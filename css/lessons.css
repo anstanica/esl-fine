@@ -226,11 +226,7 @@
         .wrapper {
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
-            height: 108vh ;
-            overflow: hidden;
-            /* scrollable */
-            scroll-behavior: scroll;
+            /* flex-grow: 1; */
         }
 
         .header {
@@ -344,9 +340,9 @@
         .main-container {
             display: flex;
             flex-direction: column;
-            /* padding: 0; */
+            padding: 0;
             flex-grow: 1;
-            overflow: hidden;
+            overflow: auto;
             font-size: 1.2em;
             font-weight: 800;
         }
