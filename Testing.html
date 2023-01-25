@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/pico.min.css">
+        <!-- import jquery -->
+        
+
+        <script src="/scripts/jquery.min.js"></script>
+</head>
+ <body class="b-translate-x-full" data-theme="dark">
+
+<div class="main-containner ">
+    <div class="flex-auto">
+        <input type="search" id="search" name="search" placeholder="Search">
+        <label for="file">File browser
+            <input type="file" id="file" name="file">
+          </label>
+          <label for="color">Color
+            <input type="color" id="color" name="color" value="#0eaaaa">
+          </label>
+        <div>1</div>
+        <div><button>Button</button>
+            <input type="submit">
+          </div>
+        <div class="div3">3</div>
+        <div>4</div>
+        <figure>
+            <table>
+              …
+            </table>
+          </figure>
+      </div>
+      <a href="#" role="button" class="secondary outline">Link</a>
+      <a href="#" role="button">Link</a>
+      <form>
+
+        <!-- Grid -->
+        <div class="grid">
+      
+          <!-- Markup example 1: input is inside label -->
+          <label for="firstname">
+            First name
+            <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+          </label>
+      
+          <label for="lastname">
+            Last name
+            <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+          </label>
+      
+        </div>
+      
+        <!-- Markup example 2: input is after label -->
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="Email address" required>
+        <small>We'll never share your email with anyone else.</small>
+      
+        <!-- Button -->
+        <button type="submit">Submit</button>
+      
+      </form>
+</div>
+    <script>
+        $(function(){
+        $("#color").on("change", function(){
+        var color = $(this).val();
+        $("body").css("background-color", color);
+
+          
+          });
+          // load video content to .div3 on click and add video tag to it
+          // get the button 
+          var btn = $("button");
+          $(btn).on("click", function(){
+            $(".div3").html("<video src='content/vsrc/zoo.mp4' controls></video>");
+
+         
+          });
+        });
+        // C:\Users\ansta\OneDrive\Desktop\eslclup\yotuube\content\vsrc\wild.mp4
+    </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html data-theme>
+
+<head>
+  <title>Adjectives</title>
+   <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- w3school css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- get style sheet from css folder -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main-small.css">
+  <link rel="stylesheet" href="/css/footer.css"/>
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <!-- <link rel="stylesheet" href="../css/dark-mode.css"/> -->
+
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <!-- fonts and icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="/css/video-js.css" rel="stylesheet" />
+  <!-- City -->
+
+  <link
+  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+  rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<body class="w3-black" style="color-scheme: dark-mode">
+  <!-- add light and dark icon -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="./worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+  <!-- Page Content -->
+  
+  <main>
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+    
+      
+      <h1 class="w3-jumbo"><span class="w3-hide-small">
+          &#128514 Adjectives	&#128512
+        </span></h1>
+      <!-- <p style="font-size:25px ;"><strong>Esl Lesson plan</strong> </p> -->
+      <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">Adjectives | A Complete Lesson Plan</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <!-- React component to show a quote inside a div -->
+
+      <p class="p-content"> Adjectives is one of the most important topics in ESL and EFL. It is a topic that is used in
+        every day conversation. It is also a topic that is used in every day writing. In this lesson plan, you will
+        learn how to teach adjectives to your students. You will also learn how to teach adjectives in a fun and
+        engaging way.
+        You should include a number of adjectives in every other topic you teach.
+        <br>
+        You can divide the lesson into two parts or even three. The first part is describing appearance, the second part
+        is describing feelings, and the third part is describing objects.
+      </p>
+      <!-- introduce the topic h1 -->
+      <h1 class="w3-text-light-grey">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content">
+        <!-- Advice  -->
+        <span class="w3-text-deep-orange">Never rush in introducing a topic, Just slow down and elicit what they know
+          about the topic</span>
+        <br> To teach adjectives, I expect that your students already learned other topics such as body parts, family,
+        and so on . If your students have not learned these topics, you should teach them for example body parts first.
+        then draw a face with big eyes, small nose, big ears and so on. Then remind them of the body parts and ask them
+        to describe the face.
+        use gestures and facial expressions to help them describe the face.
+      </p>
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900">Warm Up</h3>
+      <hr style="width: 20%;">
+      <p class="p-content">
+        AS Always, start your lesson with a warm up activity, this will help your students to get ready for the lesson.
+        Examples of warm up activities are:
+        Clap your hands, jump, and so on. Or a greeting song such as "hello, how are you?" or "if you are happy and you
+        know it" and so on.
+        <br>
+      </p>
+
+      <!-- div with embed class and a relative position add 30px margin-top-->
+      <!-- add hr-->
+      <hr style="width: 20%;">
+
+      <h3 style="color:#53d8cd; font-weight:900">If you're happy </h3> 
+
+      <div class="video">
+        <video width="600" height="388"  id="my-video"
+        class="video-js vjs-theme-city vjs-big-play-centered " controls preload="auto" poster="/Adjectives/pics/happy.png" data-setup="{}">
+
+          <source src="/videos/happy.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      
+      <div class="download-video">
+        <a href="/videos/happy.mp4" class="previous">
+
+          <button class="fa fa-download" id="downloads"> Download</button></a>
+        </a>
+      </div>
+      </div>
+      <!-- if screen width 500px change video class from  vjs-layout-medium to vjs-layout-x-small -->
+<!-- <hr> -->
+      <style>
+  
+
+
+        @media screen and (max-width: 500px) {
+          /* .video, #my-video {
+
+            margin-left: 5px;
+            margin-bottom: 5px;
+            width: 450px;
+
+          }
+          .embed{
+            margin-bottom: 5px; */
+          /* } */
+          .empty{
+            height: 30px;
+          }
+          .download-btn {
+
+            margin-top: 0;
+          }
+          .download-video{
+            margin-bottom: 50px;
+          }
+        }
+      </style>
+   <!-- <div style="margin-top: 80px; margin-bottom: 50px;"> <a href="#">TEACH SONGS </a> -->
+        <p class="p-content">
+          <hr style="width: 100%;margin-top: 80px;">
+          <strong style="color: #fcb900;"> "in the below powerpoint you will find everything you need" </strong>. <br>
+          </p>
+      <!-- </div> -->
+      <div class="embed" id="flashcards">
+        <iframe
+          src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&resid=C2C04CBE74AA957%2150498&authkey=AIfoAO9pOOc1W0g&em=2"
+          width="600" height="388"  scrolling="no"></iframe>
+    
+      <div class="download-video">
+        <a href="/Adjectives/docs/adjectives.pptx" class="previous "><button class="fa fa-download" id="downloads">
+            download </button>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="empty" style="height: 10px;"></div> -->
+      <div class="practice p-content">
+      <h3 style="color:#fbfdfe; font-weight:900">Practice</h3>
+      <hr style="width: 15%;">
+
+      <p class="p-content">
+        Teaching adjectives is fun and easy. You can use many activities to teach adjectives. As first time Practice you
+        can use the following activities:
+        <!-- list -->
+      <ul class="list-rules">
+
+        <li>
+          <span class="main-list"> Practice vocabularies</span>
+
+          <ol type="A" class="list-rules">
+            <li>
+              <p class="p-content"><a href="#hover" class="hover_img"><strong style="color: white; "> Pass & Say
+                  </strong> <span
+                    style="background-color: #222; color:rgb(247, 253, 251); bottom: 0; left: 0; width: 300px; border: 2px solid; padding: 6px;"
+                    id="hover">
+                    Hand a flashcard to one student and ask him to say and pass to the next etc... </span> </a> game
+              </p>
+            </li>
+            <li>
+              <p class="p-content"> Show the students the<a href="#flashcards" class="hover_img"> <strong
+                    style="color: white; "> Flashcards
+                  </strong></a>
+                and let them repeat after you, <strong> "clearly and Slowly" </strong></p>
+            </li>
+
+          </ol>
+          
+        </li>
+        <p class="p-content"> <blockquote style="font-size:20px; color:#a45dd4"> <strong> "Remember to correct their pronunciation mistakes
+              as it happens, specially the first ones" </strong></blockquote> </p>
+
+        <li> <span class="main-list">Practice making full sentences</span>
+          <p class="w3-text-teal">For example, “He is strong.”, “They are young.”, etc.</p>
+        </li>
+
+        <li> <span class="main-list">Practice making questions</span>
+          <p class="w3-text-teal">For example, “Is he strong?” “Are they young?”</p>
+        </li>
+      </ul>
+   
+      <br>
+      </p>
+    </div>
+      <style>
+        .main-list {
+          margin: 0;
+          padding: 0;
+          font-size: medium;
+          color: #fcb900;
+        }
+        .embed {
+          margin-bottom: 90px;
+        }
+
+      </style>
+      <!-- using TPR -->
+      <!-- h2 -->
+      <h2 style="color:#fbfdfe; font-weight:900">TPR</h2>
+      <hr style="width: 15%;">
+      <!-- reminder -->
+      <p class="p-content" id="reminder">
+        <strong>Reminder:</strong> TPR stands for Total Physical Response. It is a method of teaching that uses physical
+        actions to help students learn. <br>
+        It is a very effective method for teaching young learners. <br>
+        <strong>
+          But, Remember the students are going to imitate you. So:
+          you have to be very clear and precise. <br>
+          Be dramatic, but not over-dramatic. Be slow but not too slow <br></strong>
+      </p>
+      <!-- STYLE reminder -->
+<hr style="width: 15%;">
+      <h4 class="w3-text-aqua ">Some TPR You can use to teach adjectives:</h4>
+      
+      <!-- create A list of TPR actions for transportation -->
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> Old: <span style="color:yellowgreen ;"> Act like you are pulling on a long beard as if
+              your were an old man. </span> <img src="/Adjectives/pics/old.webp" alt="old" style="height: 100px;"></p>
+
+        </li>
+        <li class="li-list">
+          <p class="p-content">Young: <span style="color:yellowgreen ;">
+              One hand open with the level of waist .
+              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              &nbsp &nbsp &nbsp
+              <img src="/Adjectives/pics/grow_up-preview-png.webp" alt="young" style="height: 100px;">
+            </span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Bad: <span style="color:yellowgreen ;"> Point your thumbs down as a dislike</span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Good <span style="color:yellowgreen ;">Thumbs up as a like</span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Clean: <span style="color:yellowgreen ;">Rub your hands together as if you're cleaning
+              them.</span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Dirty: <span style="color:yellowgreen ;">Use facial expression as if disgusted and rub
+              your finger tips together.</span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Tall / Short / Long: <br> <img src="/Adjectives/pics/tall.png" alt="Tall-short"
+              style="height: 100px;" id="image-tpr">
+            <span style="color:yellowgreen ;"> <br> Tall: your hand open your arm stretched above your head.<br>
+              Short: your right hand at the level of your chest.
+
+              <br> Long: Use both hands to stretch your arms out horizontally.
+            </span><br>
+
+
+          </p>
+
+        </li>
+        <li class="li-list">
+          <p class="p-content">High / Low <span style="color:yellowgreen ;">Use both hands open on top of each other,
+              for High increase the space between both hands and for Low decrease it.
+
+            </span><img src="/Adjectives/pics/high.png" alt="high-low" style="height: 100px;">
+          </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Hard / soft <span style="color:yellowgreen ;"> <br> Hard : Use both your fists forming
+              fist bump. <br>
+              Soft: Use one finger or four finger and gently touch you skin .
+
+            </span>
+          </p>
+        </li>
+      </ul>
+
+
+
+      <h3 style="color:#fbfdfe; font-weight:900">Games</h3>
+      <hr style="width: 13%;">
+      <strong style="color: orange;"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an activity to ESL Students</a></strong>
+      <br>
+      <br>
+      
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong> 
+          <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            <span style="color: #5f5259;"> <strong> &nbsp; You can edit the games to fit into your lesson <br></strong>
+            </span> <br> &nbsp; Click on the game name to download the file </p>
+        </li>
+
+        <li class="li-list">
+          <p class="p-content"> <a href="./docs/adjectives.pptx" style="color: #fcb900;"> <strong>
+                Picture Game </strong> </a> &nbsp; <br>
+            <!-- add note "You can edit the game as you please"  -->
+            PPT. Audio flash cards on adjectives. Opposites, you can click on the paint brush to show the picture first, 
+            then let the students guess the word. <br>
+          </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="./docs/Hidden-Picture-Game.pptx" style="color: #fcb900;"> <strong> Hidden Picture Game
+          </strong> </a> &nbsp; <br> "A multiple choice game on colors and food. The students have to click
+            on the word corresponding to the food. "</p>
+        </li>
+
+      </ul>
+      </li>
+      <li class="li-list">
+        <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+        <!-- add ul with 3 li include images inside -->
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Draw the Description </strong> </p>
+            <img src="/Adjectives/pics/teacher-creative.jpg" alt="drawing a picture" width="300" height="200">
+            <p class="p-content"> You draw a picture of a person or an object and ask the students to describe it
+              Example: You draw a picture of a car and ask the students to describe it. </p>
+              <p class="p-content"> Also, you can play it as a charade game, divide the class into teams, and each student will draw a picture and his team will describe it. </p>
+              </p>
+          
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> 4 Corners </strong> </p>
+            <img src="/food/pics/memory-game.jpg" alt="Memory Game" width="300" height="200">
+            <p class="p-content"> Distribute the cards to the students, 
+              and ask them to stand in the four corners of the room. The teacher will call out a word, and the students will have to stand in the corner that corresponds to the word. 
+              <!-- question -->
+              For example, the teacher will call out the word "tall" and the students will have to stand in the corner that corresponds to the word. 
+              <!-- aNOTHER APPROACH -->
+           <br> <strong style="color:aquamarine ;">Another approach:</strong> is to ask the students to stand in the corner that corresponds to the opposite of the word.
+           <br> <strong style="color:aquamarine ;"> Also </strong> you can put objects in the corners, describe  the object and ask the students to stand in the corner that corresponds to the word. </p>
+            <hr>
+ 
+            </p>
+          </li>
+          <!-- <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Toys </strong> </p>
+            <img src="/food/pics/Plastic-food.jpg" alt="pig" width="300" height="200">
+            <p class="p-content">
+              Get a box fill it with food toys ,ask the students put their hands inside the box and guess the name of
+              the food.
+              , and ask the student to show it to the class,
+              if the student is correct, he will keep the food toy, and if he is incorrect, he will put it back <br>
+            </p>
+          </li> -->
+        </ul>
+
+      </li>
+      <li class="li-list">
+        <p class="p-content"> <a href="./game.html" id="online-games"> <strong id="main-list">Online Games.</strong>
+            <!-- add ul with 3 li include links to online games -->
+
+          </a>
+      </li>
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <a href="./game.html#game1" target="_blank" style="color: #fcb900;"> <strong>
+                Describer </strong> </a></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="./game.html#game2" target="_blank" style="color: #fcb900;"> <strong> monster-vocab
+              </strong> </a> </p>
+        </li>
+      </ul>
+      </ul>
+
+      <h3 style="color:#fbfdfe; font-weight:900">Wrap up</h3>
+      <hr style="width: 15%;">
+
+      <p class="p-content">
+        Wrap up the lesson by asking the students to tell you what they have learned in the lesson.
+        For younger students, you can show them a drawing or a picture of what they have learned in the lesson.
+        elicit the answers from the students, correct them if needed.
+        <br>
+
+      <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3>
+      <hr style="width: 23%;">
+      <p class="p-content">
+        <!-- Emphasis the importance of the below line -->
+        <strong style="color: #fcb900;"> "A GoodBye song is a very important part of your lesson, Make time for it."
+        </strong>.
+      </p> 
+
+      <h3> <strong> Goodbye To YOU!</strong> </h3>
+   
+      <div class="video" id="video">
+        <video width="600" height="388"  id="my-video" class="video-js vjs-theme-city vjs-big-play-centered " controls preload="auto" 
+        poster="/Adjectives/pics/goodbye.png" data-setup="{}">
+          <source src="/videos/Goodbye To YOU!.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="download-video">
+          <a href="/Adjectives/docs/adjectives.pptx" class="previous "><button class="fa fa-download" id="downloads">
+              download </button>
+          </a>
+        </div>
+      </div>
+      <button class="myTopBtn">
+        <!-- add an icon up -->
+        <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+        
+      </button>
+   <div class="empty" style="height: 100px;"></div>
+<!-- about end -->
+    </div>
+
+    <!-- script the video to play on hover -->
+    </div>
+  <div class="related-resources">
+        <hr>
+        <!--List of Related Resources -->
+        <!-- list of links to worksheets and game.html -->
+        <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content"> <a href="/Adjectives/worksheets/worksheet.html" style="color: #fcb900;">
+                <strong> Countries Worksheets </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/Adjectives/game.html" style="color: #fcb900;"> <strong> Countries
+                  online games </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/daily/daily.html" style="color: #fcb900;"> <strong> Daily Routine
+                </strong> </a> </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content"> <a href="/places/places.html" style="color: #fcb900;">
+                <strong> Places </strong> </a> </p>
+          </li>
+        </ul>
+      </div>
+ 
+  <br>
+  <br>
+  <button class="myTopBtn">
+		<!-- add an icon up -->
+		<i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+		<hr style="margin: 0; padding:3px; color: #521b30; width: 100%;">
+		<!--  -->
+	</button>
+    <!-- style myBtn to appear to the far right of tha main div -->
+<!-- main end -->
+  </div>
+
+</main>
+  <!-- the right section -->
+  <div class="right-side">
+
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <!-- latest posts section -->
+    <!-- <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+    </div> -->
+  </div>
+   
+      
+      <footer>
+        <div class="footer w3-container">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../game.html">Most Popular</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        MoESL Copyright © 2021 MoESL - All rights reserved 
+        <!-- Logo -->
+        <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" alt="logo" width="50" height="50">
+        </div>
+        </div>
+        </footer>
+    
+        <style>
+        /* .darkmode--activated footer{
+          mix-blend-mode: difference;
+            color: #fff;
+          } */
+          body.darkmode--activated{
+            background-color: rgb(209, 13, 13);
+            
+          }
+        </style>
+ 
+ <script src="/scripts/main.js"></script>
+ <script src="/scripts/video-js.js"></script>
+ <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+<script src="/scripts/topbutton.js"></script>
+<!-- <script src="/pub.js"></script> -->
+<!-- <script src="/scripts/main.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+</body>
+
+</html>

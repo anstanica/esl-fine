@@ -1,0 +1,178 @@
+.navbar {
+  overflow: hidden;
+  /* background-color: #333;  */
+  box-shadow: 0 1px 3px rgba(0, 0, 1, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  width: fit-content;
+  border-radius: 6px;
+
+
+}
+.navbar:hover, .subnav-content-clothes:hover a, .subnav-content:hover a, .subnav-content-transport:hover a
+{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #e01313;
+  font-size: 1.2em;
+  font-weight: 700;
+  
+}
+
+
+.subnav .subnavbtn {
+  font-size: 1.1em;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #312e2e;
+  font-family: inherit;
+  margin: 0;
+  width: fit-content;
+  
+}
+.subnavbtn:hover{
+  background-color: #e01313;
+  color: white;
+  border-radius: 3px;
+  transition: 0.25s all ease-in-out;
+  cursor: pointer;
+}
+
+.subnav-content:hover, .subnav-content-clothes:hover, .subnav-content-transport:hover {
+  
+ font-weight: 700;
+ /* scale: 1.1; */
+ border: 3px solid #e4e4e4;
+ border-radius: 3px;
+ transition: 0.25s all ease-in-out;
+ cursor: pointer;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 130px;
+  /* bottom: 40px; */
+  top: -90px;
+  background-color: red;
+  z-index: 1;
+  width: 60%;
+  margin: 0;
+}
+.subnav-content-clothes {
+  display: none;
+  position: absolute;
+  left: 115px;
+  bottom: 18px;
+  top: -90px;
+  background-color: red;
+  z-index: 1000;
+  width: 60%;
+  margin: 0;
+
+}
+.subnav-content a, .subnav-content-transport  a, .subnav-content-clothes a {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+  
+.subnav-content-transport {
+  display: none;
+  position: absolute;
+  left: 130px;
+  /* bottom: 40px; */
+  top: -100px;
+  background-color: red;
+  z-index: 1;
+  width: 60%;
+  margin: 0;
+}
+
+.subnav-content a:hover, .subnav-content-clothes a:hover, .subnav-content-transport a:hover {
+  background-color: #eee;
+  color: black;
+}
+.fa-caret-up {
+  font-size: 1em;
+  margin-left: 8px;
+}
+
+.subnav:hover .subnav-content, .subnav:hover, .subnav:hover .subnav-content-clothes
+
+ {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 300;
+  bottom: 20px;
+
+  /* border: 2px solid; */
+  /* flex-wrap: wrap; */
+}
+.subnav:hover .subnav-content-transport 
+
+ {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 300;
+  bottom: 20px;
+
+
+  /* border: 2px solid; */
+  /* flex-wrap: wrap; */
+}
+.video-info{
+  position: relative;
+  margin-left: 16px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbar, .subnav, .subnav-content, .subnav-content-clothes, .subnav-content-transport  {
+    width: auto;
+    margin: auto;
+  }
+  .navbar {
+    width:50%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .footer{
+    margin:0;
+    left: 0;
+    width: auto;
+    padding-left: 0;
+  }
+  .menu-icon{
+    margin-left:70px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+img.logo{
+padding-left: 0;
+margin-left: 0;
+}
+}
+  
+/* style footer */

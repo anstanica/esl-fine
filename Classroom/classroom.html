@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> Classroom</title>
+  <!-- get Classroomfavicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main-small.css">
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css"/>
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get bootstrap headings
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- Classroom-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/Classroom/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/Classroom/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+      <h1 className="w3-jumbo"><span className="w3-hide-small">
+
+          <!-- fa Classroom icon -->
+          <i className="fa fa-pencil w3-xxlarge w3-text-amber"></i>
+          Classroom <i className="fas fa-book w3-xxlarge w3-text-amber"></i></h1>
+      </h1>
+
+      <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Classroom| Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+        Classroom objects are the things that are used in a classroom. They are used by the teacher and the students. They
+        are used to teach and learn. They are used to make the classroom a better place to learn.
+        <br> Remember we use TEFL methodology to teach Classroom Objects to students <button class="ppp" 
+          >PPP</button>
+      </p>
+      <div class="hidden-div w3-hover-text-white p-content" style="display: none;">
+        <strong>Presentation, Practice and Production.</strong> <br>
+        <br> <strong style="color: yellow;">Presentation</strong> &#x3A; where the teacher introduces the topic to the
+        students.
+        <br> <strong style="color: yellow;">Practice</strong> &#x3A; where the teacher gives the students exercises to
+        practice the topic.
+        <br><strong style="color: yellow;">Production </strong>&#x3A; where the teacher gives the students a chance to
+        use
+        the topic in a real life situation.
+        <br>
+      </div>
+      <!-- scrip show/hide this div onclick -->
+      <script>
+        var btn = document.querySelector(".ppp");
+        var div = document.querySelector(".hidden-div");
+        btn.addEventListener("click", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // also show/hide this div on hover
+        btn.addEventListener("mouseover", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // if mouse is out of the div hide it
+        div.addEventListener("mouseout", function ()
+        {
+          if (div.style.display === "block")
+          {
+            div.style.display = "none";
+          }
+        });
+
+      </script>
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+        .logo-new{
+          width: 80px;
+        }
+      
+
+        @media only screen and (max-width: 600px) {
+          .download-video {
+            left: 25%;
+          }
+        }
+      </style>
+
+
+
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber">Warm Up</h3>
+      <p class="p-content">
+       It's important to teach Classroom Objects TO students .To give them instructions like : <br>
+      <strong class="w3-text-teal">turn on the light, turn off the light, open your books, 
+        open the door, close the door, bring your pencil, put
+        your pencil on the table, put your pencil in the pencil case. And so on.</strong> 
+        <br> <br>
+
+        The warm-up could a simple exercise first, Then watching a video,
+         The video will help the students.
+
+<br>
+      There are few videos about Classroom Objects. So we chose the best that could fit the topic. <br> We hope you like it.
+     <br> <strong>School Supplies Song | Fun Kids English
+      </strong>
+
+      </p>
+
+      <div class="video">
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/Classroom/pics/school-sup.png" data-setup='{}'>
+          <source src="/videos/School Supplies Song - Fun Kids English.mp4" type='video/mp4' />
+        </video>
+        <div class="download-video">
+          <a href="/videos/School Supplies Song - Fun Kids English.mp4" class="previous">
+
+            <button class="fa fa-download" id="downloads"> Download </button></a>
+          </a>
+        </div>
+
+        <div class="refer-div">
+          <a href="../teach_songs.html" tooltip-title="Check Here">
+            <strong style="font-size: 26px; color:#e9b9c9;">
+              <span class="p-content"> How to teach a song </span></strong>
+          </a>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content">
+       We start by showing them a picture of their own school, and point to the picture and say: <br>
+        "This is our school" repeat  the word school.
+      Then Show them a picture of a classroom and say "This is our classroom" repeat the word classroom.
+        <br> <br> Once the students see pictures of their school and classroom, they are know got the idea of the topic. <br>
+        And, finally show them a picture of the classroom objects or point to the objects and say: <br> "These are the classroom objects", today 
+        we are going to learn the names of the classroom objects: for example: <br>
+
+         chair, table, pencil, book, pen, eraser, ruler, blackboard, chalk, clock, door, window, light,  etc.
+        <br> <br> 
+
+        <!-- icon of down arrow -->
+        <i class="fa fa-arrow-down w3-xxlarge w3-text-red"></i>
+        of different Classroom and asking them to name the Classroom.
+      
+      </p>
+      <Strong class="w3-text-khaki w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+
+        <div style="position: relative; width: 90%; height: 0; padding-top: 70.7071%;
+      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 1.1em; overflow: hidden;
+      border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFTkzBpGeQ&#x2F;view?embed"
+            allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+        <div class="download-custom">
+          <a href="./docs/Classroom-Objects .pptx" class="previous "><button class="fa fa-download" id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+
+
+      
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber">Practice</h1>
+
+      <!-- <p class="p-content">
+    Practice is more about games and activities that help the students to practice the topic. <br>
+    Here are some activities and games that you can use in this lesson:
+  </p>  
+     -->
+      <p class="p-content">
+        
+        <strong>First</strong>
+        The teacher, first needs to elicit the names of the classroom objects from the students.
+         You can use the flashcards from above.
+        <i class="fa fa-arrow-up fa-2x" aria-hidden="true" "></i> . Or
+         You can just point to the objects and ask the students, to check if they know the English words.
+        <br> <br> 
+       <strong>In this step, the teacher should be patient and wait for the students to answer. </strong> <br>
+       <h3 class="w3-text-light-blue" >
+        <button  id="show-practice" tooltip-title="Show here" >  Practice Methods </button>
+       
+        </h3>
+       </h3>
+       <script>
+        document.getElementById("show-practice").addEventListener("mouseover", function () {
+          if (document.getElementById("list-practice").style.display == "none") {
+            document.getElementById("list-practice").style.display = "block";
+          
+          } else {
+            document.getElementById("list-practice").style.display = "none";
+          }
+          
+        });
+        // if mouseout then hide the list
+        // document.getElementById("show-practice").addEventListener("mouseout", function () {
+        //   document.getElementById("list-practice").style.display = "none";
+        // });
+       </script>
+      <ul class=" list-rules" style="display: none;" id="list-practice">
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Isolation practice </strong> : isolation practice as mentioned in the activity above (Asking and
+              practicing one by one).</p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Pair practice</strong>  : where the students will work in pairs. example:<br>
+              <strong>Student A:</strong> what is this? <br>
+              <strong>Student B:</strong> It's a pencil.
+            </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Group practice</strong>  :
+              as the name suggests is where the students will work in groups. group games , group activities, and group
+              points. </p>
+          </li>
+          </ul>
+          You can apply the practice in any order you want. <br>
+          But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+          practice.
+          <br>
+          <hr>
+          <blockquote class="w3-hover-black ">
+            <h3 class="w3-text-white"> Action verbs for this lesson:</h3> <br>
+            <strong class="w3-text-lime w3-hover-black">Point,carry, draw, type, write, read, sharpen, erase, sit,  open, close and stick </strong> <br>
+          </blockquote>
+          <blockquote class="w3-hover-black ">
+           <h3 class="w3-text-white"> Grammar with this lesson: </h3><br>
+            <strong class="w3-text-lime w3-hover-black">
+              Articles and plurals: <br>
+              It's a pencil. It's an eraser.<br> 
+              It's a book. They are books. <br>
+             </strong> <br>
+          </blockquote>
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities for practicing this lesson:
+          </h4>
+      </p>
+
+
+      <h3 style="font-weight:900" class="underline  w3-text-amber">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+   
+
+        <li class="li-list">
+          <p class="p-content"><strong class="underline  w3-text-amber">
+            Cross The River</strong>
+
+            <a href="./docs/cross-the-river.pptx" class="w3-text-white">
+              <i class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);" tooltip-title="Download"></i>
+              <br><br>
+              <picture>
+
+                <img src="/Classroom/pics/cross-the-river.gif " alt="chain" srcset="" width="300" height="200">
+
+              </picture>
+            </a>
+            <br>
+            <br>
+            Choose the correct answer to cross the river, otherwise you will fall into the water.
+             <br>
+
+          </p>
+        </li>
+        <li class="li-list">
+
+          <p class="p-content"> <strong class="underline  w3-text-amber">
+              Spin the Wheel</strong>
+          
+
+            <a href="./docs/spin-the-wheel.pptx" style="color: #fcb900;"><i class="fa fa-download fa-2x" tooltip-title="Download"
+                aria-hidden="true" style="color: rgb(243, 51, 51);"></i> <br><br>
+              <picture tooltip-title="Click to download">
+
+                <img src="/Classroom/pics/spin-the-wheel.gif" alt="how-many-can-you" srcset="" width="300" height="200">
+
+              </picture>
+            </a> &nbsp; <br> <br>
+            Spin the wheel and choose the correct answer.
+          </p>
+        </li>
+
+        <li class="li-list">
+
+          <p class="p-content"> <strong class="underline  w3-text-amber">
+             Mouse Trap &nbsp; &nbsp;</strong>
+          
+
+            <a href="./docs/mouse-trap.pptx" style="color: #fcb900;"><i class="fa fa-download fa-2x" tooltip-title="Download"
+                aria-hidden="true" style="color: rgb(243, 51, 51);"></i> <br><br>
+              <picture tooltip-title="Click to download">
+
+                <img src="/Classroom/pics/mouse-trap.gif" alt="how-many-can-you" srcset="" width="300" height="200">
+
+              </picture>
+            </a> &nbsp; <br> <br>
+            The students will choose the correct answer to avoid the cat trap. <br>
+            Use this game for practicing articles and plurals.
+          </p>
+        </li>
+
+      </ul>
+      <hr style="width:100%">
+      </li>
+      <!-- Main li -->
+      <li class="li-list">  
+        <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+        <!-- add ul with 3 li include images inside -->
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong>  Chinese whispers  </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/Classroom/pics/maxresdefault.jpg" alt="Banana" width="300" height="200">
+            <p class="p-content">
+               <br>
+             
+
+              Make a circle and whisper a word or sentence to one student. <br>
+              
+              The word must go ‘round the circle and the student on your other side must whisper to you what he heard. <br> 
+              
+              Write the sentence you said and the sentence this student said. If they’re the same, stars for everyone. 
+              
+               
+
+
+            </p>
+
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong>Dirty Monkey</strong> </p>
+
+            <p class="p-content">
+              <!-- crete ol list with a type -->
+
+              A - Make two students sit on the floor in front of each other leaving enough space between them to place
+              three flashcards. <br>
+
+
+              B - Place the three flashcards between them and give them time to think about the words they have in front
+              of them. <br>
+
+
+
+              C - Once they look ready, loudly say the name on one flashcard.
+
+              The first one to touch it wins and stays there and the loser goes to sit down. <br>
+
+
+
+              D - Give one star each; as the winner stays there he can get as many stars as he can as long as he keeps
+              on winning. <br>
+
+            </p>
+
+
+            </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Basketball  </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/Classroom/pics/playing-basketball.jpg" alt="Basketball" width="300" height="200">
+
+            <p class="p-content">
+              
+
+                A box or basket in the center of the classroom  <br>
+
+                A circle around it <br>
+
+                They throw a ball from outside of the circle after reproducing vocabulary <br>
+
+                If it enters the box, star! 
+
+              <!-- roll the dice picture -->
+              <br>
+            </p>
+
+            <hr>
+          </li>
+        </ul>
+        </li>
+
+          <li class="li-list">
+            <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+            <ul class="list-rules">
+              <li class="li-list">
+                <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/Classroom/game.html#game1"
+                    target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                      Vocab game <br></strong><br>
+                    <picture tooltip-title="Click to play the game">
+                      <img src="/Classroom/pics/vocab-game.png" alt="mystery" width="300" height="200"><br>
+                    </picture>
+                  </a>
+                  <br>
+                  <p class="p-content">
+                    The aim is practice seeing and hearing the vocabulary. And then to associate
+                    these with the pictures. <br>
+                    The game is made up of 2 mini games: one matching words to images, one
+                    revealing the hidden picture. <br>
+                </p>
+              </li>
+
+
+              <li class="li-list">
+                <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/Classroom/game.html#game2"
+                    target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                      Monster Vocab <br></strong><br>
+                    <picture tooltip-title="Click to play the game">
+                      <img src="/Classroom/pics/monster-vocab.png" alt="mystery" width="300" height="200"><br>
+                    </picture>
+                  </a>
+                  <br>
+                  <p class="p-content">
+              
+             - TO play you click on the correct the picture that matches the word. <br>
+             - You click at the top right of the screen to turn off the sound. <br>
+              <br> 
+          
+                </p>
+                </li>
+
+                <li class="li-list">
+                  <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/Classroom/game.html#game3"
+                      target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                        Big Describer <br></strong><br>
+                      <picture tooltip-title="Click to play the game">
+                        <img src="/Classroom/pics/big-describer.png" alt="mystery" width="300" height="200"><br>
+                      </picture>
+                    </a>
+                    <br>
+                    <p class="p-content">
+                      To play, you read the
+                      brief description and then click on the image that it best describes.
+            
+                  </p>
+                  </li>
+              </ul>
+         
+          </li>
+
+        </ul>
+       
+    
+        <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap up / Review</h3>
+        <p class="p-content">
+          <!-- list of activities to wrap up / end the Classroom lesson -->
+         Wrap this lesson by giving the students instructions: <br>
+          - Close your books  <br>
+          - Put your pens down  <br>
+          - Sit down  <br>
+          - Open the door  <br>
+          - Turn off the lights  <br>
+          - etc ....  <br>
+
+        </p>
+        <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3>
+        <p class="p-content"> A GoodBye song is a very important part of your lesson, Make time for it.
+
+        <h3 class="p-content" style="color:green;"> Here is a good one</h3>
+        <div class="goodbye">
+
+            <video width="700" height="388" id="my-video"
+              class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+              poster="/zoo/pics/itistime.png" data-setup='{}'>
+              <source src="/videos/Time to Say Good-bye.mp4" type='video/mp4' />
+            </video>
+                 
+        </div>
+            <div class="download-btn">
+              <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+    
+                <button class="fa fa-download" id="downloads"> Download</button></a>
+              </a>
+       
+        </p>
+    </div>
+
+    </div>
+<div class="related-resources"> <hr>
+      <!--List of Related Resources -->
+      <!-- list of links to worksheets and game.html -->
+      <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <a href="/Classroom/worksheets/worksheet.html" target="_blank"
+              style="color: #fcb900;"> <strong> Classroom Worksheets </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/Classroom/game.html" target="_blank"
+              style="color: #fcb900;"> <strong> Classroom Online Games </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/Numbers/numbers.html" target="_blank"
+              style="color: #fcb900;"> <strong> Numbers </strong> </a> </p>
+        </li>
+    
+
+      </ul>
+    </div>
+  </div>
+  <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Classroom/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Classroom/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Classroom/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Classroom/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Classroom/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../read.html">Most Popular</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+     
+    ESL Clup Copyright © 2021 ESL Clup - All rights reserved 
+    <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+    </div>
+    </div>
+    </footer>
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+  <script src="/scripts/topbutton.js"></script>
+  <script src="/scripts/darkmode.js"></script>
+  <script src="/scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</body>
+
+</html>

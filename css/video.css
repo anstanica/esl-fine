@@ -1,0 +1,122 @@
+.inside-anfield {
+  width: 100%;
+  /* border-color: rgb(255, 255, 255); */
+  cursor: pointer;
+  background-color: #1b1b1b;
+}
+img{
+height: 250px;
+max-width: 100%;
+background-color: #1b1b1b;
+
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: auto ;
+  column-gap: 26px;
+  row-gap: 40px;
+  margin: auto 220px ;
+  border:#fcb900 solid 2px; 
+background: wheat;
+  /* background-image: linear-gradient(#1b1b1b to black) */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .thumbnail-row, .thumbnail-row img{
+    
+    /* height: 150px; */
+    /* width: fit-content; */
+    align-items: center;
+    justify-content: center;
+    border: #fcb900 1px solid;
+   }
+   .video-preview{
+    border-bottom: 15px solid rgb(231, 227, 227);
+    padding-bottom: 15px;
+    height: auto;
+
+  }
+  .video-grid{
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (min-width:500px) and (max-width:650px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+  }
+
+}
+@media (min-width:651px) and (max-width:700px) {
+.video-grid {
+  grid-template-columns: 1fr 1fr;
+  padding-left: 90px;
+
+}
+}
+@media (min-width:701px) and (max-width:900px){
+.video-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (min-width:901px){
+.video-grid{
+grid-template-columns:  1fr 1fr 1fr;
+}
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 0px 1fr;
+  
+  
+}
+.thumbnail-row{
+  position: relative;
+  display: flex;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 1, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  border: 6px solid white;
+  background-color: #1b1b1b;
+}
+
+.thumbnail-row:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
+}
+/* paragrasphs style */
+
+.title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+a {
+  font-size: 14px;
+}
+
+.myTopBtn {
+  /* make the icon on top on the span */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* make #id on the bottom */
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 500;
+  border: none;
+  outline: none;
+  background-color: #fcb900;
+  color: white;
+  cursor: pointer;
+  padding: 0px 18px 2px 16px;
+
+  border-radius: 10px;
+}

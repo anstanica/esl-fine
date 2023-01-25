@@ -1,0 +1,213 @@
+:root{
+    margin: 0 0 0 50px;
+    background-image: url(https://tinywow.com/v2/img/home_bg.png);
+    font-family: 'Poppins', sans-serif;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-div{
+    margin-top: 80px;
+    display: flex;
+    align-items:center;
+    position: relative;
+    justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.toolbox{
+    /* width: 600px; */
+    border: 2px solid #250d6f;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+@media (min-width: 992px){ 
+    .toolbox{
+        -ms-flex: 0 0 51.666667%;
+        flex: 0 0 51.666667%;
+        max-width: 51.666667%;
+}
+}
+@media (min-width: 768px){
+.toolbox {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 130%;
+    color: #181D20;
+    padding-top: 8px;
+    margin-top: 5px;
+  
+}
+@media screen and (max-width: 600px) {
+    .title {
+      font-size: 32px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .title {
+      font-size: 25px;
+    }
+  }
+
+.sub_title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--theme-color);
+    margin-bottom: 0;
+    
+}
+.sub_title2{
+    /* line-height: 160%; */
+    font-size: 16px;
+    color: #007bff;
+    font-style: italic;
+}
+
+h5{
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color:#007bff;
+    /* margin: 0; */
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.search{
+ 
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+  
+
+}
+
+
+@media (min-width: 992px){
+.search {
+    -ms-flex: 0 0 35.666667%;
+    flex: 0 0 35.666667%;
+    max-width:35.666667%;
+}
+}
+@media (min-width: 768px){
+.search {
+    -ms-flex: 0 0 40.333333%;
+    flex: 0 0 35.333333%;
+    max-width: 35.333333%;
+}
+}
+.search-form{
+    position: relative;
+    margin-top: 0;
+}
+.search-form .search-btn{
+    position: absolute;
+    transform: translateY(-50%);
+    right: 8px;
+    top: 50%;
+    padding: 17px 48px;
+    box-shadow: 0 5px 10px rgb(26 143 227 / 10%);
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--theme-color);
+    padding: 13px 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.search-form .input-search{
+    display: inline-block;
+    text-align: start;
+    background: #FFFFFF;
+    border-radius: 14px;
+    border: none;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #525658;
+    height: 64px;
+    width: 100%;
+    padding: 0 56px;
+    background-image: url(https://tinywow.com/v2/img/search.svg);
+    background-position: 22px center;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 5px 10px rgb(26 143 227 / 10%);
+    box-shadow: 0 5px 10px rgb(26 143 227 / 10%);
+    overflow: visible;
+    right: 8px;
+    top: 50%;
+}
+.video{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main{
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 54.25%;
+    height: 0px;
+}
+.main video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+:root {
+    --theme-color: #1A8FE3;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}

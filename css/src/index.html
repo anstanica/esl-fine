@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
+
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+<body class="dark">
+
+    <button data-popover-target="popover-top" data-popover-placement="top" type="button"
+        class="text-white mb-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Top
+        popover</button>
+    <div data-popover id="popover-top" role="tooltip"
+        class="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Popover top</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>And here's some amazing content. It's very engaging. Right?</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <button data-popover-target="popover-right" data-popover-placement="right" type="button"
+        class="text-white mb-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Right
+        popover</button>
+    <div data-popover id="popover-right" role="tooltip"
+        class="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Popover right</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>And here's some amazing content. It's very engaging. Right?</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <button data-popover-target="popover-bottom" data-popover-placement="bottom" type="button"
+        class="text-white mb-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Bottom
+        popover</button>
+    <div data-popover id="popover-bottom" role="tooltip"
+        class="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Popover bottom</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>And here's some amazing content. It's very engaging. Right?</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <button data-popover-target="popover-left" data-popover-placement="left" type="button"
+        class="text-white mb-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Left
+        popover</button>
+    <div data-popover id="popover-left" role="tooltip"
+        class="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Popover left</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>And here's some amazing content. It's very engaging. Right?</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <button data-popover-target="popover-hover" data-popover-trigger="hover" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Hover popover</button>
+    <div data-popover id="popover-hover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Popover hover</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>And here's some amazing content. It's very engaging. Right?</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    
+    <button data-popover-target="popover-click" data-popover-trigger="click" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Click popover</button>
+    <div data-popover id="popover-click" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Popover click</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p>And here's some amazing content. It's very engaging. Right?</p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+
+
+    <!-- <script>
+        
+        // set the popover content element
+        const $targetEl = document.getElementById('popoverContent');
+
+        // set the element that trigger the popover using hover or click
+        const $triggerEl = document.getElementById('popoverButton');
+
+        // options with default values
+        const options = {
+        placement: 'bottom',
+        triggerType: 'hover',
+        offset: 10,
+        onHide: () => {
+            console.log('popover is shown');
+        },
+        onShow: () => {
+            console.log('popover is hidden');
+        }
+        };
+        const popover = new Popover($targetEl, $triggerEl, options);
+
+    </script> -->
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

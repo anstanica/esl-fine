@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> places</title>
+  <!-- get placesfavicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/"> <!-- get Numbersfavicon -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main-small.css">
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css" />
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get bootstrap headings
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- places-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/places/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/places/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">
+
+          <!-- fa places icon -->
+          <!-- school icon -->
+
+          <i class="fas fa-school
+          w3-xxlarge w3-text-purple"></i>
+          places <i class="fas fa-train w3-xxlarge w3-text-purple"></i>
+      </h1>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Places| Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+
+        <strong>What is a place?</strong> <br> A place is a location. <br> <br>
+
+        - Places like &#x3A; <br> a school, a
+        hospital, a park, a beach,a zoo, a museum, a library, a restaurant, a hotel, a bank,
+        a police station, a fire station, a pharmacy and a gas station. <br> <br>
+        - Teaching places to students is very important because it helps them to know where they can go to get
+        different services. <br> <br>
+        <span class="w3-codespan w3-amber ">
+          - where they can go to have fun, to learn and to get help in case of an emergency.
+          - where are their parents work. <br>
+        </span> <br>
+
+
+        Remember we use TEFL methodology to teach places to students
+        <button class="ppp">PPP</button>
+      </p>
+
+      <div class="hidden-div w3-hover-text-white p-content" style="display: none;">
+        <strong>Presentation, Practice and Production.</strong> <br>
+        <br> <strong style="color: yellow;">Presentation</strong> &#x3A; where the teacher introduces the topic to the
+        students.
+        <br> <strong style="color: yellow;">Practice</strong> &#x3A; where the teacher gives the students exercises to
+        practice the topic.
+        <br><strong style="color: yellow;">Production </strong>&#x3A; where the teacher gives the students a chance to
+        use
+        the topic in a real life situation.
+        <br>
+      </div>
+      <!-- scrip show/hide this div onclick -->
+
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+
+        .logo-new {
+          width: 80px;
+        }
+
+        .w3-codespan {
+
+          padding: 10px;
+          color: rgb(104, 90, 90);
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-video {
+            left: 25%;
+          }
+
+          .w3-codespan {
+            padding: 5px;
+            color: black;
+          }
+        }
+      </style>
+
+      <!-- list a href to the parts of this lesson -->
+
+
+      <div class="w3-row w3-center ">
+        <h4 class="w3-pink"> Feel free to hob into the lesson plan sections</h4>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">1</span><br>
+          <a href="places/places.html#intro" class="w3-button w3-black">Presentation</a>
+        </div>
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">2</span><br>
+          <a href="places/places.html#practice" class="w3-button w3-black">Practice</a>
+        </div>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">3</span><br>
+          <a href="places/places.html#games" class="w3-button w3-black">Production</a>
+        </div>
+      </div>
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber" id="warmup">Warm Up</h3>
+      <p class="p-content " id="warmup">
+        First, Welcome your students and greet them. <br> <br>
+        If they have already learned the <a href="/Jobs/jobs.html">Jobs</a> lesson, you can review it before teaching
+        this
+        lesson. <br>
+        Next, you can play this song to help them remember the names of the places. <br> <br>
+        <strong class="w3-border w3-padding-small">Remember to play the video in full screen mode.</strong> <br> <br>
+
+        <strong class="w3-lime">Where Are You Going? | Places Song</strong>
+      <div class="video" id="warmup">
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/places/pics/places-song.png" data-setup='{
+        
+          }'>
+          <source src="/videos/Where Are You Going- Places Song.mp4" type='video/mp4' />
+        </video>
+        <div class="download-video">
+          <a href="/videos/Where Are You Going- Places Song.mp4" class="previous">
+
+            <button class="fa fa-download" id="downloads"> Download </button></a>
+          </a>
+        </div>
+
+        <div class="refer-div">
+          <a href="../teach_songs.html" tooltip-title="Check Here">
+            <strong style="font-size: 26px; color:#e9b9c9;">
+              <span class="p-content"> How to teach a song </span></strong>
+          </a>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber" id="intro">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content w3-sepia-max w3-content  glyphicon-heart-empty ">
+        - If you have a poster of the places, you can show it to the students. If you don't have a poster, you can
+        draw a picture of the places on the board. <br>
+        - Point to the school in the poster and ask the students , if they know where they are. <br>
+        - Then, explain to them that we are going to learn about places.
+        Ask them if they know any places. <br>
+        If they know any, write them on the board. <br>
+        If they don't know any, you can tell them some places. <br>
+        For example, you can tell them that you go to school, you go to the park, you go to the hospital. <br>
+        <br class="w3-border-bottom">
+        <span class="w3-border-bottom w3-text-amber ">
+          Another idea is to build a story about a person who goes to different places. <br>
+        </span>
+        <strong class="w3-block">
+          For example :
+        </strong> <br>
+        <span class="w3-codespan w3-black w3-padding-small">
+          A boy / a girl went to the post office to send a letter to his friend, but he didn't have any
+          money. <br>
+          so, he went to the bank to get some money. But he didn't have an account. <br>
+          so he went back home to ask his mother for some money.
+          But his mother wasn't at home, she was at the market. <br>
+          So he called his father to ask him for some money,but his father was at the hospital, he is a doctor <br>
+          So he went to the park to wait for his mother,
+          When his mother came back, she gave him some money.
+          Then he went to the post office to send the letter. <br>
+
+        </span> <br>
+
+        And include visual aids of the places in the story. <br>
+
+      <h4 class="w3-lime">
+        Check the <a href="places/places.html#flashcards">flashcards</a> <i class="fa fa-arrow-down"></i>
+        below to help you.
+        <!-- below icon  -->
+
+
+      </h4>
+      </p>
+
+      <p class="p-content">
+
+      </p>
+      <hr> <br>
+
+      <span class="w3-text-deep-orange">
+        <strong>Flashcards</strong> of this lesson.
+      </span> <br>
+
+      <Strong class="w3-text-aqua w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+
+        <div style="position: relative; width: 90%; height: 0; padding-top: 70.7071%;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+        border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&amp;resid=C2C04CBE74AA957%2150524&amp;authkey=AJAP6q6ITVl2hqM&amp;em=2&amp;wdAr=1.4148802017654476">
+          </iframe>
+        </div>
+        <div class="download-custom">
+          <a href="/places/docs/Places-Flashcards.pptx" class="previous "><button class="fa fa-download" id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        .hoverable [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 60%;
+          top: 100%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber" id="practice">Practice</h1>
+
+      <!-- <p class="p-content">
+    Practice is more about games and activities that help the students to practice the topic. <br>
+    Here are some activities and games that you can use in this lesson:
+  </p>  
+     -->
+      <p class="p-content">
+        To practice the places, we can use the flashcards <i class="fa fa-arrow-up fa-2x" aria-hidden="true" "></i> .
+        Next show them Flashcards 
+      and ask them to repeat after you several times.  <br>
+      Then use play pass the flashcards. The students will pass the flashcards to each other and say the color. <br>
+      <button class=" hoverable w3-teal" tooltip-title="show / hide"><strong>Types of practice</strong> </button> <br>
+          <ul class="list-rules rules-hide" style="display: none;">
+            <li class="li-list">
+              <p class="p-content"> Isolation practice : isolation practice as mentioned in the activity above (Asking
+                and
+                practicing one by one).</p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Pair practice : where the students will work in pairs. example:<br>
+                <strong>Student A:</strong> what color is this? <br>
+                <strong>Student B:</strong> It's red.
+              </p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Group practice :
+                as the name suggests is where the students will work in groups. group games , group activities, and
+                group
+                points. </p>
+            </li>
+
+            You can apply the practice in any order you want. <br>
+            But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+            practice.
+            <br>
+          </ul>
+          <hr>
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities that you can use in this lesson:
+          </h4>
+      </p>
+      <!-- <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Production</h3><br> -->
+      <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+
+
+            <li class="li-list">
+              <p class="p-content"><strong class="underline  w3-text-amber">
+                Places Around</strong>
+
+                <a href="/places/docs/places-around-town.ppt" class="w3-text-white">
+                  <i class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);"></i>
+                  <br><br>
+                  <picture>
+
+                    <img src="/places/pics/places-around-town.gif " alt="chain" srcset="" width="300"
+                      height="200">
+
+                  </picture>
+                </a>
+                <br>
+                <br>
+                Audio flash cards on places around town. You can use it both to show the vocabulary on this topic and to check it <br>
+
+              </p>
+            </li>
+            <li class="li-list">
+
+              <p class="p-content"> <strong class="underline  w3-text-amber">
+                Maze
+
+                </strong>
+                <a href="/places/docs/maze-places-around-town.pptx" style="color: #fcb900;"><i
+                    class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);"></i> <br><br>
+                  <picture tooltip-title="Click to download">
+
+                    <img src="/places/pics/maze-places-around-town.jpg" alt="Hidden Picture Game
+                    " srcset="" width="300" height="200">
+
+                  </picture>
+                </a> &nbsp; <br> <br>
+                Who goes where? <br>
+                  - The students will follow the lines to find out where each person goes. <br>
+              </p>
+            </li>
+            <li class="li-list">
+
+              <p class="p-content"> <strong class="underline  w3-text-amber">
+                Hidden Picture Game
+
+                </strong>
+                <a href="/places/docs/Hidden-Picture-Game.pptx" style="color: #fcb900;"><i
+                    class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);"></i> <br><br>
+                  <picture tooltip-title="Click to download">
+
+                    <img src="/places/pics/hidden-pic.png" alt="Hidden Picture Game
+                    " srcset="" width="300" height="200">
+
+                  </picture>
+                </a> &nbsp; <br> <br>
+                Click on the square to reveal parts of the picture <br>
+              </p>
+            </li>
+          </ul>
+          <hr style="width:100%">
+        </li>
+        <!-- Main li -->
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+          <!-- add ul with 3 li include images inside -->
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong> Coin Race</strong> A drilling Game </p>
+              <!-- Get a banana image -->
+
+              <img src="/places/pics/spin-a-coin.webp" alt="Coin Race" width="300" height="200">
+              <p class="p-content w3-codespan w3-border w3-pink w3-Roboto w3-padding-16">
+                 - This activity game is ideal for practicing question and answer  &nbsp; &nbsp;   &nbsp; &nbsp; structures. <br>
+               <u class="w3-orange w3-padding-small" style="text-decoration: #f00 wavy underline;" >The game works best with small class sizes.</u>   <br>
+                - Write numbered question and answer structures on the board. <br>
+                - There should be one question and answer pattern for each student in the  &nbsp;  class. <br>
+                - Sit the students in a circle. Have the students repeat the first  &nbsp; &nbsp;  &nbsp; &nbsp;  question on the board three times. <br>
+                - When the students have repeated the question a third time, start to  &nbsp; &nbsp;  &nbsp; spin a coin on the floor. <br>
+                - As the coin spins, the students answer the question in turn going  &nbsp; &nbsp;   &nbsp; &nbsp; around the circle. <br>
+                - When the coin stops spinning, the student whose turn it is to speak,  &nbsp; &nbsp; answers the question and is out of the game. <br>
+                - Erase the first question and answer structure off the board and then  &nbsp; &nbsp; repeat the game with the second question and answer structure. <br>
+                - When the coin stops, the student whose turn it is to speak answers the  &nbsp;  first and second question and then leaves the game. <br> - This process is repeated until there is one student left. 
+                 That student  &nbsp; wins the game.
+
+                <br>
+
+              </p>
+
+              <hr>
+            </li>
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong>Make a Sentence</strong> </p>
+
+              <p class="p-content w3-codespan  w3-border w3-pink w3-Roboto w3-padding-16">
+                <!-- crete ol list with a type -->
+
+                - Each team stands in a line. Hold up a flashcard and make a sentence  &nbsp; &nbsp;  &nbsp; based on the picture. <br>
+                - For example,  <span class="w3-black"> "school" and then say "I go to school every day."</span> <br>  &nbsp; &nbsp;Or "I go to school by bus." <br>
+                &nbsp;  <span class="w3-black">"library" and then say " I read books at the library."</span>  <br>
+                 - The teams then repeat the sentence three times and sit down. The team  &nbsp; &nbsp; that sits down first scores a point. <br>
+                 - Then, repeat the game, but this time have the students do an action  &nbsp; &nbsp;  &nbsp;  before they sit down, <br>
+                 &nbsp; &nbsp;- e.g. <span class="w3-black">  clap and then sit, jump and then sit, etc</span>. Repeat the game with &nbsp; a  different action or actions each time. <br>
+                  - As the game progresses, instead of every member of the team speaking at the same time, each student repeats the sentence three times, do an action and then sit down. <br>
+                 * The idea is to make the tasks more challenging as the game progresses. The team with the most points at the end of the game wins.
+
+              </p>
+
+
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong> Flashcards at Dawn </strong> </p>
+              <!-- Get a banana image -->
+
+              <picture>
+                <img src="/places/pics/flashcards-down.png" alt="Flashcards at Dawn" width="300" height="200"><br>
+              </picture>
+              <p class="p-content">
+            
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                - One student from each team comes to the front of the class.  <br>
+                - Have the two students stand back to back. <br>
+                -  Give each student a flashcard. Each student holds their flashcard in  &nbsp; &nbsp; front of them with the picture side facing away. <br>
+                - Both students then take three steps away from each other before quickly  &nbsp;  turning around  <br>
+                - The two students then race to call out what's on the other student's  &nbsp; &nbsp; flashcard  <br>
+                - The first student to correctly call out what's on the flashcard scores  &nbsp;  a point for their team. <br>
+                - Play until all the flashcards have been used. The team with the most  &nbsp; &nbsp; points at the end of the game wins.
+            <br>
+              </article>
+
+
+              <!-- roll the dice picture -->
+              <br>
+              </p>
+
+              <hr>
+            </li>
+          </ul>
+        </li>
+
+        <li class="li-list">
+          <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/places/game.html#game1"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Fast Phrases <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/places/pics/fast-phrases.png" alt="Fast Phrases" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <p class="p-content">
+                This is a game for practicing English sentences. <br> - Look at the images and make
+                  sentences to describe what you see. <br> - To make the sentences, you have to choose
+                  from the options shown. If you click on the correct one, then that part of the
+                  sentence is added. <br> - Points are awarded for correct hits and this multiplies if you
+                  continue to get the answers right.
+              </p>
+            </li>
+
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/places/game.html#game2"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Falling Clouds <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/places/pics/falling-clouds.png" alt="falling-clouds" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <p class="p-content">
+                - You are presented with a jumbled sentence and have to rearrange the
+                words to create an correct sentence. <br> - The idea is that by re-ordering the
+                words you can practice grammar points and also acquire vocabulary. <br>
+                ages appear at the top of the screen to provide meaning/context to the
+                sentence. <br> - If you can correctly arrange the clouds within a few moves,
+                then you get a score bonus.
+
+
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/places/game.html#game3"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Bubbles <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/places/pics/bubbles.png" alt="Bubbles" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <p class="p-content w3-panel">
+               <strong class="w3-black">-</strong>  It is roughly based on pattern matching games in
+                which gou have to match gems or colors. <br>
+                <strong class="w3-black">-</strong> In this game, rather than matching patterns of items,
+                you click bubbles to make an English sentence. <br>
+                <strong class="w3-black">-</strong> The idea behind the game is that you can practice making grammatically correct phrases
+                according to a visual stimulus. It is hoped that this can be a good way to practice grammar
+                formations and also re-enforce vocabulary items. <br>
+                <strong class="w3-black">-</strong> To play, look at the image and think of the phrase that matches what you see. Then click on the
+                bubbles to create a sentence that corresponds to the image. <br> <strong class="w3-black">-</strong> You can either click each bubble or
+                click the first and then drag the mouse over the rest. <br> 
+                <strong class="w3-black">-</strong> If the sentence you create matches the
+                image, then the bubbles will disappear. If you make a mistake while creating four sentence,
+                then feedback and corrections will appear at the bottom. <br>
+                <strong class="w3-black">*</strong> For example, missing words will
+                appear in red with an arrow pointing to where they should be. <br>
+            
+              </p>
+            </li>
+          </ul>
+
+        </li>
+
+      </ul>
+
+
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap up / Review</h3>
+      <p class="p-content">
+        <!-- list of activities to wrap up / end the places lesson -->
+        You can wrap up the lesson by playing a game<br>
+        
+        <strong class="w3-text-amber w3-codespan w3-blue-gray w3-padding-small">
+          Distribute the flashcards around the classroom , then give the students simple instructions. <br>
+          <br>
+          For example: <br>
+          - Go to the library. <br>
+          - Go to the park. <br>
+         <span class="w3-black">You can make the game more challenging by giving the students more complex instructions. <br>
+          For example: </span> <br>
+          - Go to the library and then go to the park. <br>
+          - Go to the park and then go to the library. <br>
+
+          <span class="w3-black"> Even more challenging: You can Just use verbs </span>
+          <br>
+          - Buy a book or eat a sandwich  <br>
+          - Go study or have a picnic <br>
+        </strong>
+
+        <br>
+
+        <br>
+
+      </p>
+      <h3 style="color:#fbfdfe; font-weight:900" class="w3-border-bottom  ">GoodBye song</h3>
+
+
+      <h3 class="p-content" style="color:green;"> Last part is singing a goodbye song </h3>
+      <div class="goodbye w3-codespan w3-black w3-border">
+
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/zoo/pics/itistime.png" data-setup='{}'>
+          <source src="/videos/Time to Say Good-bye.mp4" type='video/mp4' />
+        </video>
+
+      </div>
+      <div class="download-btn">
+        <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+
+          <button class="fa fa-download" id="downloads"> Download</button></a>
+        </a>
+
+        </p>
+      </div>
+    </div>
+      </div>
+<div class="related-resources">
+        <hr>
+        <!--List of Related Resources -->
+        <!-- list of links to worksheets and game.html -->
+        <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content"> <a href="/places/worksheets/worksheet.html" target="_blank" style="color: #fcb900;">
+                <strong> places Worksheets </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/places/game.html" target="_blank" style="color: #fcb900;"> <strong> places
+                  online games </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/Jobs/jobs.html" target="_blank" style="color: #fcb900;"> <strong> Jobs
+                </strong> </a> </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content"> <a href="/Adjectives/adjectives.html" target="_blank" style="color: #fcb900;">
+                <strong> Adjectives </strong> </a> </p>
+          </li>
+        </ul>
+      </div>
+    
+    <br>
+    <br>
+    <br>
+    <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="places/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="places/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="places/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="places/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="places/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script>
+      // on windows load 
+      window.addEventListener("load", function ()
+      {
+
+        var btn = document.querySelector(".ppp");
+        var btn2 = document.querySelector(".ppp-2");
+        var div = document.querySelector(".hidden-div");
+        var div2 = document.querySelector(".hidden-div-2");
+
+        btn.addEventListener("click", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // also show/hide this div on hover
+        btn.addEventListener("mouseover", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // btn2.addEventListener("mouseover", function ()
+        // {
+        //   if (div2.style.display === "none")
+        //   {
+        //     div2.style.display = "block";
+        //   }
+        //   else
+        //   {
+        //     div2.style.display = "none";
+        //   }
+        // });
+        // if mouse is out of the div hide it
+        div.addEventListener("mouseout", function ()
+        {
+          if (div.style.display === "block")
+          {
+            div.style.display = "none";
+          }
+        });
+
+        // get hoverable 
+        var hoverable = document.querySelector(".hoverable");
+        // get rules-hide
+        var rulesHide = document.querySelector(".rules-hide");
+        // add event on hover show the .rules-hide
+        hoverable.addEventListener("mouseover", function ()
+        {
+          if (rulesHide.style.display === "none")
+          {
+            rulesHide.style.display = "block";
+          }
+          else
+          {
+            rulesHide.style.display = "none";
+          }
+        });
+      });
+
+    </script>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../game.html">Most Popular</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+
+        ESL Clup Copyright © 2021 ESL Clup - All rights reserved
+        <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+      </div>
+    </div>
+  </footer>
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+  <script src="/scripts/topbutton.js"></script>
+  <script src="/scripts/darkmode.js"></script>
+  <!-- <script src="/scripts/index.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</body>
+
+</html>

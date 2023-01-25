@@ -1,0 +1,124 @@
+.home{
+  height: auto;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content:space-evenly;
+  /* align-items: center; */
+  cursor: pointer;
+ color: #4bc0c8;
+ width: 100%;
+ left: 0;
+ /* padding-top: 10px; */
+ 
+ border-bottom: #521b30 2px solid;
+ margin: 0 5px;
+ margin-left: -30px;
+ padding-left: -30px;
+ padding: 20px 10px;
+}
+.home:hover {
+  background-color: rgb(225, 218, 218);
+}
+/* .pad:hover{
+  background-color: rgb(225, 218, 218);
+} */
+.w3-sidebar{
+  width: 20%;
+  left: 0;
+  top: 0px;
+  /* margin-right: 40px; */
+  border-right: #131212 1px solid;
+  z-index: 100;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.home:last-child{
+  border-bottom: none;
+}
+.pad{
+  padding-top: 3px;
+  font: 500 18px/26px "Roboto",sans-serif;
+  margin-left: 8px;
+  /* margin-top: 5px; */
+}
+/* hide on small screen */
+@media screen and (max-width: 768px) {
+
+  .w3-sidebar{
+    width:fit-content;
+    margin: auto;
+    padding: 30px;
+    margin-bottom:50px;
+    height: 700px;
+  }
+  .pad{
+    display: flex;
+  }
+  .menu-bar{
+    display: none;
+  }
+  .home{
+    padding: auto;
+    margin: auto;
+  }
+
+}
+
+
+.menu-bar {
+  border-radius: 25px;
+  height: fit-content;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, .4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+.menu-bar li {
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.menu-bar li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s;
+  border-radius: 25px;
+}
+.menu-bar li:hover {
+  color: black;
+}
+.menu-bar li:hover::before {
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+*{ box-sizing: border-box; }
+
+input {
+position: absolute; 
+top: -99em;
+}
+
+ul, li a { display: block; }

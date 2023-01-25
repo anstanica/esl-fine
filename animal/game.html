@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Farm Animals</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="animal/css/style.css" />
+    <link rel="stylesheet" href="/css/left-sidebar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/left-sideSmall.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .w3-row-padding img {
+        margin-bottom: 12px;
+      }
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {
+        width: 130px;
+        background: #222;
+      }
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main {
+        margin-left: 120px;
+      }
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {
+        #main {
+          margin-left: 0;
+        }
+      }
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+      <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+      </label>
+     
+      <a href="/index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x" ></i></a>
+      <a href="./animal.html" class="menu-item" data-title="Lesson Plan"> 
+         <!--icon for lesson  -->
+          <i class="fas fa-chalkboard-teacher fa-2x"></i>
+        
+      </a>
+      <a href="/animal/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"> </i></a>
+      <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+      
+    </nav>
+  <!-- close menu-items by clicking oustide -->
+    <script>
+      document.addEventListener('click', function (event) {
+        var isClickInside = document.querySelector('.menu').contains(event.target);
+        if (!isClickInside) {
+          document.getElementById('menu-open').checked = false;
+        }
+      });
+  
+    </script>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        
+      <!-- Header/Home -->
+      <header class="w3-container w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">Farm</span> Animals
+        </h1>
+        <p style="font-size: 25px"><strong>Online games</strong></p>
+        <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+      </header>
+      <div class="w3-content w3-justify w3-text-grey " id="about">
+      <div class="container">
+        <div class="iframe-container">
+          <iframe
+          
+            style="max-width: 800px; overflow: hidden; border: none; margin-left: 180px;margin-top: 75px; "
+            src="https://www.gamestolearnenglish.com/fast-english/embed.html#user/fg/29/mictube1981/farm"
+            width="100%"
+            height="550px"
+            scrolling="no"
+            frameborder="0" marginwidth="0" marginheight="0" 
+            allowfullscreen
+          ></iframe>
+
+        </div>
+      </div>
+      <div class="container">
+        <div class="iframe-container">
+          <iframe
+            style="max-width: 800px; overflow: hidden; border: none; margin-left: 180px;margin-top: 75px; "
+          src='https://www.gamestolearnenglish.com/monster-vocab/embed.html#user/fg/29/mictube1981/farm' 
+            width="100%"
+            height="550px"
+            scrolling="no"
+            frameborder="0" marginwidth="0" marginheight="0" 
+            allowfullscreen
+          ></iframe>
+
+        </div>
+      </div>
+      </div>
+      <a
+      href="./animal.html"
+      class="w3-bar-item w3-button w3-padding-large w3-hover-black nextprev a.w3-right nextprev a.w3-left" 
+    >
+    <a href="./animal.html" class="previous" style="margin-left: 50px; "><button style="background-color: #04AA6D;
+        color: #ffffff;
+        border-color: #04AA6D; height: 40px; width: 115px; cursor: pointer;">&laquo; Previous</button></a>
+ 
+
+    </a>
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+    </div>
+
+    <footer>
+      <div class="footer w3-container">
+      <div class="row">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+      
+      <div class="row">
+      <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../game.html">Most Popular</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Contact Us</a></li>
+      </ul>
+      </div>
+      
+      <div class="row">
+      MoESL Copyright © 2021 MoESL - All rights reserved 
+      <!-- Logo -->
+      <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" alt="logo" width="50" height="50">
+      </div>
+      </div>
+      </footer>
+
+  <script src="/scripts/topbutton.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+ 
+</html>

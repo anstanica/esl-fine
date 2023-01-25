@@ -1,0 +1,38 @@
+[{
+    "id": 0,
+    "name": "string",
+    "description": "string",
+    "price": 0,
+    "image": "string",
+    "category": "string",
+    "email": "string",
+    "quantity": 0,
+    "rating": {
+        "rate": 0,
+        "count": 0
+    },
+    "reviews": [
+        {
+            "name": "string",
+            "comment": "string"
+        }
+    ],
+    "tags": [
+        "string"
+    ],
+    "date": "2020-05-05T12:00:00.000Z",
+    "isAvailable": true,
+    "isFeatured": true,
+    "isPopular": true,
+    "isOnSale": true,
+    "isNew": true,
+    "isBestSeller": true,
+    "isTopRated": true,
+    "isTrending": true,
+    "isHot": true,
+    "isSale": true
+
+
+
+
+}]

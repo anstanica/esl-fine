@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> Alphabets</title>
+  <!-- get alphabetsfavicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/"> <!-- get Numbersfavicon -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main-small.css">
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css"/>
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get bootstrap headings
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- alphabets-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/alphabets/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/alphabets/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">
+
+          <!-- fa alphabets icon -->
+          <i class="fa fa-sort-alpha-asc    w3-xxlarge w3-text-amber"></i>
+          Alphabets <i class="fas fa-sort-alpha-desc  w3-xxlarge w3-text-amber"></i></h1>
+      </h1>
+
+      <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Alphabets| Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+        alphabets are the basic building blocks of the English language. 
+        They are the core of writing and reading, that's why it is important to teach them to children at an early age.
+        This lesson plan will help you teach alphabets to your students.
+
+        <br> Remember we use TEFL methodology to teach alphabets  to students <button class="ppp"
+          >PPP</button>
+      </p>
+      <div class="hidden-div w3-hover-text-white p-content" style="display: none;">
+        <strong>Presentation, Practice and Production.</strong> <br>
+        <br> <strong style="color: yellow;">Presentation</strong> &#x3A; where the teacher introduces the topic to the
+        students.
+        <br> <strong style="color: yellow;">Practice</strong> &#x3A; where the teacher gives the students exercises to
+        practice the topic.
+        <br><strong style="color: yellow;">Production </strong>&#x3A; where the teacher gives the students a chance to
+        use
+        the topic in a real life situation.
+        <br>
+      </div>
+      <!-- scrip show/hide this div onclick -->
+      <script>
+        var btn = document.querySelector(".ppp");
+        var div = document.querySelector(".hidden-div");
+        btn.addEventListener("click", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // also show/hide this div on hover
+        btn.addEventListener("mouseover", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // if mouse is out of the div hide it
+        div.addEventListener("mouseout", function ()
+        {
+          if (div.style.display === "block")
+          {
+            div.style.display = "none";
+          }
+        });
+
+      </script>
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+        .logo-new{
+          width: 80px;
+        }
+      
+
+        @media only screen and (max-width: 600px) {
+          .download-video {
+            left: 25%;
+          }
+        }
+      </style>
+
+
+
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber">Warm Up</h3>
+      <p class="p-content">
+       We  will start this the warmup activity with a song that majority of the students are familiar with.
+        <br> <strong> <i>Alphabets song</i></strong>
+          <!-- youtube link to Alphabets song -->
+       
+        <br>
+
+     <br> 
+     
+      </strong>
+
+      </p>
+
+      <div class="video">
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/alphabets/pics/abc.png" data-setup='{}'>
+          <source src="/videos/The ABC Song.mp4" type='video/mp4' />
+        </video>
+        <div class="download-video">
+          <a href="/videos/The ABC Song.mp4" class="previous">
+
+            <button class="fa fa-download" id="downloads"> Download </button></a>
+          </a>
+        </div>
+
+        <div class="refer-div">
+          <a href="../teach_songs.html" tooltip-title="Check Here">
+            <strong style="font-size: 26px; color:#e9b9c9;">
+              <span class="p-content"> How to teach a song </span></strong>
+          </a>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content">
+       Start by telling the students what are the alphabets and what they are used for. <br>
+       Show them a word they are familiar with and spell it, as an example.<br>
+        <strong> <i>Example</i></strong> <br>
+        <strong> <i>Word</i></strong> &#x3A; <strong> <i>cat</i></strong> <br>
+        <strong> <i>Spelling</i></strong> &#x3A; <strong> <i>c-a-t</i></strong> <br>
+      </p>
+      <Strong class="w3-text-khaki w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+
+        <div style="position: relative; width: 90%; height: 0; padding-top: 70.7071%;
+      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 1.1em; overflow: hidden;
+      border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFTzJc9aY4&#x2F;view?embed"
+            allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+        <div class="download-custom">
+          <a href="./docs/Alphabet Posters.pptx" class="previous "><button class="fa fa-download" id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+
+
+      
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber">Practice</h1>
+     
+      <p class="p-content">
+        
+        <strong class="w3-text-cyan">First :</strong>
+        Show the students the flashcards <i class="fa fa-arrow-up fa-2x" aria-hidden="true" "></i> and ask them to repeat the alphabets after you. <br>
+        <strong class="w3-text-cyan">Second :</strong>
+        While the students are repeating the alphabets, do the alphabets shapes with your hands, or your body. <br>
+        For example, if the letter is <strong> <i>A</i></strong> you can do the shape of the letter with your body:
+        legs apart, arms stretched out, and then bring them together. <br>
+        <img src="/Alphabets/pics/abc/b.png" alt="" width="200px">
+        <img src="/Alphabets/pics/abc/c.png" alt="" width="200px">
+
+        <br>
+
+       <h3 class="w3-text-light-blue" >
+        <button id="show-practice" tooltip-title="Show here" >  Practice Methods </button>
+       
+        </h3>
+       </h3>
+       <script>
+        document.getElementById("show-practice").addEventListener("mouseover", function () {
+          if (document.getElementById("list-practice").style.display == "none") {
+            document.getElementById("list-practice").style.display = "block";
+          
+          } else {
+            document.getElementById("list-practice").style.display = "none";
+          }
+          
+        });
+        // if mouseout then hide the list
+        // document.getElementById("show-practice").addEventListener("mouseout", function () {
+        //   document.getElementById("list-practice").style.display = "none";
+        // });
+       </script>
+      <ul class=" list-rules" style="display: none;" id="list-practice">
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Isolation practice </strong> : isolation practice as mentioned in the activity above (Asking and
+              practicing one by one).</p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Pair practice</strong>  : where the students will work in pairs. example:<br>
+              <strong>Student A:</strong> what is this? <br>
+              <strong>Student B:</strong> It's a pencil.
+            </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Group practice</strong>  :
+              as the name suggests is where the students will work in groups. group games , group activities, and group
+              points. </p>
+          </li>
+          </ul>
+          You can apply the practice in any order you want. <br>
+          But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+          practice.
+          <br>
+          <hr>
+          <!-- <blockquote class="w3-hover-black ">
+            <h3 class="w3-text-white"> Action verbs for this lesson:</h3> <br>
+            <strong class="w3-text-lime w3-hover-black">Point,carry, draw, type, write, read, sharpen, erase, sit,  open, close and stick </strong> <br>
+          </blockquote>
+          <blockquote class="w3-hover-black ">
+           <h3 class="w3-text-white"> Grammar with this lesson: </h3><br>
+            <strong class="w3-text-lime w3-hover-black">
+              Articles and plurals: <br>
+              It's a pencil. It's an eraser.<br> 
+              It's a book. They are books. <br>
+             </strong> <br>
+          </blockquote> -->
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities for practicing this lesson:
+          </h4>
+      </p>
+
+
+      <h3 style="font-weight:900" class="underline  w3-text-amber">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+   
+
+        <li class="li-list">
+          <p class="p-content"><strong class="underline  w3-text-amber">
+            Swimming Letters</strong>
+
+            <a href="./docs/swimming-abc.pptx" class="w3-text-white">
+              <i class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);" tooltip-title="Download"></i>
+              <br><br>
+              <picture>
+
+                <img src="/alphabets/pics/swimming-abc.gif " alt="swimming-abc" srcset="" width="300" height="200">
+
+              </picture>
+            </a>
+            <br>
+            <br>
+            Swimming to the letters and click pop the balloons.
+             <br>
+
+          </p>
+        </li>
+        <li class="li-list">
+
+          <p class="p-content"> <strong class="underline  w3-text-amber">
+              ABC Matching</strong>
+          
+
+            <a href="./docs/abc-matching-game.pptx" style="color: #fcb900;"><i class="fa fa-download fa-2x" tooltip-title="Download"
+                aria-hidden="true" style="color: rgb(243, 51, 51);"></i> <br><br>
+              <picture tooltip-title="Click to download">
+
+                <img src="/alphabets/pics/abc-matching-game.gif" alt="abc-matching" srcset="" width="300" height="200">
+
+              </picture>
+            </a> &nbsp; <br> <br>
+            Easy and fun Abc matching game. <br>
+            Choose the first letter that matches the picture. <br>
+          </p>
+        </li>
+
+       
+
+      </ul>
+      <hr style="width:100%">
+      </li>
+      <!-- Main li -->
+      <li class="li-list">  
+        <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+        <!-- add ul with 3 li include images inside -->
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong>  Mystery Bag  </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/alphabets/pics/mystry-bag.png" alt="Mystery Bag" width="300" height="200">
+            <p class="p-content">
+               <br>
+             
+               This is one of the easiest alphabet games for kids and doesn’t require much preparation. <br>
+                Using a bag, put objects inside such as (button, pen, apple ect), or you can put the letters. <br>
+                 Children will reach into the bag and pull out the object / the letter, they will have to guess what letter the object starts with and say the sound of the letter.
+               
+
+
+            </p>
+
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong>Hidden Letter</strong> </p>
+
+            <p class="p-content">
+              <!-- crete ol list with a type -->
+              <img src="/alphabets/pics/Alphabet-flashcards-learning-games-stomp.webp" alt="Alphabet Ball" width="300" height="200"> <br>
+              to play this game is by having objects spread out on the floor, say the name of an object and the students have to find the hidden letter and match it to the correct object.
+            </p>
+
+
+            </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Alphabet Ball  </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/alphabets/pics/beach-ball.jpg" alt="Alphabet Ball" width="300" height="200">
+
+            <p class="p-content">
+              
+
+              Use a beach ball and write letters all over it, have the students make a circle and throw it to one another. When a student catches the ball, they have to say whatever letter their finger lands on and give an example of the letter. To make the game more challenging students that catch the ball will say the letter and then throw it to a following student with the first name of that letter.
+              <br>
+            </p>
+
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Big and Small Race  </strong> </p>
+            <!-- Get a banana image -->
+
+            <p class="p-content">
+              
+
+              Place capital and lowercase letters all around the room. Have two students come up and when the teacher says start the students have to find all the capital and lowercase letters in the room and place them in order on the floor. Whichever student does it the fastest wins.
+                            <br>
+
+            </p>
+
+            <hr>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Memory Match
+            </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/alphabets/pics/big-small.png" alt="Memory Match " width="300" height="200">
+
+            <p class="p-content">
+              
+
+              Simply write each capital letter on one card and its lower case letter on the other card. <br>
+               Turn all the cards over and arrange them on a desk. Students must find both the capital and lowercase letter to make a match. <br>
+                Or make the game more challenging for your students and add a vocabulary element. Have students match an alphabet letter to a picture that starts with that letter                            <br>
+                            
+            </p>
+
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Alphabet Hop Scotch
+
+            </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/alphabets/pics/foam.jpg" alt="Alphabet Hop Scotch " width="300" height="200">
+
+            <p class="p-content">
+              
+
+              Get a foam alphabet puzzle and assemble it in a large space in your classroom. <br>
+               Put letters in random order, but limit the layout of the puzzle to four across. <br> 
+               Students then take turns hopping through the alphabet board. Have students either name the letter, its sound or a word that begins with that letter before hopping on to a given square.
+               <br> Students can choose which squares they step on, but their goal is to work from one end of the puzzle to the other end. Give each student at least one turn hopping through the alphabet.
+
+            </p>
+
+            <hr>
+          </li>
+
+        </ul>
+        </li>
+
+          <li class="li-list">
+            <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+            <ul class="list-rules">
+              <li class="li-list">
+                <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/alphabets/game.html#game1"
+                    target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                     Fast Vocab <br></strong>
+                  
+              </li>
+
+
+              <li class="li-list">
+                <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/alphabets/game.html#game2"
+                    target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                     Capital and Small Match <br></strong>
+                    <!-- <picture tooltip-title="Click to play the game"> -->
+                      <!-- <img src="/alphabets/pics/monster-vocab.png" alt="mystery" width="300" height="200"><br> -->
+                    <!-- </picture> -->
+                  </a>
+              
+          
+                </p>
+                </li>
+
+                <li class="li-list">
+                  <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/alphabets/game.html#game3"
+                      target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                        Big Describer <br></strong>
+                      <!-- <picture tooltip-title="Click to play the game"> -->
+                        <!-- <img src="/alphabets/pics/big-describer.png" alt="mystery" width="300" height="200"><br> -->
+                      <!-- </picture> -->
+                    </a>
+                  </p>
+                   
+                  </li>
+              </ul>
+         
+          </li>
+
+        </ul>
+       
+    
+        <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap up / Review</h3>
+        <p class="p-content">
+          <!-- list of activities to wrap up / end the alphabets lesson -->
+         Wrap this lesson up by having students spelling their names using the letters they learned today. <br>
+         For young learners, you can have them cut out the letters and glue them in the correct order. <br>
+
+
+
+        </p>
+        <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3>
+        <!-- <p class="p-content"> A GoodBye song is a very important part of your lesson, Make time for it. -->
+
+        <h3 class="p-content" style="color:green;"> Here is a good one</h3>
+        <div class="goodbye">
+
+            <video width="700" height="388" id="my-video"
+              class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+              poster="/zoo/pics/itistime.png" data-setup='{}'>
+              <source src="/videos/Time to Say Good-bye.mp4" type='video/mp4' />
+            </video>
+                 
+        </div>
+            <div class="download-btn">
+              <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+    
+                <button class="fa fa-download" id="downloads"> Download</button></a>
+              </a>
+       
+        </p>
+    </div>
+    </div>
+    </div>
+<div class="related-resources"> <hr>
+      <!--List of Related Resources -->
+      <!-- list of links to worksheets and game.html -->
+      <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <a href="/alphabets/worksheets/worksheet.html" target="_blank"
+              style="color: #fcb900;"> <strong> alphabets Worksheets </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/alphabets/game.html" target="_blank"
+              style="color: #fcb900;"> <strong> alphabets Online Games </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/Numbers/numbers.html" target="_blank"
+              style="color: #fcb900;"> <strong> Numbers </strong> </a> </p>
+        </li>
+    
+
+      </ul>
+    </div>
+  </div>
+  <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="alphabets/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="alphabets/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="alphabets/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="alphabets/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="alphabets/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../read.html">Most Popular</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+     
+    ESL Clup Copyright © 2021 ESL Clup - All rights reserved 
+    <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+    </div>
+    </div>
+    </footer>
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+  <script src="/scripts/topbutton.js"></script>
+  <script src="/scripts/darkmode.js"></script>
+  <script src="/scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</body>
+
+</html>

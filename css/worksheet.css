@@ -1,0 +1,192 @@
+.pr{
+    position: relative;
+    width: auto;
+    border: 3px solid chartreuse;
+    background-color: #1b1a27;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: larger;
+    margin-bottom: 20px;
+    
+  }
+  .text{
+    border: 8px solid #675dd4;
+    margin-left: 15px;
+    width:50%;
+  }
+  .right{
+    /* flex-grow: 0; */
+    width:50%;
+  }
+  .text img{
+  
+    border: 5px solid;
+  
+    left: 0;
+    top: 0;
+    transition:transform 0.25s ease;
+    z-index: 400;
+  }
+  
+    pre.text img:hover {
+        -webkit-transform:scale(1); /* or some other value */
+        transform:scale(1);
+    }
+  
+  .download{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: --moz-fit-content;
+    height: 50px;
+    border-radius: 10px;
+    border: 5px solid;
+    background-color: rgb(25, 25, 26);
+    transition:transform 0.25s ease;
+    /* color:white; */
+  }
+  .download:hover{
+    transform:scale(1.2);
+    font-size: 20px;
+  }
+  .download a{
+    color: white;
+  }
+  
+  @media screen  and (max-width:500px)and (min-width: 399px){
+    .pr, #home, .text, .right, .download{ 
+      width:auto;
+      margin: auto;
+      padding: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  .text img:hover{
+    transform:scale(1.01);
+  }
+    #main{
+      margin: auto;
+    }
+    .right-side{
+      display:none;
+    }
+    .myTopBtn {
+      right: 0;
+      
+      left: auto;
+      width: fit-content;
+    }
+    hr.top-hr{
+      display: none;
+    }
+  }
+  
+  @media screen  and (max-width:600px) and (min-width: 500px){
+    .pr, #home, .text, .right, .download{ 
+      width:auto;
+      margin: auto;
+      padding: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  .text img:hover{
+    transform:scale(1.01);
+  }
+    #main{
+      margin: auto;
+    }
+    .right-side{
+      display:none;
+    }
+    .myTopBtn {
+      right: 0;
+      
+      left: auto;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+    .top-hr{
+      display: none;
+    }
+  }
+  @media screen  and (max-width:700px) and (min-width: 600px){
+    .pr, #home, .text, .right, .download{ 
+      width:auto;
+      margin: auto;
+      padding: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  .text img:hover{
+    transform:scale(1.01);
+  }
+    #main{
+      margin: auto;
+    }
+    .right-side{
+      display:none;
+    }
+    .myTopBtn {
+      right: 0;
+      
+      left: auto;
+      width: fit-content;
+    }
+    hr.top-hr{
+      display: none;
+    }
+  }
+  @media screen  and (max-width:800px) and (min-width: 700px){
+    .pr, #home, .text, .right, .download{ 
+      width:auto;
+      margin: auto;
+      padding: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  .text img:hover{
+    transform:scale(1.01);
+  }
+    #main{
+      margin: auto;
+    }
+    .right-side{
+      display:none;
+    }
+    .myTopBtn {
+      right: 0;
+      
+      left: auto;
+      width: fit-content;
+    }
+  }
+  
+  @media screen  and (max-width:900px) and (min-width: 800px){
+    .pr, #home, .text, .right, .download{ 
+      width:auto;
+      margin: auto;
+      padding: auto;
+      display: flex;
+  
+    }
+    .download {
+      height: auto;
+    }
+  .text img:hover{
+    transform:scale(1.01);
+  }
+    #main{
+      margin: auto;
+    }
+    .right-side{
+      display:none;
+    }
+    .myTopBtn {
+      right: 0;
+      
+      left: auto;
+      width: fit-content;
+    }
+  }
+  

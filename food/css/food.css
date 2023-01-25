@@ -1,0 +1,344 @@
+.p-content {
+    font-size: 18px;
+    color: #eceef0;
+    word-break: inherit;
+    width: 750px;
+    box-shadow: 0 1px 2px rgba(0, 0, 1, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 30px;
+  }
+  .list{
+      box-shadow: 0 1px 2px rgba(0, 0, 1, 0.15);
+      transition: box-shadow 0.3s ease-in-out;
+      margin-top: 30px;
+  }
+  .list:hover{
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      border: #215387 solid;
+      padding: 4px;
+  }
+  .p-content a {
+    font-size: 18px;
+    color: #215387;
+    font-weight: 700;
+  }
+  .hover_img {
+    position: relative;
+  }
+  .hover_img span {
+    position: absolute;
+    display: none;
+    z-index: 199;
+  }
+  .hover_img:hover span {
+    display: block;
+  }
+  /* add margin top to .download-btn */
+  .download-btn {
+    margin-top: 20px;
+    position: absolute; left:450px; margin-bottom: 40px
+  }
+  /* make transition that looks like a page flipping */
+  
+  .li-list {
+    font-size: 1.3em;
+    color: rgb(254, 45, 45);
+  }
+  .p-sidebar {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 12px;
+  
+  }
+  .w3-padding-large {
+      padding: 10px 16px!important;
+  }
+  #winter {
+    color: #00ca5a;
+  }
+  .w3-sidebar {
+    margin-top: 65px;
+  }
+  
+  #online-games {
+    border: #00ca5a solid;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: large;
+    
+  }
+  #rules-title, .underline{
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      margin-bottom: 15px;
+      /* border-bottom: 1px solid rgb(238, 233, 233);
+      padding-bottom: 3px; */
+  }
+  .embed{
+    position: relative;
+  }
+  .video, .embed, .goodbye, .download-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .video{
+    position: relative; margin-top: 30px; margin-bottom: 20px;
+  }
+
+  #main{
+    /* add 30px margin to the right */
+    margin-right: 50px;
+    margin-left: 120px ;
+    background-color: #1b1a27;
+  }
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 700px) {
+    #main {
+    /* margin-right: 0; */
+    margin-left: 0;
+    margin: 0;
+  }
+  }
+  
+  
+  .right-side{
+      
+      position: absolute;
+      display: flex;
+      /* grid-column: 1fr 1fr 1fr; */
+      top: 0;
+      right: 0;
+      margin-right: 10px;
+      /* margin-left: 170px; */
+      margin-top: 130px;
+      /* border: 3px solid yellow; */
+      height: 100%;
+      width: 23%;
+     /* text-align: center; */
+     /* z-index: 100; */
+     /* padding-left: 28px; */
+     flex-direction: column;
+     justify-content: space-between;
+  }
+  
+  .two, .three{
+      display: flex;
+      background-color: #f84f39;
+      justify-items: flex-start;
+      justify-content: space-between;
+      flex: 1;
+      flex-direction: column;
+      border: 5px solid #bec4ca;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px rgba(0, 0, 1, 0.15);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .three{
+      margin-top: 10px;
+      padding: 5px;
+      
+     
+    }
+    .three:hover, .two:hover{
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
+    }
+  
+  @media only screen and (max-width: 1299px) and (min-width:1180)
+  {
+    
+     .right-side{
+         width: 10%;
+      }
+      #main, .p-content, #home, .list-rules, .pr{
+          width: 90%!important;
+      }
+  
+  }
+  @media only screen and (max-width: 1198px) and (min-width:1173)
+  {
+    
+     .right-side{
+         width: 15%;
+      }
+      #main, .p-content, #home , .list-rules, .pr{
+          width: 93%;
+      }
+  
+  }
+  @media only screen and (max-width: 1174px) and (min-width: 1074px) 
+  {
+    
+      .right-side{
+          width: 7%;
+      }
+      #main, .p-content, #home , .list-rules, .pr, .download{
+          width: 90%;
+      }
+  }
+  @media only screen and (max-width: 1073px) and (min-width: 1000px) 
+  {
+    
+      .right-side{
+          display: none;
+      }
+      #main, .p-content, #home , .list-rules{
+          width: 85%;
+      }
+      .myTopBtn{
+        left: 420px;
+
+      }
+  }
+  @media only screen and (max-width: 999px) and (min-width: 500px) 
+  {
+      .right-side{
+          display: none;
+      }
+     
+      #main, .p-content, #home, .pr {
+          width: 450px;
+      }
+      .list-rules{
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-grow: -1;
+          flex-direction: column;
+          /* list-style: none; */
+          margin-left: 0;
+          padding-left: 5px;
+      }
+      .download-btn{
+        justify-self: left;
+        flex-direction: column;
+        position: absolute; left:450px; margin-bottom: 40px;
+      }
+      #home{
+        margin-top: 90px;
+      }
+      /* hide #smallNavbar on page scroll */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+      }
+      #smallNavbar{
+        padding-left: 80px;
+  
+      }
+     
+  }
+  /* add media screen on max width 800px */
+  @media only screen and (max-width: 499px) and (min-width: 300px) 
+  {
+      .right-side{
+          display: none;
+      }
+      #main, .p-content, #home, .pr {
+          width: 300px;
+      }
+      .list-rules{
+          display: flex;
+          /* flex-wrap: wrap; */
+          flex-grow: -1;
+          flex-direction: column;
+          /* list-style: none; */
+          margin-left: 0;
+          padding-left: 5px;
+      }
+      .download-btn{
+        justify-self: left;
+        flex-direction: column;
+      }
+      #home{
+        margin-top: 90px;
+      }
+      #smallNavbar{
+        padding-left: 80px;
+      /* hide div on scroll */
+      }
+      .myTopBtn{
+        left: 420px;
+
+      }
+    }
+  @media only screen and (max-width: 500px) 
+  {
+      iframe {
+          width:400px;
+      }
+      .right-side{
+          display: none;
+      }
+  }
+  @media only screen and (max-width: 500px) 
+  {
+      .previous {
+        /* width: 150px; */
+        margin-left: 25px;
+        padding-bottom: 15px;
+  
+      }
+      .embed{
+          margin: 0;
+      }
+      #empty{
+          display: none;
+      }
+      .myTopBtn{
+        left: 420px;
+
+      }
+  }
+  @media only screen and (max-width: 390px) 
+  {
+      .previous {
+        /* width: 150px; */
+        margin-left: 25px;
+        padding-bottom: 15px;
+  
+      }
+      .embed{
+          margin: 0;
+      }
+      #empty{
+          display: none;
+      }
+      iframe {
+          width:500px;
+      }
+      .right-side{
+          display: none;
+      }
+         
+      #main, .p-content, #home,.list-rules, .pr, .download {
+          width: 20%;
+      }
+  }
+  #line{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fffefc;
+  }
+.myTopBtn{
+  /* make the icon on top on the span */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* make #id on the bottom */
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 290px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #2b2a29;
+  color: white;
+  cursor: pointer;
+  padding: 0px 18px 2px 16px;
+  
+  border-radius: 10px;
+
+}

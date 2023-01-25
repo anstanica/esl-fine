@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> Countries</title>
+  <!-- get Countriesfavicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/"> <!-- get Numbersfavicon -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+
+
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/css/main-small.css">
+  <!-- <link rel="stylesheet" href="/css/mdb.dark.min.css"> -->
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css" />
+  <!-- <link rel="stylesheet" href="/css/darkmode.css" /> -->
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get tailwind css -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <!-- get tailwind script -->
+
+
+
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- Countries-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/Countries/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/Countries/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+
+  <!-- Page Content -->
+  <div class="w3-padding-large w3-text-theme bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container w3-center w3-black" id="home">
+      <h1 class="w3-jumbo w3-text-sand w3-animate-opacity"><span class="w3-hide-small">
+
+          <!-- fa Countries icon -->
+          <!-- school icon -->
+          <img src="/countries/pics/south-africa.png" alt="" srcset="" width="40px">
+          <img src="/countries/pics/ukraine.png" alt="" srcset="" width="40px">
+          <img src="/countries/pics/qatar.png" alt="" srcset="" width="40px">
+          Countries 
+          <img src="/countries/pics/united-states.png" alt="" srcset="" width="40px">
+          <img src="/countries/pics/china.png" alt="" srcset="" width="40px">
+          <img src="/countries/pics/south-korea.png" alt="" srcset="" width="40px">
+      </h1>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Countries | Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+
+      
+        Teaching Countries to young learners can be a challenge. This lesson plan will help you teach Countries to your students
+        in a fun and engaging way. <br>
+        <strong class="w3-gray">Why teaching Countries is important?</strong>  <br>
+        Countries are the places where we live, work, and play. 
+        Where we have our families and friends. Where we have our homes and schools. <br>
+        Students need to know what other countries are like, and how they are different from their own, in order to understand
+        the world around them. <br>
+        <br>
+        <br>
+
+      </p>
+
+      <!-- scrip show/hide this div onclick -->
+
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+
+        .logo-new {
+          width: 80px;
+        }
+
+        .w3-codespan {
+
+          padding: 10px;
+          color: rgb(104, 90, 90);
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-video {
+            left: 25%;
+          }
+
+          .w3-codespan {
+            padding: 5px;
+            color: black;
+          }
+        }
+      </style>
+
+      <!-- list a href to the parts of this lesson -->
+
+
+      <div class="w3-row w3-center">
+        <h4 class="w3-pink"> Feel free to hob between the lesson plan sections</h4>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">1</span><br>
+          <a href="Countries/Countries.html#intro" class="w3-button w3-black">Presentation</a>
+        </div>
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">2</span><br>
+          <a href="Countries/Countries.html#practice" class="w3-button w3-black">Practice</a>
+        </div>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">3</span><br>
+          <a href="Countries/Countries.html#games" class="w3-button w3-black">Production</a>
+        </div>
+      </div>
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber" id="warmup">Warm Up</h3>
+      <p class="p-content " id="warmup">
+        Countries song is a great way to start the lesson. <br>
+        - Ask your students to sing the song with you. <br>
+        - After listening to the song, ask your students to tell you what they know about Countries. <br>
+      
+        <br>
+
+      <strong class="w3-border w3-padding-small">Remember to play the video in full screen mode.</strong> <br> <br>
+
+      <strong class="w3-lime"> Where are you from? By Maple Leaf | Countries Song</strong>
+      <br>
+      <p class="p-content w3-border w3-codespan">
+        Where Are You From? is a simple song for kids to learn countries. This video includes Canada, Korea, Italy, China, America, Australia, Japan, India, Spain, Germany, Mexico, Philippines, Brazil, Sweden, New Zealand, Thailand, Peru, Greece, Turkey, Jamaica, Poland and France. 
+      </p>
+      <div class="video" id="warmup">
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/Countries/pics/where-are-u-from.png" data-setup='{
+        
+          }'>
+          <source src="/videos/Where Are You From.mp4" type='video/mp4' />
+        </video>
+        <div class="download-video">
+          <a href="/videos/Where Are You From.mp4" class="previous">
+
+            <button class="fa fa-download" id="downloads"> Download </button></a>
+          </a>
+        </div>
+
+        <div class="refer-div">
+          <a href="../teach_songs.html" tooltip-title="Check Here">
+            <strong style="font-size: 26px; color:#e9b9c9;">
+              <span class="p-content"> How to teach a song </span></strong>
+          </a>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber" id="intro">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content w3-sepia-max w3-content ">
+        First, 
+        Display the world map and check if the learners know what it is and what countries
+        are. You could ask ‘What is this?’ to elicit, ‘It’s a map of the world’. Do the same
+        for relevant countries
+        <br>
+        Second, Point to your own country on the map and say the name of it. Example: ‘This is the USA.’
+         then point to your self and say: I am from the USA. or your name (Peter) is from the USA. <br>
+        
+        Then, point to their country and say the name of it. Example: ‘This is China’ and then point to the student and say: ‘You are from China.’
+        <br>
+      <h4 class="w3-lime">
+        Check the <a href="Countries/Countries.html#flashcards">flashcards</a> <i class="fa fa-arrow-down"></i>
+        below to help you.
+      </h4>
+      </p>
+
+      <p class="p-content">
+
+      </p>
+      <hr> <br>
+
+      <span class="w3-text-deep-orange">
+        <strong>Flashcards</strong> of this lesson.
+      </span> <br>
+
+      <Strong class="w3-text-aqua w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+        <div
+
+
+        
+          style="position: relative; width: 90%; height: 0; padding-top: 70.7071%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&resid=C2C04CBE74AA957%2150540&authkey=AC0o_DxA1A7sQKk&em=2"
+            allowfullscreen="allowfullscreen" allow="fullscreen"> </iframe></div>
+        <div class="download-custom">
+          <a href="/Countries/docs/countries-Flashcards.pptx" class="previous "><button class="fa fa-download" id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        .hoverable [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 60%;
+          top: 100%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber" id="practice">Practice</h1>
+
+      <!-- <p class="p-content">
+    Practice is more about games and activities that help the students to practice the topic. <br>
+    Here are some activities and games that you can use in this lesson:
+  </p>  
+     -->
+      <p class="p-content">
+
+        To practice the Countries, we can use the flashcards <i class="fa fa-arrow-up fa-2x" aria-hidden="true" "></i> .
+        Next show them Flashcards 
+        one by one and act it out.
+        Ask the students to do the same. <br>
+      Then use play pass the flashcards. The students will pass the flashcards to each other and say the word. <br>
+      <button class=" hoverable w3-teal" tooltip-title="show / hide"><strong>Types of practice</strong> </button> <br>
+          <ul class="list-rules rules-hide w3-codespan w3-border w3-padding-small p-content w3-black" style="display: none; word-spacing: -5.5px;">
+            <li class="li-list">
+              <p class="p-content"> Isolation practice : isolation practice as mentioned in the activity <br> above (Asking
+                and
+                practicing one by one).</p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Pair practice : where the students will work in pairs. example:<br>
+                <strong>Student A:</strong> what do you? <br>
+                <strong>Student B:</strong> I am a doctor.
+              </p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Group practice :
+                as the name suggests is where the students will work in groups. group games , group activities, and
+                group
+                points. </p>
+            </li>
+
+            You can apply the practice in any order you want. <br>
+            But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+            practice.
+            <br>
+          </ul>
+          <hr>
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities that you can use in this lesson:
+          </h4>
+      </p>
+      <!-- <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Production</h3><br> -->
+      <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+
+
+            <li class="li-list">
+              <p class="p-content"><strong class="underline  w3-text-amber">
+                Countries Game</strong>
+
+                <a href="./docs/countries-game.pptx" class="w3-text-white">
+                  <i class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);"></i>
+                  <br><br>
+                  <picture>
+
+                    <img src="/Countries/pics/countries-game.png " alt="Countries Game" srcset="" width="300" height="200">
+
+                  </picture>
+                </a>
+                <br>
+                <br>
+                - Click the correct answer. <br>
+              </p>
+            </li>
+            <li class="li-list">
+
+              <p class="p-content"> <strong class="underline  w3-text-amber">
+                 Countries Wheel
+
+                </strong>
+                <a href="./docs/countries-wheel.pptx" style="color: #fcb900;"><i class="fa fa-download fa-2x"
+                    aria-hidden="true" style="color: rgb(243, 51, 51);"></i> <br><br>
+                  <picture tooltip-title="Click to download">
+
+                    <img src="/Countries/pics/countries-wheel.png" alt="Countries Wheel
+                    " srcset="" width="300" height="200">
+
+                  </picture>
+                </a> &nbsp; <br> <br>
+           
+              - Spin the wheel and say the word. <br>
+
+              </p>
+            </li>
+           
+            
+      </ul>
+      <hr style="width:100%">
+    </li>
+
+
+
+        <!-- Main li -->
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+          <!-- add ul with 3 li include images inside -->
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong> Role Play</strong> </p>
+              <!-- Get a banana image -->
+
+              <img src="/Countries/pics/wherefrom.jpg" alt="Charades" width="300" height="200">
+              <p class="p-content w3-codespan w3-border w3-pink w3-Roboto w3-padding-16">
+               
+                How to play ?
+                <br>
+                - Bring a globe of the world map. <br>
+                <!-- - Prepare a set of <a href="#flashcards">cards</a>. <br> -->
+                <!-- - Act out the conversation first, "ask the local teacher to help you". <br> -->
+                - Then Pick 2 students to spin the globe. <br>
+                - One student spins the globe and points to a country, then asks the &nbsp;  &nbsp; &nbsp; other student "Where are you from?" <br>
+            
+                - The other will answer "I am from (country name)". <br>
+                - They will take turns asking and answering. <br>
+                * You can divide the class into groups and play the game in groups. <br>
+                 <br>
+
+
+              
+
+             
+
+              </p>
+
+              <hr>
+            </li>
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong>Hot Potato Countries around the World Game</strong> </p>
+              <img src="/Countries/pics/download.jpg" alt="Charades" width="300" height="200">
+              <p class="p-content w3-codespan  w3-border w3-pink w3-Roboto w3-padding-16">
+                <!-- crete ol list with a type -->
+
+               - Students pass around an object and the person holding it when the music stops or the timer goes off has to Answer a question about the country. <br>
+                <br>
+
+              </p>
+
+
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong> Join the Dots </strong> </p>
+              <!-- Get a banana image -->
+
+              <picture>
+                <img src="/Countries/pics/dots.jpg" alt="Join the Dots" width="300" height="200"><br>
+              </picture>
+              <p class="p-content">
+
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                - Draw a five-by-five dotted grid on the board. <br>
+                - Divide the class into teams, and give each team a different a country name. <br>
+                - Take it in turns to ask each team a quiz question. <br>
+                - If a team answers correctly, they connect two of the dots with a line &nbsp; &nbsp; either horizontally or vertically. <br>
+                - The aim of the game is to join the dots together to make squares. When &nbsp; a team forms a square as a result of drawing a fourth line, they write &nbsp; their team's country in the square and have another turn. <br>
+                - The game is over when all 16 squares have been completed. The team with the most squares wins the game.
+              </article>
+
+
+              <!-- roll the dice picture -->
+              <br>
+              </p>
+
+              <hr>
+            </li>
+          </ul>
+        </li>
+
+        <li class="li-list">
+          <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/Countries/game.html#game1"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Fast Phrases <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/Countries/pics/comes-from.png" alt="Fast Phrases" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <p class="p-content">
+                <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                - This is a game for practicing English sentences. <br> 
+                - Look at the images and make
+                sentences to describe what you see. <br> - To make the sentences, you have to choose
+                from the options shown. If you click on the correct one, then that part of the
+                sentence is added. <br> - Points are awarded for correct hits and this multiplies if you
+                continue to get the answers right. <br>
+               * The idea behind this game is that the meaning of the images becomes associated
+                with the sentence you construct. When making the phrase, the vocabulary is
+                reinforced and the grammatical structure is practiced.
+              </p>
+            </article>
+            </li>
+
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/Countries/game.html#game2"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Countries Maze<br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/Countries/pics/maze.png" alt="falling-clouds" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <p class="p-content">
+                <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                - This is a simple Maze game for practicing countries. <br>
+                - To play, you click on the start button and then use the arrow keys to move the
+                character around the maze. <br> - The aim of the game is to get to the correct country.
+                  </article>
+
+
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/Countries/game.html#game3"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Falling Countries <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/Countries/pics/falling-countries.png" alt="Falling Countries" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <p class="p-content w3-panel">
+                <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                  You are presented with a jumbled sentence and have to re-arrange the
+                  words to create an correct sentence. The idea is that by re-ordering the
+                  words you can practice grammar points and also acquire vocabulary.
+                  ages appear at the top of the screen to provide meaning/context to the
+                  sentence. If you can correctly arrange the clouds within a few moves,
+                  then you get a score bonus.
+                </article>
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/Countries/game.html#game4"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Airplane Travel <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/Countries/pics/Airplane.png" alt="Airplane Travel" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <p class="p-content w3-panel">
+                <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                  - Fly the airplane to the correct country. <br>
+                  - To play, you click on the start button and then use the arrow keys to move the
+                  airplane around the screen. <br> 
+                  </article>
+                  
+              </strong>
+              </p>
+            </li>
+          </ul>
+
+        </li>
+
+      </ul>
+
+<!-- 
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap up / Review</h3>
+      <p class="p-content">
+ 
+        <strong class="w3-text-black w3-codespan w3-gray w3-padding-small">
+            To wrap-up up the Countries lesson, you can do the following: <br>
+          
+            Ask the students "What do you want to be when you grow up?" <br>
+            As every student answers, write their answer and their name
+            on the board. <br>
+            Then, Call them by their title / job , Example "Doctor, Mark" , "Teacher, John" <br>
+            Use their title / job to ask them questions, to greet them, to say goodbye to them, etc. <br>
+          </strong>
+            <br>
+
+
+      </p> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="w3-border-bottom  ">GoodBye song</h3>
+
+
+      <h3 class="p-content" style="color:green;"> Last part is singing a goodbye song </h3>
+      <div class="goodbye w3-codespan w3-black w3-border">
+
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/zoo/pics/itistime.png" data-setup='{}'>
+          <source src="/videos/Time to Say Good-bye.mp4" type='video/mp4' />
+        </video>
+
+      </div>
+      <div class="download-btn">
+        <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+
+          <button class="fa fa-download" id="downloads"> Download</button></a>
+        </a>
+
+        </p>
+      </div>
+
+      </div>
+<div class="related-resources">
+        <hr>
+        <!--List of Related Resources -->
+        <!-- list of links to worksheets and game.html -->
+        <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content"> <a href="/Countries/worksheets/worksheet.html" style="color: #fcb900;">
+                <strong> Countries Worksheets </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/Countries/game.html" style="color: #fcb900;"> <strong> Countries
+                  online games </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/places/places.html" style="color: #fcb900;"> <strong> Work places
+                </strong> </a> </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content"> <a href="/places/worksheets/worksheet.html" style="color: #fcb900;">
+                <strong> Places Worksheets </strong> </a> </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <br>
+    <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Countries/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Countries/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Countries/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Countries/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="Countries/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script>
+      // on windows load 
+      window.addEventListener("load", function ()
+      {
+
+        var btn = document.querySelector(".ppp");
+        var btn2 = document.querySelector(".ppp-2");
+        var div = document.querySelector(".hidden-div");
+        var div2 = document.querySelector(".hidden-div-2");
+
+        // btn.addEventListener("click", function ()
+        // {
+        //   if (div.style.display === "none")
+        //   {
+        //     div.style.display = "block";
+
+        //   }
+        //   else
+        //   {
+        //     div.style.display = "none";
+        //   }
+        // });
+        // // also show/hide this div on hover
+        // btn.addEventListener("mouseover", function ()
+        // {
+        //   if (div.style.display === "none")
+        //   {
+        //     div.style.display = "block";
+        //   }
+        //   else
+        //   {
+        //     div.style.display = "none";
+        //   }
+        // });
+        // btn2.addEventListener("mouseover", function ()
+        // {
+        //   if (div2.style.display === "none")
+        //   {
+        //     div2.style.display = "block";
+        //   }
+        //   else
+        //   {
+        //     div2.style.display = "none";
+        //   }
+        // });
+        // if mouse is out of the div hide it
+        // div.addEventListener("mouseout", function ()
+        // {
+        //   if (div.style.display === "block")
+        //   {
+        //     div.style.display = "none";
+        //   }
+        // });
+
+        // get hoverable 
+        var hoverable = document.querySelector(".hoverable");
+        // get rules-hide
+        var rulesHide = document.querySelector(".rules-hide");
+        // add event on hover show the .rules-hide
+        hoverable.addEventListener("mouseover", function ()
+        {
+          if (rulesHide.style.display === "none")
+          {
+            rulesHide.style.display = "block";
+          }
+          else
+          {
+            rulesHide.style.display = "none";
+          }
+        });
+      });
+
+    </script>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../game.html">Most Popular</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+
+        ESL Clup Copyright © 2021 ESL Clup - All rights reserved
+        <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="/scripts/main.js"></script> -->
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+  <script src="/dark-mode-tailwindcss/src/js/index.js"></script>
+  <script src="/scripts/topbutton.js"></script>
+  <!-- <script src="/scripts/dark.js"></script> -->
+
+</body>
+
+</html>

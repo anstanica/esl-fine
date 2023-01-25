@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> colors</title>
+  <!-- get colorsfavicon -->
+  <script src="/scripts/jquery.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/"> <!-- get Numbersfavicon -->
+
+  <link rel="stylesheet" href="/css/w3css.css">
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main-small.css">
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css"/>
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <!-- <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get bootstrap headings
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- colors-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/colors/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/colors/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">
+
+          <!-- fa colors icon -->
+          <i class="fa fa-paint-brush w3-xxlarge w3-text-red"></i>
+          Colors <i class="fa fa-paint-brush w3-xxlarge w3-text-red"></i></h1>
+      </h1>
+
+      <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Colors| Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+        Colors are a part of every other topic in the curriculum. We teach colors to our students so that they can
+        recognize them and use them in their daily lives. Which color is your favorite? What color is your shirt? What
+        color is your hair? What color is this / that ?.
+        <br> Remember we use TEFL methodology to teach colors to students <button class="ppp"
+          >PPP</button>
+      </p>
+      <div class="hidden-div w3-hover-text-white p-content" style="display: none;">
+        <strong>Presentation, Practice and Production.</strong> <br>
+        <br> <strong style="color: yellow;">Presentation</strong> &#x3A; where the teacher introduces the topic to the
+        students.
+        <br> <strong style="color: yellow;">Practice</strong> &#x3A; where the teacher gives the students exercises to
+        practice the topic.
+        <br><strong style="color: yellow;">Production </strong>&#x3A; where the teacher gives the students a chance to
+        use
+        the topic in a real life situation.
+        <br>
+      </div>
+      <!-- scrip show/hide this div onclick -->
+      <script>
+        var btn = document.querySelector(".ppp");
+        var div = document.querySelector(".hidden-div");
+        btn.addEventListener("click", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // also show/hide this div on hover
+        btn.addEventListener("mouseover", function ()
+        {
+          if (div.style.display === "none")
+          {
+            div.style.display = "block";
+          }
+          else
+          {
+            div.style.display = "none";
+          }
+        });
+        // if mouse is out of the div hide it
+        div.addEventListener("mouseout", function ()
+        {
+          if (div.style.display === "block")
+          {
+            div.style.display = "none";
+          }
+        });
+
+      </script>
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+        .logo-new{
+          width: 80px;
+        }
+      
+
+        @media only screen and (max-width: 600px) {
+          .download-video {
+            left: 25%;
+          }
+        }
+      </style>
+
+
+
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber">Warm Up</h3>
+      <p class="p-content">
+        The best way to start this lesson is to warm up the students. And the best warm up is a song
+
+        Here is a list of colors songs you can use:
+      <ul class="li-list">
+        <!-- What Color Is It? | Color Song for Kids | Learn your Colors Jack Hartmann-->
+        <li> <a href="https://youtu.be/wmsjmTUVHmc" target="_blank">What Color Is It?</a> </li>
+        <li> <a href="https://youtu.be/zxIpA5nF_LY" target="_blank">What's Your Favorite Color?</a> </li>
+      </ul>
+
+      <strong> But Our favorite from mable leaf, it's a great song and it's very easy to learn</strong>
+
+      </p>
+
+      <div class="video">
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/colors/pics/colors-song.png" data-setup='{}'>
+          <source src="/videos/What's Your Favorite Color-.mp4" type='video/mp4' />
+        </video>
+        <div class="download-video">
+          <a href="/videos/What's Your Favorite Color-.mp4" class="previous">
+
+            <button class="fa fa-download" id="downloads"> Download</button></a>
+          </a>
+        </div>
+
+        <div class="refer-div">
+          <a href="../teach_songs.html" tooltip-title="Check Here">
+            <strong style="font-size: 26px; color:#e9b9c9;">
+              <span class="p-content"> How to teach a song </span></strong>
+          </a>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content">
+        Most of the time the majority of the students know the colors,
+        but we still need to introduce them to the colors
+        in English. We can do this by showing them the flashcards below
+        <!-- icon of down arrow -->
+        <i class="fa fa-arrow-down w3-xxlarge w3-text-red"></i>
+        of different colors and asking them to name the colors.
+        <br> <br> <strong>Example:</strong> <br>
+        <strong>Teacher:</strong> What color is this? <br>
+        <strong>Student:</strong>
+        It's red. <br>
+        <br>
+        Or we can connect the colors to a previous lesson. For example, if we taught the students the names of the
+        fruits and vegetables, we can ask them to name the colors of the fruits and vegetables.
+
+      </p>
+      <Strong class="w3-text-khaki w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+
+        <div style="position: relative; width: 90%; height: 0; padding-top: 70.7071%;
+      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 1.1em; overflow: hidden;
+      border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFTkxbtyoM&#x2F;view?embed"
+            allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+        <div class="download-custom">
+          <a href="./docs/Colors-Flashcard.pptx" class="previous "><button class="fa fa-download" id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber">Practice</h1>
+
+      <!-- <p class="p-content">
+    Practice is more about games and activities that help the students to practice the topic. <br>
+    Here are some activities and games that you can use in this lesson:
+  </p>  
+     -->
+      <p class="p-content">
+        To practice the colors, we can use the flashcards that we just downloaded.
+        Next show them Flashcards <i class="fa fa-arrow-up fa-2x" aria-hidden="true" "></i> 
+      and ask them to repeat after you several times.  <br>
+      Then use the isolation practice , where students play pass the flashcards. The students will pass the flashcards to each other and say the color. <br>
+      The practice here is divided into three sections: <br>
+      <ul class=" list-rules">
+          <li class="li-list">
+            <p class="p-content"> Isolation practice : isolation practice as mentioned in the activity above (Asking and
+              practicing one by one).</p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> Pair practice : where the students will work in pairs. example:<br>
+              <strong>Student A:</strong> what color is this? <br>
+              <strong>Student B:</strong> It's red.
+            </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> Group practice :
+              as the name suggests is where the students will work in groups. group games , group activities, and group
+              points. </p>
+          </li>
+          </ul>
+          You can apply the practice in any order you want. <br>
+          But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+          practice.
+          <br>
+          <hr>
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities that you can use in this lesson:
+          </h4>
+      </p>
+
+      <h3 style="font-weight:900" class="underline  w3-text-amber">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+   
+
+        <li class="li-list">
+          <p class="p-content"><strong class="underline  w3-text-amber">
+              Colors game</strong>
+
+            <a href="./docs/colours-game.ppt" class="w3-text-white">
+              <i class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);"></i>
+              <br><br>
+              <picture>
+
+                <img src="/colors/pics/colours-game.png " alt="chain" srcset="" width="300" height="200">
+
+              </picture>
+            </a>
+            <br>
+            <br>
+            choose the correct word that matches the color. <br>
+
+          </p>
+        </li>
+        <li class="li-list">
+
+          <p class="p-content"> <strong class="underline  w3-text-amber">
+              Word Search
+            </strong>
+
+            <a href="./docs/colours-wordsearch.pptx" style="color: #fcb900;"><i class="fa fa-download fa-2x"
+                aria-hidden="true" style="color: rgb(243, 51, 51);"></i> <br><br>
+              <picture tooltip-title="Click to download">
+
+                <img src="/colors/pics/word-search.png" alt="how-many-can-you" srcset="" width="300" height="200">
+
+              </picture>
+            </a> &nbsp; <br> <br>
+            Find out the colors corresponding to the paint drops within the time limit (1 minute).
+          </p>
+        </li>
+
+      </ul>
+      <hr style="width:100%">
+      </li>
+      <!-- Main li -->
+      <li class="li-list">  
+        <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+        <!-- add ul with 3 li include images inside -->
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Roll the dice </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/colors/pics/Roll-Dice.png" alt="Banana" width="300" height="200">
+            <p class="p-content">
+              Roll the dice and say the color. <br>
+              You will need a die and colors flashcards, and numbers from 1 to 6. <br>
+              Lay the flashcards on the table 6 colors in a row and 6 numbers in order from 1 to 6. <br>
+              The students will roll the dice and say the color that matches the number. <br>
+              For example, if the student rolls the number 3, he will say the color that is in the third column. <br>
+              <!-- roll the dice picture -->
+              <br>
+
+
+            </p>
+
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong>Dirty Monkey</strong> </p>
+
+            <p class="p-content">
+              <!-- crete ol list with a type -->
+
+              A - Make two students sit on the floor in front of each other leaving enough space between them to place
+              three flashcards. <br>
+
+
+              B - Place the three flashcards between them and give them time to think about the words they have in front
+              of them. <br>
+
+
+
+              C - Once they look ready, loudly say the name on one flashcard.
+
+              The first one to touch it wins and stays there and the loser goes to sit down. <br>
+
+
+
+              D - Give one star each; as the winner stays there he can get as many stars as he can as long as he keeps
+              on winning. <br>
+
+            </p>
+
+
+            </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Flashcard Race </strong> </p>
+            <!-- Get a banana image -->
+
+
+            <p class="p-content">
+              Set all the flashcards on the whiteboard like a board game with a start and a finish line.
+
+              Make then throw a dice and reproduce the vocab. they land on. 
+              put some ‘Return to Start’, ‘Go back two’, ‘Advance two’, ‘Star’, and any other ‘event squares’
+              that you may think of to make the game more interesting.
+
+
+              <!-- roll the dice picture -->
+              <br>
+            </p>
+
+            <hr>
+          </li>
+        </ul>
+        </li>
+
+          <li class="li-list">
+            <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+            <ul class="list-rules">
+              <li class="li-list">
+                <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/colors/game.html#game1"
+                    target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                      Concentration <br></strong><br>
+                    <picture tooltip-title="Click to play the game">
+                      <img src="/colors/pics/Concentration.png" alt="mystery" width="300" height="200"><br>
+                    </picture>
+                  </a>
+                  <br>
+                  <p class="p-content">
+                  The aim is match words and images by revealing corresponding pairs. <br>
+                  The items are hidden behind squares and are revealed when clicked. <br>
+                  To match all the pairs, you have to concentrate and remember where the items are. <br>
+                </p>
+              </li>
+
+
+              <li class="li-list">
+                <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/colors/game.html#game2"
+                    target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                      Hangman <br></strong><br>
+                    <picture tooltip-title="Click to play the game">
+                      <img src="/colors/pics/hangman.png" alt="mystery" width="300" height="200"><br>
+                    </picture>
+                  </a>
+                  <br>
+                  <p class="p-content">
+              - This is a version Of the classic game Of hangman in Which you try to guess the word or
+              &nbsp; &nbsp; &nbsp; phrase before
+              the man dies. <br>
+             - TO play you click on the letters to try and reveal the word. <br>
+             - If the word contains the letter, then it is
+              revealed, but if the word doesn't contain the letter then a part of the hangman picture is drawn.
+              <br> 
+            -  When the picture is completely drawn, the man is hung and the game ends.
+          
+                </p>
+                </li>
+              </ul>
+         
+          </li>
+
+        </ul>
+       
+    
+        <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap up / Review</h3>
+        <p class="p-content">
+          <!-- list of activities to wrap up / end the colors lesson -->
+          You can wrap up the lesson by playing a game and by doing a review. <br>
+          For example, you can play a game of <strong class="w3-text-pink  " >: “I spy” </strong>. <br>
+         <strong class="w3-text-amber"> Teacher :</strong> I spy with my little eye something that is
+          <strong class="w3-text-red">red</strong> . <br>
+          The students will have to guess what the teacher is talking about, 
+          and they will run around the classroom looking for something red. <br>
+          <br>
+
+        </p>
+        <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3>
+        <p class="p-content"> A GoodBye song is a very important part of your lesson, Make time for it.
+
+        <h3 class="p-content" style="color:green;"> Here is a good one</h3>
+        <div class="goodbye">
+
+            <video width="700" height="388" id="my-video"
+              class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+              poster="/zoo/pics/itistime.png" data-setup='{}'>
+              <source src="/videos/Time to Say Good-bye.mp4" type='video/mp4' />
+            </video>
+                 
+        </div>
+            <div class="download-btn">
+              <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+    
+                <button class="fa fa-download" id="downloads"> Download</button></a>
+              </a>
+       
+        </p>
+    </div>
+    </div>
+    </div>
+<div class="related-resources"> <hr>
+      <!--List of Related Resources -->
+      <!-- list of links to worksheets and game.html -->
+      <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <a href="/colors/worksheets/worksheet.html" 
+              style="color: #fcb900;"> <strong> Colors Worksheets </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/colors/game.html"
+              style="color: #fcb900;"> <strong> Colors Online Games </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/Numbers/numbers.html"
+              style="color: #fcb900;"> <strong> Numbers </strong> </a> </p>
+        </li>
+    
+
+      </ul>
+    </div>
+  </div>
+  <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="colors/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="colors/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="colors/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="colors/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="colors/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../game.html">Most Popular</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+     
+    ESL Clup Copyright © 2021 ESL Clup - All rights reserved 
+    <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+    </div>
+    </div>
+    </footer>
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/video-js.js"></script>
+  <!-- <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script> -->
+
+  <script src="/scripts/topbutton.js"></script>
+  <script src="/scripts/darkmode.js"></script>
+  <script src="/scripts/index.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</body>
+
+</html>

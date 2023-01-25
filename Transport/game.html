@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESL Clup Games</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/logos/Black and White Vintage Circle Coffee Shop Logo (2).png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="animal/css/style.css" />
+    <link rel="stylesheet" href="/css/online-games.css" />
+    <link rel="stylesheet" href="/css/footer-other.css">
+
+    <!-- menu -->
+    <link rel="stylesheet" href="/css/left-sidebar.css" />
+    <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+
+    <!-- google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+          <script src="/scripts/jquery.min.js"></script>
+</head>
+
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+      <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+      </label>
+  
+      <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+      <a href="/transport/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+          class="fa fa-file-word fa-2x"></i> </a>
+      <a href="/transport/Transportation.html" class="menu-item" data-title="Lesson Plan"> <i class="fas fa-chalkboard-teacher fa-2x"></i> </a>
+      <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+  
+    </nav>
+    <!-- close menu-items by clicking oustide -->
+    <script>
+      document.addEventListener('click', function (event)
+      {
+        var isClickInside = document.querySelector('.menu').contains(event.target);
+        if (!isClickInside)
+        {
+          document.getElementById('menu-open').checked = false;
+        }
+      });
+  
+    </script>
+  
+  
+
+    <!-- Page Content -->
+    <div class="w3-padding-16" id="main">
+      <!-- Header/Home -->
+
+      <br />
+      <!-- To understand how it works you can click on ! -->
+     <div class="how-to-play">
+       <h4 class="w3-center w3-left-align w3-responsive w3-pale-red">
+        <strong>How to play?</strong> <br />
+        <!-- add !  icon -->
+
+        click <i class="fa fa-info-circle w3-white" style="font-size: 24px"></i>
+        at the bottom left of the game.
+      </h4>
+     </div>
+     <div class="w3-content w3-justify w3-text-grey " id="about">
+    <div class="container" id="game1">
+        <div class="iframe-container">
+          <iframe
+            style="max-width: 1000px; overflow: hidden; border: none"
+            src="https://www.gamestolearnenglish.com/fast-english/embed.html#transport"
+            width="100%"
+            height="550px"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="iframe-container" title="game2">
+          <iframe id="game2"
+            style="max-width: 1000px; overflow: hidden; border: none"
+            src="https://www.gamestolearnenglish.com/describer/embed.html#transport"
+            width="100%"
+            height="550px"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+     </div>
+      <a
+        href="./transportation.html"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black nextprev a.w3-right nextprev a.w3-left"
+      >
+        <a
+          href="./transportation.html"
+          class="previous"
+          style="margin-left: 50px"
+          ><button
+            style="
+              background-color: #04aa6d;
+              color: #ffffff;
+              border-color: #04aa6d;
+              height: 40px;
+              width: 115px;
+              cursor: pointer;
+            "
+          >
+            &laquo; Previous
+          </button></a
+        >
+      </a>
+      <button class="myTopBtn">
+        <!-- add an icon up -->
+        <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+        <hr style="margin: 0; padding: 3px; color: #521b30; width: 100%" />
+        
+      </button>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+    
+  <!-- add My footer -->
+  <footer class="footer">
+    <div class="row">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span>ESL</span>CLUP           <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (2).svg" alt="logo" class="logo-new">
+          </h1>
+          <!-- logo image -->
+          <p>
+            This is a website for kids to learn English. It has many activities and games for kids to learn English.
+          </p>
+
+          <div class="w3-row">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="w3-row">
+          <br>
+          <ul>
+            <a href="../index.html">
+              <li>Home</li>
+            </a>
+            <a href="../about.html">
+              <li>About</li>
+            </a>
+            <a href="../contact.html">
+              <li>Contact</li>
+            </a>
+            <a href="../privacy.html">
+              <li>Privacy Policy</li>
+            </a>
+            <a href="../terms.html">
+              <li>Terms and Conditions</li>
+            </a>
+          </ul>
+        </div>
+    </div>
+  </footer>
+  <script src="/scripts/topbutton.js"></script>
+</body>
+  <script src="/scripts/main.js"></script>
+</html>

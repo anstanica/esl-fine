@@ -1,0 +1,173 @@
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+  .related-resources h3{
+    margin-top:80px;
+  }
+}
+
+.w3-bar-item {
+  /* width: fit-content; */
+  /* height: 80px; */
+  padding-left: 10px;
+  padding-bottom: 0;
+}
+
+.w3-bar {
+  height: 80px;
+}
+
+.App-header {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4caf50;
+  padding-top: 10px;
+  padding-right: 220px;
+  text-align: justify-all;
+}
+
+#right-signin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+}
+
+.w3-pale-red {
+  width: fit-content;
+  margin: 15px auto;
+  padding: 6px;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style h1 to be on top of iframe-container */
+.h1 {
+  position: absolute;
+  /* margin-top: 10px; */
+  z-index: 100;
+}
+
+/* style container to show in the center of the page */
+
+.container {
+  border-bottom: 50px solid;
+  border-color: #070707;
+  /* border-bottom-width: 50px; */
+  margin-bottom: 15px;
+  width: 100%;
+
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* style h1 to be on top of iframe-container */
+.h1 {
+  position: absolute;
+  /* margin-top: 10px; */
+  z-index: 100;
+}
+
+.myTopBtn {
+  /* make the icon on top on the span */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* make #id on the bottom */
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 240px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #fcb900;
+  color: white;
+  cursor: pointer;
+  padding: 0px 18px 2px 16px;
+
+  border-radius: 10px;
+
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 500px) {
+  .myTopBtn {
+    right: 0;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 499px) and (min-width: 300px) {
+  .myTopBtn {
+    right: 0;
+    width: fit-content;
+  }
+}
+
+.fa-car {
+  color: #f1c40f;
+  position: relative;
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  /* align the icon to the middle of the header */
+  vertical-align: middle;
+
+}
+
+.fa-bus {
+  color: #f1c40f;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  /* align the icon to the middle of the header */
+  vertical-align: middle;
+
+}
+
+@media only screen and (max-width: 500px) {
+  .container:first-child {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.top-head {
+  text-align: center;
+  /* add border and background */
+  border: 2px solid black;
+  background-color: #812e2e;
+  /* make stick to the top */
+  display: flex;
+  position: absolute;
+
+  right: 450px;
+
+  margin-top: 0px;
+
+  z-index: 998;
+  width: fit-content;
+
+}
+
+.related-resources {
+  height: auto;
+  padding-top: 50px;
+  margin-top: 70px;
+}
+.iframe-container{
+  height: 520px;
+  width:100%;
+  overflow:hidden;
+}

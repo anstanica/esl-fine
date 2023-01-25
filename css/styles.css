@@ -1,0 +1,21 @@
+@media(prefers-reduced-motion:reduce) {
+  html {
+      scroll-behavior: auto
+  }
+}
+@media(prefers-color-scheme:dark ) {
+  html, header, #sidebar, .subnav, .subnav-content, .subnav-content-clothes, .subnav-content-transport
+  {
+      color:grey;
+      background-image: linear-gradient(rgb(32, 31, 31), rgb(15, 15, 15));
+  }
+  img{
+      filter: brightness(0.9) grayscale(0.5)
+  }
+  .video-grid{
+      background: #1b1b1b;
+    }
+}
+img:hover{
+  filter: brightness(1) grayscale(0)
+}

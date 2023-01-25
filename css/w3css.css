@@ -1,0 +1,331 @@
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+body {
+    scroll-behavior: smooth;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    /* filter: blur(10px); */
+}
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+footer,
+header,
+nav {
+    display: block
+}
+
+video {
+    display: inline-block
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+strong {
+    font-weight: bolder
+}
+
+img {
+    border-style: none
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input {
+    font: inherit;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button {
+    text-transform: none
+}
+
+button {
+    appearance: button
+}
+
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+[type=checkbox] {
+    padding: 0
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+:disabled * {
+    pointer-events: none
+}
+
+#main {
+    transition: margin-left .4s
+}
+
+.w3-container:after,
+.w3-container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.w3-content {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.w3-content {
+    max-width: 980px
+}
+
+@media (max-width:600px) {
+    .w3-hide-small {
+        display: none !important
+    }
+}
+
+.w3-container {
+    padding: 0.01em 16px
+}
+
+.w3-opacity {
+    opacity: 0.60
+}
+
+.w3-xxlarge {
+    font-size: 36px !important
+}
+
+.w3-jumbo {
+    font-size: 64px !important
+}
+
+.w3-justify {
+    text-align: justify !important
+}
+
+.w3-center {
+    text-align: center !important
+}
+
+.w3-padding-large {
+    padding: 12px 24px !important
+}
+
+/* Colors */
+.w3-black {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-text-amber,
+.w3-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.w3-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.w3-text-khaki {
+    color: #b4aa50 !important
+}
+
+.w3-text-pink {
+    color: #e91e63 !important
+}
+
+.w3-text-red {
+    color: #f44336 !important
+}
+
+.w3-text-teal {
+    color: #009688 !important
+}
+
+.w3-text-white,
+.w3-hover-text-white:hover {
+    color: #fff !important
+}
+
+.w3-text-grey,
+.w3-text-gray {
+    color: #757575 !important
+}
+
+.w3-text-light-grey {
+    color: #f1f1f1 !important
+}
+
+.vjs-theme-city {
+    --vjs-theme-city--primary: #bf3b4d;
+    --vjs-theme-city--secondary: #fff
+}
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-2x {
+    font-size: 2em
+}
+
+.fa-heart:before {
+    content: "\f004"
+}
+
+.fa-home:before {
+    content: "\f015"
+}
+
+.fa-download:before {
+    content: "\f019"
+}
+
+.fa-arrow-up:before {
+    content: "\f062"
+}
+
+.fa-arrow-down:before {
+    content: "\f063"
+}
+
+.fa-chevron-up:before {
+    content: "\f077"
+}
+
+.fa-twitter:before {
+    content: "\f099"
+}
+
+.fa-facebook:before {
+    content: "\f09a"
+}
+
+.fa-gamepad:before {
+    content: "\f11b"
+}
+
+.fa-youtube:before {
+    content: "\f167"
+}
+
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+.fa-paint-brush:before {
+    content: "\f1fc"
+}

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> time</title>
+  <!-- get timefavicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main-small.css">
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css"/>
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get bootstrap headings
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- time-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/time/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/time/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+      <h1 className="w3-jumbo"><span className="w3-hide-small">
+
+        <!-- clock icon -->
+        <img src="/Time/pics/clocks.png" alt="" srcset="" width="50px">        
+          Time 
+          <img src="/Time/pics/clock.png" alt="" srcset="" width="50px">
+      </h1>
+
+      <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Time| Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+       
+        Telling the time is a very important skill for children to learn. 
+        It is a skill that they will use every day for the rest of their lives. 
+        It is also a skill that they will use in many different situations. 
+        For example, they will need to know the time when they are going to school etc . <br>
+
+        That is why it is important to teach children how to tell the time in a fun and interesting way.
+        Time and numbers are connected, so make sure that you teach children how to count and recognize numbers before you teach them how to tell the time. 
+        
+        
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+        .logo-new{
+          width: 80px;
+        }
+      
+
+        @media only screen and (max-width: 600px) {
+          .download-video {
+            left: 25%;
+          }
+        }
+      </style>
+
+
+
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber">Warm Up</h3>
+      <p class="p-content">
+        Review numbers from 1 to 12. <br>
+        Start with numbers song and then ask the students to sing it with you. <br>
+      Numbers Songs like :Counting Numbers | Counting Songs | Learn Numbers |By Kids TV
+      
+<br> <i> OR you can download this song directly ></i>  
+    <b> 1-20 | by the Singing Walrus 
+      <a href="/videos/Number song 1-20 .mp4" class="link w3-codespan w3-theme-l2">Download</a>
+    </b> <br> <br>
+
+      Then it time of the time song. <br>
+      </p>
+
+      <b class="w3-pink"> Time Song | By PinkFong</b>
+      <div class="video">
+        
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/videos/posters/time-song.png" data-setup='{}'>
+          <source src="/videos/Telling Time 1 - Time Songs - Pinkfong Songs for Children.mp4" type='video/mp4' />
+        </video>
+        <div class="download-video">
+          <a href="/videos/Telling Time 1 - Time Songs - Pinkfong Songs for Children.mp4" class="previous">
+
+            <button class="fa fa-download" id="downloads"> Download </button></a>
+          </a>
+        </div>
+
+        <div class="refer-div">
+          <a href="../teach_songs.html" tooltip-title="Check Here">
+            <strong style="font-size: 26px; color:#e9b9c9;">
+              <span class="p-content"> How to teach a song </span></strong>
+          </a>
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content">
+       
+        We will start by teaching the main concepts like clock face, hour hand, minute hand, and second hand. 
+        Then we will teach the students how to tell the time using the clock face.
+        Also we will teach them how to tell the time using the digital clock. <br>
+        <br>
+        Start by showing the students a clock face and asking them to name the numbers on the clock face. 
+        Then name the hour hand and the minute hand. <br>
+        <!-- icon of down arrow -->
+        <i class="fa fa-arrow-down w3-xxlarge w3-text-red"></i>
+        Download the flashcards to practice the names of the numbers on the clock face and the names of the hour hand and the minute hand. 
+      <br>
+        <b><i>All our flashcards are Illustrated components, so you can edit them easily</i></b>
+      </p>
+      <Strong class="w3-text-khaki w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+
+        <div style="position: relative; width: 90%; height: 0; padding-top: 70.7071%;
+      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 1.1em; overflow: hidden;
+      border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&amp;resid=C2C04CBE74AA957%2150570&amp;authkey=ALO-CcH5ZqV51v8&amp;em=2&amp;wdAr=1.4148802017654476"
+            allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+        <div class="download-custom">
+          <a href="/Time/docs/time-Objects .pptx" class="previous "><button class="fa fa-download" id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+
+
+      
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber">Practice</h1>
+
+      <p class="p-content">
+            Time fractions are the parts of the hour, it could be challenging for the students to understand the time fractions.
+            So we will start by teaching the students the time fractions. <br>
+            <br>
+            Explain to the students that the hour hand moves around the clock face once in an hour.
+            So the 'hour hand' moves 60 minutes in an hour. and  the half of the hour is 30 minutes and the quarter of the hour is 15 minutes.
+            and teach what "PAST" means.<br>
+            half past 2 means 2:30 and quarter past 2 means 2:15. <br>
+            <br>
+          
+            - USE THE FLASHCARDS TO PRACTICE THE TIME FRACTIONS. <br>
+            - Also we included in-class activities to practice the time fractions. <br>
+
+       
+       <h3 class="w3-text-light-blue" >
+        <button  id="show-practice" tooltip-title="Show here" >  Practice Methods </button>
+       
+        </h3>
+       </h3>
+       <script>
+        document.getElementById("show-practice").addEventListener("mouseover", function () {
+          if (document.getElementById("list-practice").style.display == "none") {
+            document.getElementById("list-practice").style.display = "block";
+          
+          } else {
+            document.getElementById("list-practice").style.display = "none";
+          }
+          
+        });
+  
+       </script>
+      <ul class=" list-rules" style="display: none;" id="list-practice">
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Isolation practice </strong> : isolation practice as mentioned in the activity above (Asking and
+              practicing one by one).</p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Pair practice</strong>  : where the students will work in pairs. example:<br>
+              <strong>Student A:</strong> what is this? <br>
+              <strong>Student B:</strong> It's a pencil.
+            </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <strong class="w3-text-sand">Group practice</strong>  :
+              as the name suggests is where the students will work in groups. group games , group activities, and group
+              points. </p>
+          </li>
+          </ul>
+          You can apply the practice in any order you want. <br>
+          But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+          practice.
+          <br>
+          <hr>
+
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities for practicing this lesson:
+          </h4>
+      </p>
+
+
+      <h3 style="font-weight:900" class="underline  w3-text-amber">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+   
+
+        <li class="li-list">
+          <p class="p-content"><strong class="underline  w3-text-amber">
+            Spin and Tell</strong>
+
+            <a href="/Time/docs/tell-time.ppt" class="w3-text-white">
+              <i class="fa fa-download fa-2x" aria-hidden="true" style="color: rgb(243, 51, 51);" tooltip-title="Download"></i>
+              <br><br>
+              <picture>
+
+                <img src="/time/pics/tell-time.png " alt="chain" srcset="" width="300" height="200">
+
+              </picture>
+            </a>
+            <br>
+            <br>
+            Spin and tell the time.
+             <br>
+
+          </p>
+        </li>
+        
+
+      </ul>
+      <hr style="width:100%">
+      </li>
+      <!-- Main li -->
+      <li class="li-list">  
+        <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+        <!-- add ul with 3 li include images inside -->
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong>  Digital Clock Race </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/time/pics/time-dice.jpg" alt="Banana" width="200" height="200">
+            <p class="p-content">
+               <br>
+             
+
+               For this activity, you'll need a digital clock and a few dice. Have the kids roll the dice and then set the clock to match the number shown on the dice. The first child to get the clock to the correct time wins.
+
+               
+
+
+            </p>
+
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong>Time Puzzles</strong> </p>
+
+            <p class="p-content">
+              <!-- crete ol list with a type -->
+
+              Print out or draw a clock face with the hands missing and have your students fill in the correct time. You can also make time-themed word puzzles or crossword puzzles for your students to complete.
+
+            </p>
+
+
+            </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Mr. Wolf  </strong> </p>
+            <!-- Get a banana image -->
+
+            <img src="/time/pics/mr-wolf.png" alt="Basketball" width="300" height="200">
+
+            <p class="p-content">
+              
+              One of the best telling time activities for kindergarten or preschool kids is What Time is it Mr. Wolf? It’s ideal because it gets young kids up out of their seats and moving around the classroom. Choose one student to be the wolf and the rest of the students stand lining up against one wall.
+
+              The students on the wall ask, “What time is it Mr. Wolf?” If he says, “Four O’clock,” the students take 4 steps towards him. At any point in time he can say, “It’s lunchtime” and then try to catch one of the students who will take his place as the wolf.
+              <!-- roll the dice picture -->
+              <br>
+            </p>
+
+            <hr>
+          </li>
+
+          
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Draw the Clock  </strong> </p>
+            <!-- Get a banana image -->
+
+            <p class="p-content">
+              
+              Draw the clock is a fun way to practice telling time. 
+              You can use a digital clock or a paper clock face. 
+              Have the students draw the hands on the clock to match the time you call out. 
+              You can also have them draw the clock face and then write the time on it.
+
+              <br>
+            </p>
+
+            <hr>
+          </li>
+        </ul>
+        </li>
+
+          <li class="li-list">
+            <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+            <ul class="list-rules">
+              <li class="li-list">
+                <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/time/game.html#game1"
+                    target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                     Time  <br></strong><br>
+                    <picture tooltip-title="Click to play the game">
+                      <img src="/time/pics/time.png" alt="mystery" width="300" height="200"><br>
+                    </picture>
+                  </a>
+                  <br>
+                  <p class="p-content">
+                    This is a mini-game to practice telling the time in English. The first screen
+                    shows an analog or digital clock, with the time displayed in English words
+                    below. You can change the time by moving the clock hands or by clicking the
+                    arrows at the bottom. The aim of this clock is to review the basic language for
+                    telling the time.
+                    To play the mini-game. click where it says "start". This takes you to the second
+                    screen which displays time phrases and three possible clocks. The aim here is
+                    to practice the time language by clicking on the clock that matches the text. If a
+                    guess is incorrect. then you have to start again from the beginning.
+                </p>
+              </li>
+              </ul>
+         
+          </li>
+
+        </ul>
+       <hr width="100%">
+    
+        <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap up / Review</h3>
+        <p class="p-content">
+          
+          At the end of your ESL time lesson, you'll want to wrap up by reviewing the key concepts with your students. Ask them to explain what they've learned about telling time, such as the different ways to say the time, how to read clocks, and how to ask and answer questions about the time. You can also review the key vocabulary words from the lesson and practice forming sentences with these words. Additionally, you can ask the students to write their own sentences about the time, or create their own mini-dialogue about the time. Finally, you can play a game to help the students practice the concepts. This can be a simple game such as “I Spy” or a more interactive game such as “Simon Says”. Making learning fun is a great way to reinforce the lesson and help the students remember the concepts.
+
+        </p>
+
+      <br>
+        <HR width="100%">
+        <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3>
+
+        <h3 class="p-content" style="color:green;"> Here is a good one</h3>
+        <div class="goodbye">
+
+            <video width="700" height="388" id="my-video"
+              class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+              poster="/zoo/pics/itistime.png" data-setup='{}'>
+              <source src="/videos/Time to Say Good-bye.mp4" type='video/mp4' />
+            </video>
+                 
+        </div>
+            <div class="download-btn">
+              <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+    
+                <button class="fa fa-download" id="downloads"> Download</button></a>
+              </a>
+       
+        </p>
+    </div>
+
+  
+  </div>
+
+  </div>
+<div class="related-resources"> <hr>
+    <!--List of Related Resources -->
+    <!-- list of links to worksheets and game.html -->
+    <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+    <ul class="list-rules">
+      <li class="li-list">
+        <p class="p-content"> <a href="/time/worksheets/worksheet.html" target="_blank"
+            style="color: #fcb900;"> <strong> Time Worksheets </strong> </a> </p>
+      </li>
+      <li class="li-list">
+        <p class="p-content"> <a href="/time/game.html" target="_blank"
+            style="color: #fcb900;"> <strong> Time Online Games </strong> </a> </p>
+      </li>
+      <li class="li-list">
+        <p class="p-content"> <a href="/Numbers/numbers.html" target="_blank"
+            style="color: #fcb900;"> <strong> Numbers </strong> </a> </p>
+      </li>
+  
+
+    </ul>
+  </div>
+  <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="time/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="time/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="time/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="time/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="time/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../read.html">Most Popular</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+     
+    ESL Clup Copyright © 2021 ESL Clup - All rights reserved 
+    <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+    </div>
+    </div>
+    </footer>
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+  <script src="/scripts/topbutton.js"></script>
+  <script src="/scripts/darkmode.js"></script>
+  <script src="/scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</body>
+
+</html>

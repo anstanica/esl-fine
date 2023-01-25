@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+
+
+  <title> Weather</title>
+  <!-- get weather favicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/"> <!-- get Numbersfavicon -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/main-small.css">
+  <!-- <link rel="stylesheet" href="/css/mdb.dark.min.css"> -->
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css" />
+  <!-- <link rel="stylesheet" href="/css/darkmode.css" /> -->
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?weather=Poppins:wght@400;500&weather=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get icon8 -->
+<!-- import jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- get tailwind script -->
+  <link href="/dist/output.css" rel="stylesheet">
+
+
+
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- weather-->
+
+<body class="w3-black">
+
+  <!-- script jquery find every strong tag or b and add border-y class -->
+  <script>
+    $(document).ready(function ()
+    {
+      $("strong, b").addClass("border-y");
+    });
+    </script>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x">  </i></a>
+    <a href="/weather/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="../weather/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i>
+    </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+
+  <!-- Page Content -->
+  <div
+    class="w3-padding-large w3-text-theme bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
+    id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container w3-center w3-black" id="home">
+      <h1 class="w3-jumbo w3-text-sand w3-animate-opacity"><span class="w3-hide-small">
+
+          <!-- fa weather icon -->
+          <!-- weather icon -->
+          <i class="fas fa-cloud-sun-rain fa-2x"></i>
+          
+          Weather
+          <i class="fas fa-cloud-sun-rain fa-2x"></i>       </h1>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Weather | Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+
+        <!-- <img src="Weather/pics/weather.png" alt="weather" class="w3-image w3-round" width="100" height="100"> -->
+        
+        How is the weather today? What is the weather like ? , is the most common question we ask each other.It is determined by the temperature, humidity, wind
+        speed, and precipitation. It is sunny today, it is raining, it is snowing, it is windy, it is cloudy, it is hot, it is cold and so on. Weather is
+        something that we experience every day. It is important to know about the weather because it affects our daily lives.
+        This lesson plan will help the ESL students to learn about the weather and how to talk about the weather.
+        <hr>
+   
+      
+
+
+        <br>
+        
+    
+
+
+      </p>
+
+      <!-- scrip show/hide this div onclick -->
+
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+
+        .logo-new {
+          width: 80px;
+        }
+
+        .w3-codespan {
+
+          padding: 10px;
+          color: rgb(104, 90, 90);
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-video {
+            left: 25%;
+          }
+
+          .w3-codespan {
+            padding: 5px;
+            color: black;
+          }
+        }
+      </style>
+
+      <!-- list a href to the parts of this lesson -->
+
+
+      <div class="w3-row w3-center">
+        <h4 class="w3-pink"> Feel free to hob between the lesson plan sections</h4>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">1</span><br>
+          <a href="weather/weather.html#intro" class="w3-button w3-black">Presentation</a>
+        </div>
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">2</span><br>
+          <a href="weather/weather.html#practice" class="w3-button w3-black">Practice</a>
+        </div>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">3</span><br>
+          <a href="weather/weather.html#games" class="w3-button w3-black">Production</a>
+        </div>
+      </div>
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber" id="warmup">Warm Up</h3>
+      <p class="p-content " id="warmup">
+
+        <!-- weather warmup -->
+        - Ask your students to look outside the window and describe the weather. <br>
+        say : What is the weather like today ? <br>
+        Is it sunny ? use gestures to show the weather. <br>
+        * Example : 
+        Sunny <i class="fas fa-sun"></i> both hands up and open and your face smiling. <br>
+        Cloudy <i class="fas fa-cloud"></i> Draw a cloud 
+         and your face frowning . <br>
+
+        <br>
+        Finally, Show the video below and ask your students to sing along with the song. <br>
+<br>        <strong class="w3-lime"> How's The Weather? </strong>
+        <div class="video" id="warmup">
+          <video width="700" height="388" id="my-video"
+            class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+            poster="/videos/posters/how-is-the-weather.png" data-setup='{
+          
+            }'>
+            <source src="/videos/How's The Weather- - Super Simple Songs.mp4" type='video/mp4' />
+          </video>
+          <div class="download-video">
+            <a href="/videos/How's The Weather- - Super Simple Songs.mp4" class="previous">
+  
+              <button class="fa fa-download" id="downloads" type="button"> Download </button>
+            </a>
+          </div>
+  
+          <div class="refer-div w3-grayscale">
+            <a href="../teach_songs.html" tooltip-title="Check Here">
+            
+                <b class="p-content"> How to teach a song </b>
+            </a>
+  
+          </div>
+        </div>
+
+<br>
+<br>
+<br>
+        <br>
+
+        <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber" id="intro">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content w3-sepia-max w3-content ">
+
+        <!-- weather introduction -->
+        <img src="/weather/pics/weather-temp.jpg" alt="" width="150px" height="150px"> <br>
+        Draw a large temperature chart on the whiteboard and discuss the different temperatures that are usually experienced in different seasons.
+        Ask the students what kind of weather they experienced recently and have them draw the corresponding temperature.
+        <br>
+      </p>
+<hr>
+      <div class="w3-row">
+       <b class="w3-aqua">
+        Questions to learn:
+       </b> <br>
+       <i>
+        <b>
+        - How is the weather today ? <br>
+        - What is the weather like today ? <br>
+      </b>
+       </i> 
+
+       <b class="w3-white">TPR</b> <br>
+        <i class="w3-text-aqua">
+          - Sunny <i class="fas fa-sun w3-text-red"></i>  : Open one hand like a claw or a light spot . <br>
+          - Cloudy <i class="fas fa-cloud  w3-text-red"></i> : Open your hands like claws and swirl them around. <br>
+          - Rainy <i class="fas fa-cloud-rain w3-text-red "></i> : move your fingers from the top of your head to the bottom of your body and wiggle them 
+          like rain drops. <br>
+          - Snowy <i class="fas fa-snowflake w3-text-red "></i> : Open both hands and float them down while wiggling your fingers. <br>
+          - Windy <i class="fas fa-wind w3-text-red"></i> : Your open hands sway from side to side. <br>
+          - Hot <i class="fas fa-temperature-high w3-text-red"></i> : Sway on hand from side to side rapidly in front of your face. <br>
+          - Cold <i class="fas fa-temperature-low w3-text-red"></i> : Hug yourself and shiver. <br>
+          - Stormy <i class="fas fa-bolt w3-text-red"></i> : Move your hands in a lightning bolt shape. <br>
+          - Foggy <i class="fas fa-smog w3-text-red"></i> : Move your hands Like a car's wipers. <br>
+
+          </i>
+
+        </div> <br>
+<hr>
+      <span class="w3-text-deep-orange">
+        <strong>Flashcards</strong> of this lesson.
+      </span> <br>
+      <Strong class="w3-text-aqua w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+        <div
+          style="position: relative; width: 90%; height: 0; padding-top: 70.7071%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&resid=C2C04CBE74AA957%2150562&authkey=AOXJI-NtaIdWXLQ&em=2"
+            
+            allowfullscreen="allowfullscreen" allow="fullscreen"> </iframe>
+        </div>
+        <div class="download-custom">
+          <a href="/weather/docs/The Weather.pptx" class="previous "><button class="fa fa-download"
+              id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+        [tooltip-title]{
+          content: attr(tooltip-title);
+          width:auto;
+        }
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          height: fit-content;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        .hoverable [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 60%;
+          top: 100%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+          .refer-div [tooltip-title]:after{
+            content: attr(tooltip-title);
+          width: 50px;
+          height: fit-content;
+          /* top: 140%; */
+          left: 110px;
+        }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber" id="practice">Practice</h1>
+
+      <!-- <p class="p-content">
+    Practice is more about games and activities that help the students to practice the topic. <br>
+    Here are some activities and games that you can use in this lesson:
+  </p>  
+     -->
+      <p class="p-content">
+
+        Start by asking the students to name the different  <a href="/seasons/seasons.html"> Seasons</a> if they have already learned them.
+        First ask the students to repeat the words after you,  then ask them to say the words individually.
+        - continue for three or four times.
+             <br>
+
+
+
+          <button class=" hoverable w3-teal" tooltip-title="show / hide"><strong>Types of practice</strong> </button>
+          <br>
+          <ul class="list-rules rules-hide w3-codespan w3-border w3-padding-small p-content w3-black"
+            style="display: none; word-spacing: -5.5px;">
+            <li class="li-list">
+              <p class="p-content"> Isolation practice : isolation practice as mentioned in the activity <br> above
+                (Asking
+                and
+                practicing one by one).</p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Pair practice : where the students will work in pairs. example:<br>
+                <strong>Student A:</strong> what do you? <br>
+                <strong>Student B:</strong> I am a doctor.
+              </p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Group practice :
+                as the name suggests is where the students will work in groups. group games , group activities, and
+                group
+                points. </p>
+            </li>
+
+            You can apply the practice in any order you want. <br>
+            But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+            practice.
+            <br>
+          </ul>
+
+          <!-- <p class="w3-codespan w3-padding-small p-content">
+
+            TPR :
+            <br>
+            - <strong class="w3-justify w3-text-theme">
+              Brush your teeth :
+            </strong>
+            Act like tou are holding a toothbrush and brush your &nbsp; teeth.<br>
+            - <strong class="w3-justify w3-text-theme">
+              Wake up :
+            </strong>
+            Stretch your arms and yawn like you are waking up. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Take a nap :
+            </strong>
+            Lie down on the floor and pretend to sleep, or lean your &nbsp; &nbsp; head on the table and close your
+            eyes. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Take a shower :
+            </strong>
+            Pretend to wash your hair and body. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Eat breakfast :
+            </strong>
+            Pretend to eat a sandwich.
+          </p> -->
+          <hr>
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities that you can use in this lesson:
+          </h4>
+      </p>
+      <!-- <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Production</h3><br> -->
+      <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong> </p>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+
+            <li class="li-list">
+              <p class="p-content">
+                <a href="/weather/docs/weather-report.pptx">
+                <strong class=" w3-amber" tooltip-title="Download">
+                  Weather Report &nbsp;</strong> <i class="fa fa-download fa-2x w3-text-white"></i><br>
+                <br>
+                <img src="/weather/pics/weather-report.png" tooltip-title="Download"  alt="" width="300" height="200">
+              </a> <br>
+              <br>
+              - Click the correct word . <br>
+              - And then click the correct icon that fit the description. <br>
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content"> 
+                <a href="/Weather/docs/weather-activities.ppt">
+                <strong class=" w3-amber" tooltip-title="Download">
+                  What is the weather like? &nbsp;</strong>  <i class="fa fa-download fa-2x w3-text-white"></i><br>  
+                <br>
+                <img src="/Weather/pics/weather-activities.png" tooltip-title="Download"  alt="" width="300" height="200">
+              </a> <br>
+              <br>
+              - What is the weather like? <br>
+              - A ppt game to practice the weather. <br>
+
+
+              </p>
+            </li>
+        
+
+          </ul>
+        </li>
+    
+          <hr style="width:100%">
+     
+        <!-- Main li -->
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> In-Class Games</strong>    <br>
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content">
+                <strong class=" w3-amber">
+                  Weather Experiments</strong><br>
+                <br>
+                <img src="/Weather/pics/SCIENCE - Week 2 - IMAGE - diy tornado.png" alt="" width="250px" height="200px">
+                  <br><br>
+              <strong class="w3-text-yellow">
+                Activity Objective:
+              </strong><br>
+             <b>              To practice recognizing and saying different weather types .           </b> <br>
+             <b class="w3-text-yellow">
+              Procedure:</b> <i>
+              Try fun experiments with your students to demonstrate different types of weather.
+               For example, you can make a cloud in a jar to show them how clouds are formed and how rain is created.
+                You can also make a tornado in a bottle to show them how tornadoes are formed. <br> <br>
+               <b>How to make a cloud in a jar: </b> <br>
+                - Fill a jar with water. <br>
+                - Add a few drops of dish soap. <br>
+                - Add a few drops of food coloring. <br>
+                - Put the lid on the jar and shake it. <br>
+                - The water will turn cloudy. <br>
+                - The cloud will disappear when you open the lid. <br> <br>
+               <b>How to make a tornado in a bottle:</b>  <br>
+                Fill your container about ¾ full with clean water. <br>
+                Add a squirt of dish soap, as well as your glitter or food coloring, if desired <br>
+                Seal the container tightly. <br>
+                Move the bottle rapidly in a circular motion. After a few seconds, you should see the water begin swirling. Stop, and watch your tornado!
+               
+
+              <br> <br>
+             <i>
+
+            <b class="w3-text-yellow"> Materials and Preparation:</b> <br>
+             - A jar or a bottle. <br>
+              - Water. <br>
+              - Dish soap. <br>
+              - Food coloring. or Glitter <br>
+          
+           
+
+            </i>
+
+            </p>
+            </li>
+            <li class="li-list">
+              <p class="p-content">
+                <strong class=" w3-amber">
+                  Weather Bingo</strong><br>
+                <br>
+                <img src="/weather/pics/Weather-Bingo_Page_08.png"  width="200" height="200">
+              <br>
+              <br>
+              Create bingo cards with weather-related words such as 'cloud', 'rain', 'snow', 'tornado', and 'sun'.( included in the PPT file). <br>
+              it's a good idea to have a few extra cards in case some students don't have a partner. <br>
+
+                
+              <br>
+             <b>Procedure:</b>  <br>
+              - Divide the class into pairs. <br>
+              - Give each pair a bingo card. <br>
+              - Tell the students to take turns calling out the weather-related words on their cards. <br>
+              - The first student to get five words in a row wins. <br>
+
+
+
+              </p>
+
+
+            </li>
+            <li class="li-list">
+              <p class="p-content">
+                <strong class=" w3-amber">
+                  Memory Game</strong><br> <br>
+                <img src="/weather/pics/The Weather.png"  width="300" height="200" alt="">
+           
+           
+              <br>
+              <br>
+              - Put up pictures of different kinds of weather and have the kids take turns trying to remember which pictures are associated with each kind of weather. <br>
+              - For example, you can put up a picture of a sunny day and a picture of a rainy day. <br>
+              - The kids will have to remember which picture is associated with which kind of weather. <br>
+              For older students, you can also have them  match the pictures with the correct weather words. <br>
+              <br>
+
+
+                    </p>
+            </li>
+         
+            <li class="li-list">
+              <p class="p-content">
+                <strong class=" w3-amber">
+                  Roll The Dice</strong><br> <br>
+                <img src="/weather/pics/weather-dice.png"  width="200" height="200" alt="">
+           
+           
+              <br>
+              <br>
+              -  Create a dice with pictures of different kinds of weather on each side. <br>
+              -  Have the kids roll the dice and then say the weather that is associated with the picture that they rolled. <br>
+              -  For example, if they roll a picture of a sunny day, they should say "It's sunny today." <br>
+               * The dice cube is included in the <a href="./worksheets/worksheet.html">worksheet file. </a>
+              <br>
+
+
+                    </p>
+            </li>
+          </ul>
+
+        </li>
+<br>
+<br>
+<hr>
+        <li class="li-list">
+          <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue">
+                <a href="/weather/game.html#game1" target="_blank" style="color: #fcb900;"> <strong
+                    tooltip-title="Click to play the game">
+                    The weather<br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/weather/pics/weather-game.png" alt="the weather" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                This is a simple game for learning English. The target language is weather vocabulary,
+                countries and weather related phrases; the aim of the game is to have student exposed
+                to weather language and to practice phrases related to weather For example, the
+                vocabulary items "Sunny", "Rain", "Hot" and "Cold", and weather phrases such as "in
+                England it Will be cold" or "in France it Will be sunny".
+                There are 4 sets of content, with each using different kinds of weather vocabulary and
+                countries from different parts of the world. The first group uses the basic weather items
+                nd some countries from Europe. The second set is weather describing how hot it is and
+                uses countries from Asia_ The third set is more obscure weather vocabulary, such as
+                "drizzle" and It uses directions on a map of North America. Finally, the last set uses a
+                map of the whole world and involves disaster weather vocab such as "Flood" and
+                "Forest fire".
+              </article>
+              </p>
+
+            </li>
+
+
+           
+          </ul>
+
+        </li>
+
+      </ul>
+
+
+
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap Up</h3>
+      <p class="p-content">
+
+
+        create a weather forecast! Have the kids brainstorm different types of weather they know, like sunny, rainy, windy, snowy, etc. Then, have each student pick one type of weather and draw it or talk about it in front of the class. <br>
+
+        <br>
+      </p>
+
+
+      <h3 style="color:#fbfdfe; font-weight:900" class="w3-border-bottom  ">GoodBye song</h3>
+
+
+      <h3 class="p-content" style="color:green;"> Last part is singing a goodbye song </h3>
+      <div class="goodbye w3-codespan w3-black w3-border">
+
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/videos/posters/bye-bye-super-simple.png" data-setup='{}'>
+          <!-- <source src="https://youtu.be/PraN5ZoSjiY" type='video/mp4' /> -->
+          <source src="/videos/Bye Bye Goodbye.mp4" type='video/mp4' />
+          
+        </video>
+<!-- Goodbye song from youtube -->
+       
+      </div>
+      <div class="download-btn">
+        <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+
+          <button class="fa fa-download" id="downloads"> Download</button></a>
+        </a>
+
+        </p>
+      </div>
+  </div>
+      </div>
+<div class="related-resources">
+        <hr>
+        <!--List of Related Resources -->
+        <!-- list of links to worksheets and game.html -->
+        <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3> <hr>
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content"> <a href="/weather/worksheets/worksheet.html" style="color: #fcb900;">
+                <strong>Weather Worksheets </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/weather/game.html" style="color: #fcb900;"> <strong> Weather
+                  online games </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/seasons/seasons.html" style="color: #fcb900;"> <strong> Seasons
+                   </strong> </a> </p>
+           
+          </li>
+
+          <li class="li-list">
+            <p class="p-content">
+              <a href="/countries/countries.html" style="color: #fcb900;">
+                <strong> Countries </strong> 
+              </a>
+            </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content">
+              <a href="/Adjectives/adjectives.html" style="color: #fcb900;">
+                <strong> Adjectives </strong> 
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+ 
+    <br>
+    <br>
+    <br>
+    <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="weather/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="weather/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="weather/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="weather/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="weather/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script>
+      // on windows load 
+      window.addEventListener("load", function ()
+      {
+
+        var btn = document.querySelector(".ppp");
+        var btn2 = document.querySelector(".ppp-2");
+        var div = document.querySelector(".hidden-div");
+        var div2 = document.querySelector(".hidden-div-2");
+
+
+
+        // get hoverable 
+        var hoverable = document.querySelector(".hoverable");
+        // get rules-hide
+        var rulesHide = document.querySelector(".rules-hide");
+        // add event on hover show the .rules-hide
+        hoverable.addEventListener("mouseover", function ()
+        {
+          if (rulesHide.style.display === "none")
+          {
+            rulesHide.style.display = "block";
+          }
+          else
+          {
+            rulesHide.style.display = "none";
+          }
+        });
+      });
+
+    </script>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../game.html">Most Popular</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+
+        ESL Clup Copyright © 2021 ESL Clup - All rights reserved
+        <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="/scripts/main.js"></script> -->
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+  <script src="/dark-mode-tailwindcss/src/js/index.js"></script>
+  <script src="/scripts/topbutton.js"></script>
+  <!-- <script src="/scripts/dark.js"></script> -->
+
+</body>
+
+</html>

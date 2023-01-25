@@ -1,0 +1,43 @@
+p {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body {
+  font-family: Roboto, Arial, sans-serif;
+  padding-top: 80px;
+  /* padding-left: 80px; */
+  /* background-color:#c6c0c9; */
+  background-color: #F6F2F2, #D9D9D9;
+  background-repeat: no-repeat;
+  margin:auto;
+  font-family: var(--body-font);
+  color: var(--body-color);
+  background-image: url(/logos/class.jfif);
+  background-image: url(/logos/class-ob.jfif);
+  background-position:top;
+  background-size: contain;
+  background-repeat:repeat;
+  background-blend-mode: color-burn;
+  background-color: rgba(18, 21, 39, 0.86);
+
+
+}
+/* Apply the filter directly on the body tag */
+/* CSS */
+
+.button-20:focus:not(:focus-visible) {
+outline: 0;
+}
+
+:root {
+  --body-font: "Inter", sans-serif;
+  --theme-bg: #1f1d2b;
+  --body-color: #808191;
+  --button-bg: #353340;
+  --border-color: rgb(128 129 145 / 24%);
+  --video-bg: #252936;
+  --delay: 0s;
+}

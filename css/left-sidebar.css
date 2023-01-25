@@ -1,0 +1,211 @@
+
+ .menu {
+	filter: url('#shadowed-goo');
+}
+.menu-item, .menu-open-button {
+	background: #0a0f0f;
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	margin-left: -40px;
+	position: absolute;
+	top: 10px;
+	color: white;
+	text-align: center;
+	line-height: 80px;
+	transform: translate3d(0, 0, 0);
+	transition: transform ease-out 200ms;
+	z-index: 1;
+}
+
+.menu-open {
+	display: none;
+}
+.hamburger {
+	width: 25px;
+	height: 3px;
+	background: white;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -12.5px;
+	margin-top: -1.5px;
+	transition: transform 200ms;
+}
+.hamburger-1 {
+	transform: translate3d(0, -8px, 0);
+}
+.hamburger-2 {
+	transform: translate3d(0, 0, 0);
+}
+.hamburger-3 {
+	transform: translate3d(0, 8px, 0);
+}
+.menu-open:checked + .menu-open-button .hamburger-1 {
+	transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+	transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+	transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+.menu {
+	position: absolute;
+	left: 50px;
+	margin-left: -50px;
+	padding-top: 20px;
+	padding-left: 50px;
+	width: auto;
+	height: 200px;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: left;
+	z-index: 1;
+	position: fixed;
+}
+
+.menu-item:hover {
+	background: white;
+	color: #00bcd4;
+	z-index: 1;
+	/* show tooltip on hover */
+	
+
+}
+/* .menu-item:nth-child(3) {
+	transition-duration: 180ms;
+}
+.menu-item:nth-child(4) {
+	transition-duration: 180ms;
+}
+.menu-item:nth-child(5) {
+	transition-duration: 180ms;
+}
+.menu-item:nth-child(6) {
+	transition-duration: 180ms;
+} */
+.menu-open-button {
+	z-index: 2;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-duration: 400ms;
+	transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+	cursor: pointer;
+}
+.menu-open-button:hover {
+	transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+.menu-open:checked + .menu-open-button {
+	transition-timing-function: linear;
+	transition-duration: 200ms;
+	transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+.menu-open:checked ~ .menu-item {
+	transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {
+	transition-duration: 190ms;
+	transform: translate3d(0, 65px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+	transition-duration: 290ms;
+	transform: translate3d(0, 135px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+	transition-duration: 390ms;
+	transform: translate3d(0, 205px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+	transition-duration: 490ms;
+	transform: translate3d(0, 275px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+	transition-duration: 590ms;
+	transform: translate3d(0, 400px, 0);
+}
+
+
+.fa-home, .fa-file-word, .fa-gamepad, .fa-heart{
+   /* align them in the middle of  menu-item*/
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+ }
+[data-title]:hover:after {
+   opacity: 1;
+   transition: all 0.1s ease 0.5s;
+   transform: translate3d(0,0,0);
+   visibility: visible;
+   background: #00bcd4;
+   padding: 0.3em;
+   transition: .3s linear;
+   top:-10%; left:115%;
+   /* animation: odsoky 1s ease-in-out infinite  alternate; */
+   text-align: center;
+   
+   
+}
+[data-title]:after {
+   content: attr(data-title);
+   color: #fcfaff;
+   position: absolute;
+   left: 100%; 
+   /* top: 100%; */
+   margin-bottom: 1em;
+   padding: 1em;
+   background-color: #000;
+   font-size: 1.1em;
+   font-weight: 600;
+   line-height: 1.6;
+   text-align: left;
+   white-space: nowrap;
+   transform: translate(-50%, 1em);
+   transition: all .15s ease-in-out;
+   border-radius: 5px;   
+   box-shadow: 0px 0px 4px #222;  
+   visibility: hidden;
+   z-index: 9999;
+}
+
+[tooltip-title]:hover:after {
+   opacity: 1;
+   visibility: visible;
+   background: #00bcd4;
+   padding: 0.6em;
+/* 	
+   transform: translate(50%, -1em); */
+   /* transition: all 0.1s ease 0.5s;
+   transform: translate3d(0,0,0); */
+   visibility: visible;
+
+   animation: odsoky 5s ease-in-out alternate-reverse ;
+   text-align: center;
+
+}
+[tooltip-title]:after {
+   content: attr(tooltip-title);
+   visibility: hidden;
+   width: fit-content;
+   background-color: black;
+   color: rgb(7, 6, 6);
+   text-align: center;
+   border-radius: 6px;
+   padding: 15px 0;
+   left: 15%; 
+   
+   margin-bottom: 1em;
+   
+   border-bottom: 1px dotted black;
+   font-size: 0.7em;
+   /* Position the tooltip */
+   position: absolute;
+   z-index: 1;
+   opacity: 0;
+
+}
+/* @keyframes odsoky {
+
+} */

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> Daily Routine</title>
+  <!-- get daily favicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/"> <!-- get Numbersfavicon -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/main-small.css">
+  <!-- <link rel="stylesheet" href="/css/mdb.dark.min.css"> -->
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css" />
+  <!-- <link rel="stylesheet" href="/css/darkmode.css" /> -->
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get tailwind css -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- get tailwind script -->
+
+
+
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- daily-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/daily/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/daily/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i>
+    </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+
+  <!-- Page Content -->
+  <div
+    class="w3-padding-large w3-text-theme bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
+    id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container w3-center w3-black" id="home">
+      <h1 class="w3-jumbo w3-text-sand w3-animate-opacity"><span class="w3-hide-small">
+
+          <!-- fa daily icon -->
+          <!-- school icon -->
+          <img src="/daily/pics/brush your teeth.png" alt="" srcset="" width="40px">
+          <img src="/daily/pics/get dressed.png" alt="" srcset="" width="40px">
+          Daily Routine
+          <img src="/daily/pics/clean.png" alt="" srcset="" width="40px">
+          <img src="/daily/pics/do home work.png" alt="" srcset="" width="40px">
+      </h1>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Daily Routine | Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+
+
+        Daily routine is a set of activities that people do on a regular basis at the same time every day,
+        such as eating and sleeping, going to work or school.
+        It is important to teach your students about daily routines.
+        You can use it as a daily part of your upcoming lessons. and in circle time for daily chit chat with your
+        students.
+
+        <br>
+
+      </p>
+
+      <!-- scrip show/hide this div onclick -->
+
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+
+        .logo-new {
+          width: 80px;
+        }
+
+        .w3-codespan {
+
+          padding: 10px;
+          color: rgb(104, 90, 90);
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-video {
+            left: 25%;
+          }
+
+          .w3-codespan {
+            padding: 5px;
+            color: black;
+          }
+        }
+      </style>
+
+      <!-- list a href to the parts of this lesson -->
+
+
+      <div class="w3-row w3-center">
+        <h4 class="w3-pink"> Feel free to hob between the lesson plan sections</h4>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">1</span><br>
+          <a href="daily/daily.html#intro" class="w3-button w3-black">Presentation</a>
+        </div>
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">2</span><br>
+          <a href="daily/daily.html#practice" class="w3-button w3-black">Practice</a>
+        </div>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">3</span><br>
+          <a href="daily/daily.html#games" class="w3-button w3-black">Production</a>
+        </div>
+      </div>
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber" id="warmup">Warm Up</h3>
+      <p class="p-content " id="warmup">
+
+        - Ask your students to stand up and start exercising. <br>
+        - Start with simple exercises like jumping, running, and stretching. <br>
+        - Then add daily routine instructions, and act it out, <br> Example: <br>
+        wash your hands / face , brush your teeth, comb your hair, put on your clothes,
+        eat breakfast, go to school, go to bed, etc. <br>
+        - It is important to ask your students to repeat after you, not just acting out <br>
+        - continue for 5 minutes. <br>
+
+        <br>
+
+        <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber" id="intro">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content w3-sepia-max w3-content ">
+
+        This lesson we will use a song to introduce daily routine. <br>
+        - Ask your students to sing the song with you. <br>
+        - After listening to the song, ask your students to tell you what they know about daily routine. <br>
+
+        <br>
+
+        <strong class="w3-border w3-padding-small">Remember to play the video in full screen mode.</strong> <br> <br>
+
+        <strong class="w3-lime"> What do you do everyday? By Maple Leaf </strong>
+        <br>
+
+      <div class="video" id="warmup">
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/daily/pics/everyday.png" data-setup='{
+        
+          }'>
+          <source src="/videos/What do you do every day-.mp4" type='video/mp4' />
+        </video>
+        <div class="download-video">
+          <a href="/videos/What do you do every day-.mp4" class="previous">
+
+            <button class="fa fa-download" id="downloads"> Download </button></a>
+          </a>
+        </div>
+
+        <div class="refer-div">
+          <a href="../teach_songs.html" tooltip-title="Check Here">
+            <strong style="font-size: 26px; color:#e9b9c9;">
+              <span class="p-content"> How to teach a song </span></strong>
+          </a>
+
+        </div>
+      </div>
+      <hr>
+      <br>
+      <br>
+      <h4 class="w3-lime">
+        Check the <a href="/daily/daily.html#flashcards">flashcards</a> <i class="fa fa-arrow-down"></i>
+        below to help you.
+      </h4>
+      </p>
+
+      <p class="p-content">
+
+      </p>
+      <hr> <br>
+
+      <span class="w3-text-deep-orange">
+        <strong>Flashcards</strong> of this lesson.
+      </span> <br>
+
+      <Strong class="w3-text-aqua w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+        <div
+          style="position: relative; width: 90%; height: 0; padding-top: 70.7071%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&resid=C2C04CBE74AA957%2150543&authkey=AKv-khRpvmAeleA&em=2"
+            allowfullscreen="allowfullscreen" allow="fullscreen"> </iframe>
+        </div>
+        <div class="download-custom">
+          <a href="/daily/docs/daily Flashcards.pptx" class="previous "><button class="fa fa-download"
+              id="downloads">
+              Download </button>
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        .hoverable [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 60%;
+          top: 100%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber" id="practice">Practice</h1>
+
+      <!-- <p class="p-content">
+    Practice is more about games and activities that help the students to practice the topic. <br>
+    Here are some activities and games that you can use in this lesson:
+  </p>  
+     -->
+      <p class="p-content">
+
+        To practice the daily routine, we can use the flashcards <i class="fa fa-arrow-up fa-2x" aria-hidden="true" "></i> .
+        Next show them Flashcards 
+        one by one and act it out.
+        Ask the students to do the same. <br>
+      Then play " Pass the Flashcards". The students will pass the flashcards to each other and say the sentence. <br>
+          <button class=" hoverable w3-teal" tooltip-title="show / hide"><strong>Types of practice</strong> </button>
+          <br>
+          <ul class="list-rules rules-hide w3-codespan w3-border w3-padding-small p-content w3-black"
+            style="display: none; word-spacing: -5.5px;">
+            <li class="li-list">
+              <p class="p-content"> Isolation practice : isolation practice as mentioned in the activity <br> above
+                (Asking
+                and
+                practicing one by one).</p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Pair practice : where the students will work in pairs. example:<br>
+                <strong>Student A:</strong> what do you? <br>
+                <strong>Student B:</strong> I am a doctor.
+              </p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Group practice :
+                as the name suggests is where the students will work in groups. group games , group activities, and
+                group
+                points. </p>
+            </li>
+
+            You can apply the practice in any order you want. <br>
+            But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+            practice.
+            <br>
+          </ul>
+
+          <p class="w3-codespan w3-padding-small p-content">
+
+            TPR :
+            <br>
+            - <strong class="w3-justify w3-text-theme">
+              Brush your teeth :
+            </strong>
+            Act like tou are holding a toothbrush and brush your &nbsp; teeth.<br>
+            - <strong class="w3-justify w3-text-theme">
+              Wake up :
+            </strong>
+            Stretch your arms and yawn like you are waking up. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Take a nap :
+            </strong>
+            Lie down on the floor and pretend to sleep, or lean your &nbsp; &nbsp; head on the table and close your
+            eyes. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Take a shower :
+            </strong>
+            Pretend to wash your hair and body. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Eat breakfast :
+            </strong>
+            Pretend to eat a sandwich.
+          </p>
+          <hr>
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities that you can use in this lesson:
+          </h4>
+      </p>
+      <!-- <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Production</h3><br> -->
+      <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+
+
+            <li class="li-list">
+              <p class="p-content"><strong class=" w3-amber">
+                  Daily routine Game</strong>
+              <div class="embed " id="flashcards" style="margin-left: 0; margin-left: 0;">
+                <iframe loading="lazy"
+                  style=" width: 500PX; height: 300px; border: 0; padding-bottom: 0; padding-left: 0; margin-left: 0;"
+                  src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&amp;resid=C2C04CBE74AA957%2123085&amp;authkey=AKlhZhUVRS1JIIQ&amp;em=2&amp;wdAr=1.3333333333333333"
+                  allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+
+              </div>
+              <br>
+              - Spin and say. <br>
+              </p>
+            </li>
+          </ul>
+          <hr style="width:100%">
+        </li>
+
+
+
+        <!-- Main li -->
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+          <!-- add ul with 3 li include images inside -->
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong>Pogo Drill</strong> </p>
+              <!-- Get a banana image -->
+
+              <img src="/daily/pics/2kids.jpg" alt="Charades" width="300" height="200">
+              <p class="p-content w3-codespan w3-border w3-pink w3-Roboto w3-padding-16">
+
+                How to play ?
+                <br>
+                - Two students sit facing each other. <br>
+                - The first student says a sentence. <br>
+                - The second student says the sentence again and adds a new sentence. <br>
+                - The first student says the sentence again and adds a new sentence. <br>
+
+                Example: <br>
+                - Student A: I wake up at 6:00 am. <br>
+                - Student B: I wake up at 6:00 am. I wash my hands. <br>
+                - Student A: I wake up at 6:00 am. I wash my hands. I brush my teeth. <br>
+                - Student B: I wake up at 6:00 am. I wash my hands. I brush my teeth. I eat breakfast. <br>
+                and so on. <br>
+
+                <q> It could be challenging at first but it will get easier with practice.
+                  To make it easier, allow them to use the flashcards.
+
+
+                </q>
+
+              </p>
+
+              <hr>
+            </li>
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong>Mix and Match</strong> </p>
+              <img src="/daily/pics/mix-match.png" width="200" height="150">
+
+              <p class="p-content w3-codespan  w3-border w3-pink w3-Roboto w3-padding-16">
+                <!-- crete ol list with a type -->
+
+                How to play ?
+                <br>
+                Mix and Match involves having a number of words written on cards, with
+                picture cards that correspond. <br> - In other words, if the word on the
+                card is "brush your teeth", you should have another card with a picture of
+                the word. It is usually best to have no more than 20 matching pairs. <br>
+                - The words and pictures are randomly placed, face side down, on a board or on
+                the ground. <br> - Invite a learner to turn over only two cards, instructing the leaner
+                that if he or she finds a matching pair, he or she can continue to look for more
+                pails. Learners must then remove a single picture or word and try to match it <br>
+
+              </p>
+
+
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong> Flyswatter </strong> </p>
+              <!-- Get a banana image -->
+
+              <picture>
+                <img src="/daily/pics/flyswatter.png" alt="Join the Dots" width="300" height="200"><br>
+              </picture>
+              <p class="p-content">
+
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                - Divide students into two teams. Each team is given a single marker and takes turns choosing a leader,
+                who is handed a flyswatter. <br>
+                - The leader and group must listen carefully to a definition of a word. A number of words are written
+                randomly across the board. <br>
+                - Tell students that the leader must choose the correct word by “swatting” the correct word faster than
+                his or her opponent. <br>
+                - The first person to swat the word receives a point for his/her team.
+              </article>
+
+
+              <!-- roll the dice picture -->
+              <br>
+              </p>
+
+              <hr>
+            </li>
+          </ul>
+        </li>
+
+        <li class="li-list">
+          <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue">
+                <a href="/daily/game.html#game1" target="_blank" style="color: #fcb900;"> <strong
+                    tooltip-title="Click to play the game">
+                    Monster Vocab <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/daily/pics/monster-vocab.png" alt="Fast Phrases" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                Monster Vocab is a fun way to practice vocabulary. <br>
+                - 30 questions divided in to 2 parts.
+                <br>
+
+                - First part, click on the correct picture that matches the word. <br>
+                - Second part, drag the picture into the correct box that matches the word. <br>
+
+              </article>
+              </p>
+
+            </li>
+
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue">
+                <a href="/daily/game.html#game3" target="_blank" style="color: #fcb900;"> <strong
+                    tooltip-title="Click to play the game">
+                    Concentration<br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/daily/pics/conentration.png" alt="Concentration" width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                - The aim is match words and images by revealing corresponding pairs. <br> - The items
+                are hidden behind squares and are revealed when clicked. <br> - To match all the pairs,
+                you have to concentrate and remember where the items are.
+              </article>
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue"> <a href="/daily/game.html#game2"
+                  target="_blank" style="color: #fcb900;"> <strong tooltip-title="Click to play the game">
+                    Wack a mole <br></strong><br>
+                  <picture tooltip-title="Click to play the game">
+                    <img src="/daily/pics/wack-amole.png" alt="Wack a mole " width="300" height="200"><br>
+                  </picture>
+                </a>
+                <br>
+
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                - Wack a mole is a game where you have to hit the mole with a hammer. <br>
+                - The mole will pop up from the holes and you have to hit the correct one with the hammer. <br>
+
+              </article>
+              </p>
+            </li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+
+
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap Up</h3>
+      <p class="p-content">
+
+        <strong class="w3-text-black w3-codespan w3-gray w3-padding-small">
+          "Simon Says" </strong> <br>
+        - Ask students to share their favorite part of the lesson. <br>
+        - Play a game of “Simon Says” to end the lesson. <br>
+        Example: Simon says, “Brush your teeth.” <br>
+        , then say “Brush your teeth.” with out saying “Simon says” <br>
+        an so on. <br>
+
+        <br>
+
+
+      </p>
+
+
+      <h3 style="color:#fbfdfe; font-weight:900" class="w3-border-bottom  ">GoodBye song</h3>
+
+
+      <h3 class="p-content" style="color:green;"> Last part is singing a goodbye song </h3>
+      <div class="goodbye w3-codespan w3-black w3-border">
+
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/zoo/pics/itistime.png" data-setup='{}'>
+          <source src="/videos/Time to Say Good-bye.mp4" type='video/mp4' />
+        </video>
+
+      </div>
+      <div class="download-btn">
+        <a href="/videos/Time to Say Good-bye.mp4" class="previous">
+
+          <button class="fa fa-download" id="downloads"> Download</button></a>
+        </a>
+
+        </p>
+      </div>
+    </div>
+      </div>
+<div class="related-resources">
+        <hr>
+        <!--List of Related Resources -->
+        <!-- list of links to worksheets and game.html -->
+        <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content"> <a href="/daily/worksheets/worksheet.html" style="color: #fcb900;">
+                <strong>Daily routine Worksheets </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/daily/game.html" style="color: #fcb900;"> <strong> daily
+                  online games </strong> </a> </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content"> <a href="/places/places.html" style="color: #fcb900;"> <strong> Work places
+                </strong> </a> </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content">
+              <a href="/Adjectives/adjectives.html" style="color: #fcb900;">
+                <strong> Adjectives </strong> 
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="daily/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="daily/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="daily/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="daily/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="daily/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script>
+      // on windows load 
+      window.addEventListener("load", function ()
+      {
+
+        var btn = document.querySelector(".ppp");
+        var btn2 = document.querySelector(".ppp-2");
+        var div = document.querySelector(".hidden-div");
+        var div2 = document.querySelector(".hidden-div-2");
+
+
+
+        // get hoverable 
+        var hoverable = document.querySelector(".hoverable");
+        // get rules-hide
+        var rulesHide = document.querySelector(".rules-hide");
+        // add event on hover show the .rules-hide
+        hoverable.addEventListener("mouseover", function ()
+        {
+          if (rulesHide.style.display === "none")
+          {
+            rulesHide.style.display = "block";
+          }
+          else
+          {
+            rulesHide.style.display = "none";
+          }
+        });
+      });
+
+    </script>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../game.html">Most Popular</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+
+        ESL Clup Copyright © 2021 ESL Clup - All rights reserved
+        <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="/scripts/main.js"></script> -->
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+  <script src="/dark-mode-tailwindcss/src/js/index.js"></script>
+  <script src="/scripts/topbutton.js"></script>
+  <!-- <script src="/scripts/dark.js"></script> -->
+
+</body>
+
+</html>

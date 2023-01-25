@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\video.css" />
+    <link rel="stylesheet" href="css\header.css" />
+    <link rel="stylesheet" href="css\general.css" />
+    <link rel="stylesheet" href="css\game.css" />
+    <link rel="stylesheet" href="css\sidebar.css" />
+    <link rel="stylesheet" href="css\navbar.css" />
+    <title>game</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+  <body class="game">
+    <header class="header">
+      <!-- <div class="mobile-container"> -->
+      <div class="left-section">
+        <div class="top-nav">
+          <a href="#home" class="active"></a>
+        <img src="header/hamburger-menu.svg" class="menu" onclick="myFunction()" />
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+        <img src="header/youtube-logo.svg" class="logo" />
+      </div>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+<!-- Simulate a smartphone / tablet -->
+    
+      <div class="middle-section">
+        <input type="search" placeholder="Search" class="search" />
+        <button class="search-button" onclick="search() " id="search-button">
+          <img src="header/search.svg" class="search-icon" title="Search" />
+          <div class="tooltip">Search</div>
+        </button>
+
+        <button class="voice-search-button">
+          <img src="header/voice-search-icon.svg" class="voice-icon" />
+          <div class="tooltip">Seach with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-tooltip">
+          <img src="header/upload.svg" class="upload" />
+          <div class="tooltip">Create</div>
+        </div>
+
+        <div class="apps-tooltip">
+          <img src="header/youtube-apps.svg" class="apps" />
+          <div class="tooltip">Apps</div>
+        </div>
+
+        <div class="icon-counter">
+          <img src="header/notifications.svg" class="notification-icon" />
+          <div class="tooltip">Notifications</div>
+          <div class="notification-number">1</div>
+        </div>
+        <div class="my-channel-too">
+          <img src="header/my-channel.jpeg" class="my-channel" title="lOGO" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar div -->
+    <nav class="sidebar">
+           
+        <div class="home"  onclick="window.location.href='index.html';">
+            <img src="sidebar/home.svg" class="upload" >
+        <div>Home</div> 
+      </div>
+      
+       <div class="home" onclick="window.location.href='home.html';">
+          <img src="sidebar/explore.svg" class="upload"> 
+          <div>Videos </div>
+      </div>
+       
+
+      <div class="home"onclick="window.location.href='game.html';" >
+        <img src="sidebar/subscriptions.svg" class="upload" />
+        <div>Games</div>
+      </div>
+
+      <div class="home">
+        <img src="sidebar/originals.svg" class="upload" />
+        <div>Originals</div>
+      </div>
+      <div class="home">
+        <img src="sidebar/youtube-music.svg" class="upload" />
+        <div>Music</div>
+      </div>
+      <div class="home">
+        <img src="sidebar/library.svg" class="upload" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="iframe-container">
+        <iframe
+          class="fullscreen"
+          src="https://www.gamestolearnenglish.com/questions/embed.html"
+          scrolling="no"
+          allowfullscreen
+        >
+        </iframe>
+        <button onclick="makeFullScreen()">Make Full Screen</button>
+      </div>
+    </div>
+
+    <script>
+   
+    //   document.querySelector('button').addEventListener('onclick', makeFullScreen)
+    </script>
+
+  <script src="/scripts/topbutton.js"></script>
+</body>
+</html>

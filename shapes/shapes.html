@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/SearchResultsPage" lang="en">
+
+<head>
+  <title> Shapes</title>
+  <!-- get shapes favicon -->
+
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/"> <!-- get Numbersfavicon -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+  <!-- <link rel="stylesheet" href="Numbers\css\Numbers.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/main-small.css">
+  <!-- <link rel="stylesheet" href="/css/mdb.dark.min.css"> -->
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/left-sideSmall.css" />
+  <link rel="stylesheet" href="/css/footer-other.css" />
+  <!-- <link rel="stylesheet" href="/css/darkmode.css" /> -->
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get tailwind css -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- get tailwind script -->
+
+
+
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+
+
+<!-- shapes-->
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
+    <a href="/shapes/worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i
+        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="../shapes/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i>
+    </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+
+  </nav>
+  <!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event)
+    {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside)
+      {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+
+  <!-- Page Content -->
+  <div
+    class="w3-padding-large w3-text-theme bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
+    id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container w3-center w3-black" id="home">
+      <h1 class="w3-jumbo w3-text-sand w3-animate-opacity"><span class="w3-hide-small">
+
+          <!-- fa shapes icon -->
+          <!-- school icon -->
+     
+         <!-- SHAPES icon -->
+          <i class="fas fa-shapes w3-text-orange"></i>
+          <!-- fa spring icon -->
+     
+
+          Shapes
+       <!-- summer icon -->
+       <i class="fas fa-shapes w3-text-orange"></i>
+          <!-- fa autumn icon -->
+     
+     
+        </span> 
+         
+      </h1>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey">
+        <p class="p-content"> Shapes | Lesson Plan </p>
+      </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">
+         Shapes are everywhere around us. Shapes are 2 sided shapes  like digons and 3 sided shapes like pyramids, cones, and triangles . Shapes are also 4 sided shapes like rectangles, squares, and 5 sided shapes like pentagons. 6 sided shapes like hexagons, 7 sided shapes like heptagons, 8 sided shapes like octagons   or no sides at all like circles and ovals.
+
+         And the list goes on. You will teach the shapes according to your students level.
+         This Lesson plan will help you to teach the shapes to your students.
+        <br>
+
+      </p>
+
+      <!-- scrip show/hide this div onclick -->
+
+      <style>
+        .download-video {
+          left: 35%;
+
+        }
+
+        .logo-new {
+          width: 80px;
+        }
+
+        .w3-codespan {
+
+          padding: 10px;
+          color: rgb(104, 90, 90);
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-video {
+            left: 25%;
+          }
+
+          .w3-codespan {
+            padding: 5px;
+            color: black;
+          }
+        }
+      </style>
+
+      <!-- list a href to the parts of this lesson -->
+
+
+      <div class="w3-row w3-center">
+        <h4 class="w3-pink"> Feel free to hob between the lesson plan sections</h4>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">1</span><br>
+          <a href="shapes/shapes.html#intro" class="w3-button w3-black">Presentation</a>
+        </div>
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">2</span><br>
+          <a href="shapes/shapes.html#practice" class="w3-button w3-black">Practice</a>
+        </div>
+
+        <div class="w3-quarter w3-section w3-border">
+          <span class="w3-xlarge">3</span><br>
+          <a href="shapes/shapes.html#games" class="w3-button w3-black">Production</a>
+        </div>
+      </div>
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline w3-text-amber" id="warmup">Warm Up</h3>
+      <p class="p-content " id="warmup">
+
+        <!-- shapes warmup -->
+        - This warm up song will help your students remember the shapes, and get them ready for the lesson. <br>
+        <br>
+
+        <strong class="w3-lime"> The Shapes song ...| by super simple  </strong>
+        <div class="video" id="warmup">
+          <video width="700" height="388" id="my-video"
+            class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+            poster="/videos/posters/shapes-song.png" data-setup='{}'>
+            <source src="/videos/Shapes-Song.mp4" type='video/mp4' />
+          </video>
+          <div class="download-video">
+            <a href="/videos/Shapes-Song.mp4" class="previous">
+  
+              <button class="fa fa-download" id="downloads"> Download </button></a>
+            </a>
+          </div>
+  
+          <div class="refer-div">
+            <a href="../teach_songs.html" tooltip-title="Check Here">
+              <strong style="font-size: 26px; color:#e9b9c9;">
+                <span class="p-content"> How to teach a song </span></strong>
+            </a>
+  
+          </div>
+        </div>
+
+
+        <br>
+
+        <hr width="100%">
+      <h1 style="color:#fbfdfe; font-weight:900" class="w3-text-amber" id="intro">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content w3-sepia-max w3-content ">
+
+       1 - Start by introducing the shapes using pictures or visuals. <br>   2-  Draw the shapes on the board or show pictures of objects that are shaped like the shape you are teaching.
+
+
+
+        <br>
+
+      </p>
+
+      <p class="p-content">
+        Questions: <br>
+        - What is the shape of the sun? <br>
+        - What shape is it ? <br>
+        - How many sides does it have? <br>
+
+
+      </p>
+      <hr> <br>
+
+      <span class="w3-text-deep-orange">
+        <strong>Flashcards</strong> of this lesson.
+      </span> <br>
+
+      <Strong class="w3-text-aqua w3-hover-text-amber"> Click on the flashcards to preview before download.</Strong>
+      <div class="embed" id="flashcards">
+        <div
+          style="position: relative; width: 90%; height: 0; padding-top: 70.7071%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&resid=C2C04CBE74AA957%2150568&authkey=AHyD1MYgltn3O9E&em=2"
+            allowfullscreen="allowfullscreen" allow="fullscreen"> </iframe>
+        </div>
+
+
+        <div class="download-custom">
+          <a href="/shapes/docs/Shapes & objects .pptx" class="previous "><button class="fa fa-download"
+              id="downloads">
+              Download</button>
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <style>
+        .download-custom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 35%;
+
+        }
+
+        .refer-div {
+          position: absolute;
+          left: 70%;
+          top: 100%;
+          bottom: 0;
+          border-bottom: 2px solid #e9b9c9;
+        }
+
+        .refer-div [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 70%;
+          top: 97%;
+        }
+
+        .hoverable [tooltip-title]:after {
+          content: attr(tooltip-title);
+          left: 60%;
+          top: 100%;
+        }
+
+        @media only screen and (max-width: 720px) {
+          .download-custom {
+            display: flex;
+            justify-content: center;
+            top: 320px;
+            left: 120px;
+          }
+
+          .download-video {
+            left: 110px;
+          }
+        }
+      </style>
+
+
+      <br>
+
+      <h1 style="color:#fbfdfe; font-weight:900" class="underline  w3-text-amber" id="practice">Practice</h1>
+
+      <!-- <p class="p-content">
+    Practice is more about games and activities that help the students to practice the topic. <br>
+    Here are some activities and games that you can use in this lesson:
+  </p>  
+     -->
+      <p class="p-content">
+
+        
+        Have the students practice saying the names of the shapes out loud. Make sure to provide positive feedback for their efforts.
+
+
+          <button class=" hoverable w3-teal" tooltip-title="show / hide"><strong>Types of practice</strong> </button>
+          <br>
+          <ul class="list-rules rules-hide w3-codespan w3-border w3-padding-small p-content w3-black"
+            style="display: none; word-spacing: -5.5px;">
+            <li class="li-list">
+              <p class="p-content"> Isolation practice : isolation practice as mentioned in the activity <br> above
+                (Asking
+                and
+                practicing one by one).</p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Pair practice : where the students will work in pairs. example:<br>
+                <strong>Student A:</strong> what do you? <br>
+                <strong>Student B:</strong> I am a doctor.
+              </p>
+            </li>
+            <li class="li-list">
+              <p class="p-content"> Group practice :
+                as the name suggests is where the students will work in groups. group games , group activities, and
+                group
+                points. </p>
+            </li>
+
+            You can apply the practice in any order you want. <br>
+            But we recommend that you start with the isolation practice, then the pair practice, and finally the group
+            practice.
+            <br>
+          </ul>
+
+          <!-- <p class="w3-codespan w3-padding-small p-content">
+
+            TPR :
+            <br>
+            - <strong class="w3-justify w3-text-theme">
+              Brush your teeth :
+            </strong>
+            Act like tou are holding a toothbrush and brush your &nbsp; teeth.<br>
+            - <strong class="w3-justify w3-text-theme">
+              Wake up :
+            </strong>
+            Stretch your arms and yawn like you are waking up. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Take a nap :
+            </strong>
+            Lie down on the floor and pretend to sleep, or lean your &nbsp; &nbsp; head on the table and close your
+            eyes. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Take a shower :
+            </strong>
+            Pretend to wash your hair and body. <br>
+            - <strong class="w3-justify w3-text-theme">
+              Eat breakfast :
+            </strong>
+            Pretend to eat a sandwich.
+          </p> -->
+          <hr>
+          <h4 class="w3-text-pink w3-text-hover-amber">
+            Below are some activities that you can use in this lesson:
+          </h4>
+      </p>
+      <!-- <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Production</h3><br> -->
+      <h3 style="font-weight:900" class="underline  w3-text-amber" id="games">Games</h3><br>
+      <strong class="w3-text-teal"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an
+          activity to ESL Students</a></strong>
+      <br>
+      <br>
+
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong>
+            <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            </p>
+
+
+            <li class="li-list">
+              <p class="p-content">
+                <a href="/shapes/docs/😶.pptx">
+                <strong class=" w3-amber" tooltip-title="Download">
+                  What is the shape?</strong> <br>
+                <br>
+                <img src="/shapes/pics/😶.gif" tooltip-title="Download"  alt="" width="300" height="200">
+              </a> <br>
+              <br>
+              - Click on the shape that matches the description.
+
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content">
+                <a href="/shapes/docs/shapes-angry-bird-game-animated.ppt">
+                <strong class=" w3-amber" tooltip-title="Download">
+                  Shapes Angry BirdS</strong> <br>
+                <br>
+                <img src="/shapes/pics/shapes-angry-bird-game-animated.png" tooltip-title="Download"  alt="" width="300" height="200">
+              </a> <br>
+              <br>
+              - Click the correct shapes to advance to the next level.  
+              </p>
+            </li>
+        
+
+          <li class="li-list">
+              <p class="p-content">
+               
+                <a href="/shapes/docs/shapes-ppt.ppt"> 
+                <strong class=" w3-amber" tooltip-title="Download">
+                  How Many shapes?</strong> <br>
+                <br>
+                <img src="/shapes/pics/shapes-ppt.png" tooltip-title="Download"  alt="" width="300" height="200">
+              </a> <br>
+              <br>
+              - Count the objects that matches the shape.
+              </p>
+            </li>
+          </ul>
+
+        </li>
+          <hr style="width:100%">
+     
+        <!-- Main li -->
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+          <!-- add ul with 3 li include images inside -->
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong> “I Spy” </strong> </p>
+              <!-- Get a banana image -->
+
+              <img src="/shapes/pics/Ispy.png" alt="i spy" width="300" height="200">
+              <p class="p-content w3-codespan w3-border w3-pink w3-Roboto w3-padding-16">
+
+                Have the students stand up and walk around the classroom. Tell them to look for a shape. When they find
+                it, they should say “I spy with my little eye, something that is a circle.” Then they should sit down.
+
+                <br>
+
+              </p>
+
+              <hr>
+            </li>
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong>Draw It</strong> </p>
+              <img src="/shapes/pics/toddler-girl-practice-drawing.png" width="300" height="200">
+
+              <p class="p-content w3-codespan  w3-border w3-pink w3-Roboto w3-padding-16">
+                <!-- crete ol list with a type -->
+
+                Have the students draw their own shapes. Give them paper and markers and have them draw shapes and write the names of the shapes next to them.
+
+              </p>
+            </li>
+
+            <li class="li-list">
+              <p class="p-content" style="color: #fcb900;"> <strong> Shape Sorting </strong> </p>
+    
+              <img src="/shapes/pics/shapesorting.png" alt="Join the Dots" width="300" height="200">
+              <p class="p-content">
+
+              <article class="w3-codespan w3-border w3-pink w3-Roboto w3-padding-16 p-content">
+                -  Give the kids a pile of 
+                <a href="/shapes/shapes.html#flashcards" rel="noopener noreferrer">cards</a>
+                with a variety of shapes and ask them to sort them into the correct shape piles. 
+              <br>  - Or you can draw the shapes on the floor, then collect some objects from around the classroom and ask the students to sort them into the correct shape piles.
+              </article>
+
+
+              <!-- roll the dice picture -->
+              <br>
+              </p>
+
+              <hr>
+            </li>
+          </ul>
+        </li>
+
+        <li class="li-list">
+          <p class="p-content"><strong id="online-games">Online Games.</strong> </p>
+
+          <ul class="list-rules">
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue">
+
+                <a href="/shapes/game.html#game1" target="_blank" style="color: #fcb900;"> <strong
+                    tooltip-title="Click to play the game">
+                    Labelled Diagram<br></strong><br>
+                    <picture tooltip-title="Click to play the game">
+              <img src="/shapes/pics/labelled-diagram.png"  alt="Labelled Diagram" width="300" height="200">
+            </picture>
+                </a>
+                <br>
+                <br>
+                - Drag and drop pins to their correct places.
+              </p>
+
+            </li>
+
+
+            <li class="li-list">
+              <p class="p-content w3-text-gray w3-hover-text-light-blue">
+                <a href="/shapes/game.html#game2" target="_blank" style="color: #fcb900;"> <strong
+                    tooltip-title="Click to play the game">
+                    Random Wheel<br></strong><br>
+                    <picture  tooltip-title="Click to play the game">
+              <img src="/shapes/pics/random-wheel.png" alt="Random Wheel" width="300" height="200">
+            </picture>
+                </a>
+                <br>
+      
+              </p>
+            </li>
+
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+
+
+      <h3 style="color:#fbfdfe; font-weight:900" class="underline">Wrap Up</h3>
+      <p class="p-content">
+
+        <strong class="w3-text-black w3-codespan w3-padding-small">
+        End the lesson with a fun activity like a shape scavenger hunt. Place shapes around the classroom and have students find them and match them to the shapes you’ve taught.
+      </p>
+      <h3 style="color:#fbfdfe; font-weight:900" class="w3-border-bottom  ">GoodBye song</h3>
+
+
+      <h3 class="p-content" style="color:green;"> Last part is singing a goodbye song </h3>
+      <div class="goodbye">
+
+        <video width="700" height="388" id="my-video"
+          class="video-js vjs-theme-city vjs-big-play-centered data-vjs-player" controls preload="auto"
+          poster="/videos/posters/see-u-later.png" data-setup='{}'>
+          <source src="/videos/See You Later - Goodbye Song.mp4" type='video/mp4' />
+        </video>
+
+      </div>
+      <div class="download-btn">
+        <a href="/videos/The Shape Song #1 - Super Simple Songs.mp4" class="previous">
+
+          <button class="fa fa-download" id="downloads"> Download</button></a>
+        </a>
+
+        </p>
+      </div>
+
+    </div>
+    
+    </div>
+<div class="related-resources">
+      <hr>
+      <!--List of Related Resources -->
+      <!-- list of links to worksheets and game.html -->
+      <h3 style="color:#fbfdfe; font-weight:900">Related Resources</h3>
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <a href="/shapes/worksheets/worksheet.html" style="color: #fcb900;">
+              <strong>Shapes Worksheets </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/shapes/game.html" style="color: #fcb900;"> <strong> shapes
+                online games </strong> </a> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="/Weather/weather.html" style="color: #fcb900;"> <strong> The weather Lesson Plans
+              </strong> </a> </p>
+        </li>
+
+        <li class="li-list">
+          <p class="p-content">
+            <a href="/clothes/clothes.html" style="color: #fcb900;">
+              <strong> Clothes Lesson Plans </strong> 
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr width="100%">
+
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      
+    </button>
+  </div>
+
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
+    // $('.three:gt(1)').hide()
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="shapes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="shapes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="shapes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="shapes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="shapes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script>
+      // on windows load 
+      window.addEventListener("load", function ()
+      {
+
+        var btn = document.querySelector(".ppp");
+        var btn2 = document.querySelector(".ppp-2");
+        var div = document.querySelector(".hidden-div");
+        var div2 = document.querySelector(".hidden-div-2");
+
+
+
+        // get hoverable 
+        var hoverable = document.querySelector(".hoverable");
+        // get rules-hide
+        var rulesHide = document.querySelector(".rules-hide");
+        // add event on hover show the .rules-hide
+        hoverable.addEventListener("mouseover", function ()
+        {
+          if (rulesHide.style.display === "none")
+          {
+            rulesHide.style.display = "block";
+          }
+          else
+          {
+            rulesHide.style.display = "none";
+          }
+        });
+      });
+
+    </script>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../game.html">Most Popular</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+
+        ESL Clup Copyright © 2021 ESL Clup - All rights reserved
+        <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="/scripts/main.js"></script> -->
+  <script src="/scripts/video-js.js"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+  <script src="/dark-mode-tailwindcss/src/js/index.js"></script>
+  <script src="/scripts/topbutton.js"></script>
+  <!-- <script src="/scripts/dark.js"></script> -->
+
+</body>
+
+</html>
