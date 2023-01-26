@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Zoo</title>
+   <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- w3school css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- get style sheet from css folder -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" media="screen and (max-width: 500px)" href="../css/main-small.css">
+  <link rel="stylesheet" href="/css/footer-other.css"/>
+  <link rel="stylesheet" href="/css/left-sidebar.css"/>
+  <link rel="stylesheet" media="screen and (max-width: 500px)" href="/css/left-sideSmall.css"  />
+  <!-- fonts and icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="/css/video-js.css" rel="stylesheet" />
+  <!-- City -->
+  <link href="/css/forest-video.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link
+  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+  rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+  body{
+    background-color: #111827;
+  }
+</style>
+<body class="w3-black">
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+   
+    <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x" ></i></a>
+    <a href="./worksheets/worksheet.html" class="menu-item" data-title="Worksheets"> <i class="fa fa-file-word fa-2x"></i> </a>
+    <a href="./game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
+    <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
+    
+  </nav>
+<!-- close menu-items by clicking oustide -->
+  <script>
+    document.addEventListener('click', function (event) {
+      var isClickInside = document.querySelector('.menu').contains(event.target);
+      if (!isClickInside) {
+        document.getElementById('menu-open').checked = false;
+      }
+    });
+
+  </script>
+
+
+  <!-- Page Content -->
+  <main>
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+
+      <h1 class="w3-jumbo"><span class="w3-hide-small">
+        🦁&#x1F418; Zoo	🐅🐍
+        <!-- zoo entity -->
+
+        </span></h1>
+      <!-- <p style="font-size:25px ;"><strong>Esl Lesson plan</strong> </p> -->
+      <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+      <h2 class="w3-text-light-grey"> Zoo | A Complete Lesson Plan</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <!-- React component to show a quote inside a div -->
+
+      <p class="p-content"> 
+        Children love learning about animals, especially ones which are big, scary, colorful, wild, and potentially dangerous!.
+        You’ll find that they are more than eager to learn the English vocabulary needed to talk about it. There are hundreds of language focus points you can develop when doing topics on zoo animals
+      </p>
+      <!-- introduce the topic h1 -->
+      <h1 class="w3-text-light-grey">Introduction</h1>
+      <hr style="width: 30%;">
+      <p class="p-content">
+        <!-- Advice  -->
+        <span class="w3-text-deep-orange">Never rush in introducing a topic, Just slow down and elicit what they know
+          about the topic</span><br>
+        <br> <strong>What noises do they make?</strong> <br> 
+        You may find that where you teach the animals make different noises to English ones! 
+        This is generally true of farm and domestic animals (cats, dogs, cows, ducks, etc) 
+        but see if any zoo animals make different noises. The children will love making the noises to compare to English zoo animal noises.
+      </p>
+
+      <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
+        <style> </style> -->
+      <h3 style="color:#fbfdfe; font-weight:900">Warm Up</h3>
+      <hr style="width: 20%;">
+      <p class="p-content">
+        AS Always, start your lesson with a warm up activity, this will help your students to get ready for the lesson.
+        Examples of warm up activities are:
+        <ul class="li-list" id="inline">
+          <li>
+            Review <a href="../animal/animal.html" class="link"  > <strong tooltip-title="Click to redirect to the topic">Farm Animals</strong> </a></li> 
+          <li>Play a game</li> 
+          <li>Do a song</li>
+          <li>Do a dance</li>
+          <li>Do a quiz</li><br>
+          <li>Do a role play</li>
+        </ul>
+   
+      </p>
+
+      <!-- div with embed class and a relative position add 30px margin-top-->
+      <!-- add hr-->
+      <hr style="width: 20%;">
+      <p class="p-content">
+        Here is a video to help you with the warm up activity.
+      </p>
+      <h3 style="color:#53d8cd; font-weight:900">Walking in the jungle </h3> 
+
+      <div class="video">
+        <video width="700" height="388"  id="my-video"
+        class="video-js vjs-theme-city vjs-big-play-centered" controls preload="auto" 
+        poster="./pics/walking.png" data-setup='{}'>
+          <source src="/videos/Walking In The Jungle.mp4" type='video/mp4' />
+
+        </video>
+       
+      <div class="download-video">
+        <a href="/videos/Walking In The Jungle.mp4" class="previous">
+
+          <button class="fa fa-download" id="downloads"> Download</button></a>
+        </a>
+      </div>
+      </div>
+      <!-- if screen width 500px change video class from  vjs-layout-medium to vjs-layout-x-small -->
+<!-- <hr> -->
+      <style>
+        ul#inline li{
+          display: inline;
+          margin-right: 10px;
+          /* add a square before every li */
+          content: "\25CF";
+          
+        }
+        /* .download-video{
+          
+          left: 400px;
+        } */
+        @media screen and (max-width: 500px) {
+          .empty{
+            height: 30px;
+          }
+          .download-btn {
+
+            margin-top: 0;
+          }
+          .download-video{
+            margin-bottom: 50px;
+          }
+        }
+      </style>
+   <!-- <div style="margin-top: 80px; margin-bottom: 50px;"> <a href="#">TEACH SONGS </a> -->
+        <p class="p-content">
+          <hr style="width: 100%;margin-top: 80px;">
+          <strong style="color: #fcb900;"> "in the below powerpoint you will find everything you need" </strong> <br> 
+
+          <strong>Also an audio song <strong>-"Look! Look! what do you see?"-</strong> included in the ppt.</strong><br>
+          </p>
+      <!-- </div> -->
+      <div class="embed" id="flashcards" title="flashcards">
+        <iframe src="https://onedrive.live.com/embed?cid=0C2C04CBE74AA957&resid=C2C04CBE74AA957%2150501&authkey=AFsnKMFNhec5xe4&em=2" width="702" height="388" frameborder="0" scrolling="no"></iframe>
+    
+      <div class="download-video">
+        <a href="/zoo-animals/docs/zoo-animal.pptx" class="previous "><button class="fa fa-download" id="downloads">
+            download </button>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="empty" style="height: 10px;"></div> -->
+      <div class="practice p-content">
+      <h3 style="color:#fbfdfe; font-weight:900">Practice</h3>
+      <hr style="width: 15%;">
+
+      <p class="p-content">
+        Teaching Zoo is fun and easy. You can use many activities to teach Zoo. As first time Practice you
+        can use the following activities:
+        <!-- list -->
+      <ul class="list-rules">
+
+        <li>
+          <span class="main-list"> Practice vocabularies</span>
+
+          <ol type="A" class="list-rules">
+            <li>
+              <span class="main-list">Always teach vocabulary in context
+              </span>
+              <p class="p-content">
+                You’ve probably heard this again and again (especially from me!) but it can’t be emphasized enough. The first step in helping students remember vocabulary is teaching it in context. This means you should never provide a list of isolated, and least of all unrelated words, for them to learn. Words should be introduced within the context of a story, everyday situation, sport, activity or any context your students are familiar with.
+              </p>
+            </li>
+            <li>
+              <span class="main-list">Teach vocabulary in chunks
+              </span>
+              <p class="p-content">
+                When teaching vocabulary, it’s important to teach it in chunks. This means that you should teach vocabulary in groups of words that are related to each other. For example, if you’re teaching the vocabulary for a zoo, you should teach the words for the animals, the zookeeper, the zoo, etc. This will help students remember the words more easily.
+              </p>
+            </li>
+            <li>
+              <span class="main-list">Practice out loud
+              </span>
+              <p class="p-content">
+                Quite often we give students vocabulary exercises to complete, and while this is important to help them practice writing the new words, studies also show that practicing words out loud is more effective in improving retention than practicing them silently. Apparently, the ear is an important ally when it comes to remembering vocabulary.              </p>
+            </li>
+            <li>
+              <span class="main-list">
+                <span class="main-list">Teach vocabulary through games 
+                
+              </span>
+              <p class="p-content">
+                When teaching vocabulary, it’s important to teach it through games. This means that you should teach vocabulary through games, including through games such as charades, hangman, and so on.
+              </p>
+            </li>
+            <li>
+              <span class="main-list"> Make the words memorable </span>
+              <p class="p-content">
+
+                By definition, “memorable” event or occasion is easily remembered. By the same token, you can make new words more “memorable” by using techniques that engage students and get their attention.
+
+Try this: Introduce vocabulary related to feelings by making exaggerated faces. It will make your students laugh, and chances are they’ll remember them more. The same thing will happen if you draw funny pictures on the board or use realia. These types of experiences are memorable for students, which makes the vocabulary you use easier to remember as well.
+
+                      </p>
+             
+
+            </li>
+          </ol>
+          
+        </li>
+        <p class="p-content"> <blockquote style="font-size:20px; color:#a45dd4"> <strong> "Remember to correct their pronunciation mistakes
+              as it happens, specially the first ones" </strong></blockquote> </p>
+
+        <li> <span class="main-list">Practice making full sentences</span>
+          <p class="w3-text-teal">For example, “It's a tiger”, “It's a giraffe”, etc.</p>
+        </li>
+
+        <li> <span class="main-list">Practice making questions</span>
+          <p class="w3-text-teal">For example, “What is your favorite animal?” “what sound does it make?”
+
+            "Can you describe your favorite animal?"
+          </p>
+        </li>
+      </ul>
+   
+      <br>
+      </p>
+    </div>
+      <style>
+        .main-list {
+          margin: 0;
+          padding: 0;
+          font-size: medium;
+          color: #fcb900;
+        }
+        .embed {
+          margin-bottom: 90px;
+        }
+        .p-content{
+          margin-top:0;
+          padding-bottom:0;
+        }
+      </style>
+      <!-- using TPR -->
+      <!-- h2 -->
+      <h2 style="color:#fbfdfe; font-weight:900">TPR</h2>
+      <hr style="width: 15%;">
+      <!-- reminder -->
+      <p class="p-content" id="reminder">
+        <strong>Reminder:</strong> TPR stands for Total Physical Response. It is a method of teaching that uses physical
+        actions to help students learn. <br>
+        It is a very effective method for teaching young learners. <br>
+        <strong>
+          But, Remember the students are going to imitate you. So:
+          you have to be very clear and precise. <br>
+          Be dramatic, but not over-dramatic. Be slow but not too slow <br></strong>
+      </p>
+      <!-- STYLE reminder -->
+<hr style="width: 15%;">
+      <h4 class="w3-text-aqua ">Some TPR You can use to teach Zoo:</h4>
+      
+      <!-- create A list of TPR actions for transportation -->
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> Tiger: <span style="color:yellowgreen ;"> 
+
+              Act like a tiger. Roar, growl, and move your arms like a tiger. </span>
+
+              </span>
+              </p>
+
+        </li>
+        <li class="li-list">
+          <p class="p-content">Giraffe: <span style="color:yellowgreen ;">
+              Act like a giraffe. Stretch your neck and move your arms like a giraffe. </span>
+            </span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Monkey: <span style="color:yellowgreen ;"> 
+                Jump and put your hands under your armpits.
+          </span>
+        </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Penguin: <span style="color:yellowgreen ;">
+          Stick your arms to your sides with hands open to the outside and walk like a penguin.
+          </span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content">Snake: <span style="color:yellowgreen ;">
+            Put your left hand under your right elbow and make your right hand's fingers look like a snake's head and do the hissing sound of a snake.
+          </span></p>
+        </li>
+      </ul>
+
+
+
+      <h3 style="color:#fbfdfe; font-weight:900">Games</h3>
+      <hr style="width: 13%;">
+      <strong style="color: orange;"> <a href="../explain-agame.html" class="how-to-explain">How to explain a game or an activity to ESL Students</a></strong>
+      <br>
+      <br>
+      
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <strong id="online-games"> PPT Games</strong> 
+          <!-- add ol with 3 li include links to powerpoint files -->
+          <ul class="list-rules">
+            <span style="color: #5f5259;"> <strong> &nbsp; You can edit the games to fit into your lesson <br></strong>
+            </span> <br> &nbsp; Click on the game name to download the file </p>
+        </li>
+
+        <li class="li-list">
+          <p class="p-content"> <a href="#flashcards" style="color: #fcb900;"> <strong>
+                What can you see? </strong> </a> &nbsp; <br>
+            <!-- add note "You can edit the game as you please"  -->
+            This game is included in the <a href="#flashcards" style="color: #fcb900;">PPT flashcards</a> <br>
+            It is basically A GOOGLE eyes or a telescope on click it will move to a part of the zoo animals flashcard 
+            
+            let the students guess what animal is it. <br>
+          </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="#flashcards" style="color: #fcb900;"><strong tooltip-title="Included in the ppt Click to download ">
+            Building a chain
+
+          </strong><br>
+        <picture>
+         
+          <img src="./pics/chain.png" alt="chain" srcset="" width="300" height="200">
+        
+        </picture>
+        </a> &nbsp; <br> "It's a chain game
+          ,first student will say the name of an animal and the next student will say the name of the animal previous student plus another animal and so on" <br>
+          For example: I see a tiger, I see a tiger and a giraffe, I see a tiger and a giraffe and a monkey, I see a tiger and a giraffe and a monkey and a penguin, and so on. <br>
+          
+        </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="./docs/match-the-animals-game.pptx" style="color: #fcb900;">
+            <strong  tooltip-title="Click to download the game">
+            Match the animals game</strong><br>
+            <picture tooltip-title="Click to download the game">
+              <img src="./pics/match-the-animals.png"  width="300" height="200"><br>
+
+            </picture>
+            
+          </a><br> 
+            This game is two parts : Match the pictures and match the words. <br>
+            Click on "SHOW/HIDE" button to show the animals cards.Give the students 1 minute to memorize the cards. 
+            Then click on "SHOW/HIDE" button again to hide the cards. <br>
+            After that ask the students to come to the screen and click on the cards that match the animals. <br>
+            If the students click on the wrong card, Click the cards again to hide it. <br>
+
+            
+        </p>
+        </li>
+
+      </ul>
+      <hr style="width:100%">
+      </li>
+      <li class="li-list">
+        <p class="p-content"> <strong id="online-games"> In-Class Games</strong></p>
+        <!-- add ul with 3 li include images inside -->
+        <ul class="list-rules">
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Animals Race </strong> </p>
+            <img src="./pics/children-acting.jpg" alt="Memory Game" width="300" height="200">
+            <p class="p-content">  Kids love this game, you can divide the class into teams then pick a student from each team, tell them a name of an animal and they have to race to the front of the class and act like the animal. 
+              The first team to finish wins. <br>
+              For example: "Monkey, go!" they will run to the front of the class and act like a monkey. <br>
+               
+              </p>
+          
+            <hr>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Zoo Animals Play-doh </strong> </p>
+            <img src="./pics/playdoh.jpg" alt="Memory Game" width="300" height="200">
+            <p class="p-content"> You'll need different colored play-doh. Sit down the students 
+              in groups and show them how to make simple models of 
+              animals. Let everyone make the animals that they want and 
+              as they are doing so circulate and ask lots of questions (e.g. 
+              What’s that? Is it a lion? What noise does a lion make? etc.).
+              <!-- aNOTHER APPROACH -->
+     
+            </p>
+          </li>
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Who Am I? </strong> </p>
+            <!-- <img src="/food/pics/Plastic-food.jpg" alt="pig" width="300" height="200"> -->
+            <p class="p-content">
+              Stick an animal picture onto each child’s back without them finding out what animal they are.
+            To find out what animal they are, they will need to ask “yes” or “no” questions. e.g., “do I live in the forest” "How many legs do i have?" <br>
+            </p>
+          </li>
+
+          <li class="li-list">
+            <p class="p-content" style="color: #fcb900;"> <strong> Draw and Color</strong> </p>
+            <img src="./pics/snake-animal-coloring.webp" alt="snake" width="300" height="200">
+            <p class="p-content">
+              For younger learners you can give them a coloring page and ask them to color the animal. <br>
+              For older learners you can give them a blank paper and ask them to draw a zoo animal. <br>
+              You can also ask them to write the name of the animal under the drawing. <br>
+
+            </p>
+          </li>
+        </ul>
+<hr style="width:100%">
+      </li>
+      <li class="li-list">
+        <p class="p-content"><strong id="online-games">Online Games.</strong>
+            <!-- add ul with 3 li include links to online games -->
+
+      </li>
+      <ul class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> <a href="./game.html#game1" target="_blank" style="color: #fcb900;"> <strong>
+                Animals Mystery <br></strong><br>
+                 <img src="./pics/mystery.png" alt="mystery" width="300" height="200"><br></a><br>
+                
+                The target language
+                is question sentences about animals such as 'Can it fly?' or 'How many legs
+                does it have?'. Users can practice making a range of different question forms
+                by clicking or tapping on word boxes. This is made into a game by having
+                users ask questions about a hidden animal with a view to guessing which
+                animal it is. When users appropriately form questions, they are given a
+                simple response with an accompanying image to further clarify the meaning
+                of the question and response.
+                
+                
+              </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="./game.html#game2" target="_blank" style="color: #fcb900;"> <strong> Monster-vocab
+            <br></strong><br>
+              <img src="./pics/monster-vocab.png" alt="monster-vocab" width="300" height="200"><br> </a> <br>
+            It's a multiple choice game, the students will have to choose the correct answer. <br>
+            The target language is vocabulary related to animals. <br>
+            You can mute the audio for older learners. <br>
+            
+            </p>
+        </li>
+      </ul>
+      </ul>
+
+      <h3 style="color:#fbfdfe; font-weight:900">Wrap up</h3>
+      <hr style="width: 15%;">
+
+      <p class="p-content">
+        It is important to make the students happy before you leave the class. <br>
+        That's what the wrap up activity for. As for this topic you can do  
+        <strong> "An animal chase"</strong><br>Pick 4 or 5 students and tell them to stand up. 
+        Then show them a picture of an animal ask them to guess what animal it is.
+        and chase them  around the classroom, acting like the animal.
+        and so on until you finish with all the students. <br>
+        <br>
+
+      <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3>
+      <hr style="width: 23%;">
+      <p class="p-content">
+        <!-- Emphasis the importance of the below line -->
+        <strong style="color: #fcb900;"> "A GoodBye song is a very important part of your lesson, Make time for it."
+        </strong>.
+      </p> 
+
+      <h3> <strong> Time to Say Good-bye
+      </strong> </h3>
+   
+      <div class="video" id="video">
+        <video width="600" height="388"  id="my-video" class="video-js vjs-theme-city vjs-big-play-centered " controls preload="auto" 
+        poster="/zoo-animals/pics/itistime.png" data-setup="{}">
+          <source src="/videos/Time to Say Good-bye.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="download-video">
+          <a href="/videos/Time to Say Good-bye.mp4" class="previous "><button class="fa fa-download" id="downloads">
+              download </button>
+          </a>
+        </div>
+      </div>
+   <div class="empty" style="height: 100px;"></div>
+<!-- about end -->
+    </div>
+    
+    <!-- script the video to play on hover -->
+
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      <hr style="margin: 0; padding:3px; color: #521b30; width: 100%;">
+      <span id="line">Top</span>
+    </button>
+    <!-- style myBtn to appear to the far right of tha main div -->
+<!-- main end -->
+  </div>
+  <!-- the right section -->
+  <div class="right-side">
+
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+      </div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
+
+      </div>
+    </main>
+
+      <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../game.html">Most Popular</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        MoESL Copyright © 2021 MoESL - All rights reserved 
+        </div>
+        </div>
+        </footer>
+    
+        <style>
+        /* .darkmode--activated footer{
+          mix-blend-mode: difference;
+            color: #fff;
+          } */
+          body.darkmode--activated{
+            background-color: rgb(209, 13, 13);
+            
+          }
+        </style>
+ 
+ <script src="/scripts/main.js"></script>
+ <script src="/scripts/video-js.js"></script>
+ <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+<script src="/scripts/topbutton.js"></script>
+<script src="/scripts/darkmode.js"></script>
+<script src="/scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+</body>
+
+</html>
