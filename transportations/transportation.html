@@ -107,10 +107,10 @@
             <video  class="video-js vjs-theme-city vjs-big-play-centered vjs-fluid"  
             controls preload="auto" poster="/transportations/pics/transportation.webp" data-setup="{}" >
             <source
-            src="/videos/Transportation song - car bus taxi - The Wheels on the Bus.mp4"  type="video/mp4">
+            src="/videos/Transportation.mp4"  type="video/mp4">
           </video>
             <div class="download-video" id="down-video">
-              <a href="/videos/Transportation song - car bus taxi - The Wheels on the Bus.mp4" class="previous "> 
+              <a href="/videos/Transportation.mp4" class="previous "> 
                 
                 <button class="fa fa-download" id="downloads"> Download</button></a>
               </a>
@@ -349,7 +349,8 @@
   </script>
   <button class="myTopBtn">
     <!-- add an icon up -->
-    <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i><hr style="margin: 0; padding:3px; color: #521b30; width: 100%;">
+    <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+    <hr style="margin: 0; padding:3px; color: #521b30; width: 100%;">
     
   </button>
  <!-- style myBtn to appear to the far right of tha main div -->
@@ -382,12 +383,6 @@
   </div>
  </div>
 
-  <script>
-    // $('.three:gt(1)').hide()
-  </script>
-  <!-- latest posts section -->
-  
-
 <footer>
   <div class="footer  w3-container">
   <div class="row">
@@ -410,7 +405,12 @@
   <div class="w3-row">
    
   ESL Clup Copyright © 2021 ESL Clup - All rights reserved 
-  <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new">
+  <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo-new" alt="logo">
+  <style>
+    .logo-new{
+      width: 40px;
+    }
+  </style>
   </div>
   </div>
   </footer>
@@ -420,6 +420,6 @@
 <script src="/scripts/main.js"></script> 
  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 
-<script src="/scripts/topbutton.js"></script>
+<script defer src="/scripts/topbutton.js"></script>
 </body>
 </html>

@@ -15,7 +15,6 @@
             max-width: 100%;
         }
 
-
        
 
         :root {
@@ -858,7 +857,7 @@
             width: 100%;
         }
 
-        .chat-header {
+        .chat-header , msg__name video-p-name a{
             display: flex;
             align-items: center;
             padding: 20px 0;

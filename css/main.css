@@ -388,8 +388,8 @@ hr{
   align-items: center;
   /* make #id on the bottom */
   justify-content: center;
-  position: fixed;
-  bottom: 20px;
+  position: absolute;
+  /* bottom: 120px; */
   right: 290px;
   z-index: 500;
   border: none;
