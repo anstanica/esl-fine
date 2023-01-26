@@ -229,7 +229,7 @@ $(function () {
   });
 
   $(".transport").on("click", function () {
-    loadContent("/transportaions/transportation.html");
+    loadContent("/transportations/transportation.html");
   });
 
   $(".verbs").on("click", function () {

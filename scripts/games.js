@@ -309,7 +309,7 @@ $(".related-resources").remove();
      
   //   });
   //   $(".zoo").on("click", function () {
-  //     loadContent("/zoo/game.html");
+  //     loadContent("/zoo-animals/game.html");
   //     $("title").text($(this).text() + "Worksheets");
   //   });
   

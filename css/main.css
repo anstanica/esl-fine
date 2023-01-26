@@ -84,7 +84,7 @@ h6 {
 /* Set the width of the sidebar to 120px */
 /* .w3-sidebar {width: 110px;background: #222;} */
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 140px;
+#main {margin-left: 130px;
 z-index: 1000;
 
 }
