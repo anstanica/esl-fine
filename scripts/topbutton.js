@@ -3,7 +3,7 @@
 $(function () {
   // var btn = $('.myTopBtn');
   $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 300) {
       $(".myTopBtn").show();
     } else {
       $(".myTopBtn").hide();

@@ -19,6 +19,7 @@ $(function () {
   
   
     if ($windowWidth < 768) {
+      $(".top-hr").css("display", "none");
       $(".sidebar").css("display", "none");
       $(".m-icon").css("display", "block");
       $(".button-wrapper").css("right", "0");
@@ -32,12 +33,13 @@ $(function () {
       $(".m-icon").css("display", "none");
       $(".side-title").html("Menu");
       $(".m-icon").css("top", "17px");
+      $(".top-hr").css("display", "none");
     } else {
       $(".button-wrapper").css("right", "460px");
       $(".sidebar").css("display", "block");
       $(".m-icon").css("display", "none");
       $(".side-title").html("Menu");
-      $(".m-icon").css("top", "17px");
+      // $(".m-icon").css("top", "17px");
     }
   });
   
@@ -52,24 +54,26 @@ $(function () {
   
   // .m-icon onclick display sidebar
   $(".m-icon").on("click", function () {
-    $(".sidebar").toggle();
+    $(".sidebar").toggle('fast');
+
+    
     if (".m-icon"){
      
      
       $(".logo-expand").hide();
-      $(".side-title").html("");
-      $(".m-icon").css("left", "15px");
-      $(".m-icon").css("top", "0");
+      $(".side-title").html("ESL CLUP");
+      $(".m-icon").css("left", "5px");
+      $(".m-icon").css("top", "21px");
     }
   //   
 //   github pull command
     
     else {
-     
+    //  ONCLICK again 
       $(".logo-expand").show();
       $(".side-title").html("Menu");
-      $(".m-icon").css("left", "0");
-      $(".m-icon").css("top", "0");
+      $(".m-icon").css("left", "15PX");
+      // $(".m-icon").css("top", "0");
     }
   });
   
@@ -111,10 +115,13 @@ $(function () {
     });
   });
   
-  // can you refactor this code to make it more readable and reusable?
-  
-    // search the parent folder "youtuube" and find the the directory that matches the class
 
+  //  get the data-topic attribute from the sidebar link
+  // var topic = $(this).attr("data-topic");
+  // if the .sidebar-link  = "live" or "community" or "competition" or "tutorial" show a message to the user "coming soon"
+  
+
+    // search the parent folder "youtuube" and find the the directory that matches the class
 
 
     // function for loading content

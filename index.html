@@ -24,7 +24,7 @@
 
 	<link rel="stylesheet" href="css/footer.css" />
 
-	<link rel="stylesheet" href="search.css" />
+	<!-- <link rel="stylesheet" href="search.css" /> -->
 
 	<link rel="stylesheet" media="screen and (max-width: 500px)" href="/css/left-sideSmall.css" />
 	<!-- fonts -->
@@ -58,35 +58,13 @@
 				  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
 			  </button>
 			</div>
-			<!-- script -->
-
-			<!-- <a href="index.html"><img src="/logos/Black and White Vintage Circle Coffee Shop Logo (2).svg"
-					class="logo"></a> -->
-			<!-- script img onclick return to index.html -->
-
+		
 		</div>
 
 
 		<div class="middle-section">
 		
-			<!-- <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 z-auto focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-				<svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-				<svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-			</button> -->
-			<!-- 	li Watch Now
-	li Movies
-	li TV Shows
-	li Sports
-	li Kids
-	li Library -->
-			<!-- <ul class="menu-bar">
-				<li>Watch Now</li>
-				<li>Movies</li>
-				<li>TV Shows</li>
-				<li>Sports</li>
-				<li>Kids</li>
-				<li>Library</li>
-			</ul> -->
+	
 
 <nav class="bg-white h-15 w-6 px-2 left-0 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full  top-0  border-b border-gray-200 dark:border-gray-600" id="nav-left">
 	<div class="flex items-center justify-between left-0 mr-5" id="center-div">
@@ -177,7 +155,7 @@
 		</div>
 		<div class="search-btn-div w3-diplay-topright md:bg-white">
 			<!-- <input type="search" placeholder="Search" class="search" data-search/> -->
-			<button class="search-button md:bg-gray-900 md:border-0 focus-visible) hover:text-white" onclick="overlayShow()" id="search-button">
+			<button class="search-button md:bg-gray-900 md:border-0 focus-visible) hover:text-white">
 				<!-- <img src="header/search.svg" class=" search-icon" title="Search">  -->
 				<!-- fa search icon  -->
 				<i class="fa fa-search" style="font-size:24px"></i>
@@ -185,49 +163,29 @@
 				<div class="tooltip">Search</div>
 
 			</button>
+			<!-- add input -->
+			<input type="text" placeholder="Search" id="search-final" data-search autocomplete="on">
 		</div>
 
 <style>
 	.search-btn-div, .search-button{
-		top: 20px;
+		top: 10px;
+		z-index: 1000;
+	}
+	#search-final{
+		/* on top of everything else */
+		z-index: 999;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+
 
 	}
 </style>
 		
 
-		<div id="myOverlay" class="overlay" style="display: none;">
-			<!-- <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span> -->
-			<main class="notmain">
-				<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-				<div class="search-box">
 
-					<div class="search-icon"><i class="fa fa-search search-icon"></i></div>
-					<form action="" class="search-form">
-						<input type="text" placeholder="Search" id="search" data-search autocomplete="on">
-					</form>
-					<svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
-						viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
-						<path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
-						<path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
-					</svg>
-					<div class="go-icon"><i class="fa fa-arrow-right"></i></div>
-
-					<div class="user-cards search-results" data-user-cards-container>
-					
-					</div>
-
-					<!-- <ul class="search-results"></ul> -->
-
-					<template data-user-template>
-						<div class="card">
-							<div class="card-header" data-header></div>
-							<div class="card-body" data-body></div>
-						</div>
-					</template>
-				</div>
-		</div>
+	
 		</main>
 		</div>
 
@@ -235,88 +193,6 @@
 		
 	</header>
 
-	<!--   
-    <div class="accordion">
-
-     
-      <input id="default" type="radio" name="rgroup" checked="checked" />
-       
-     <label class= "outer">
-       <input class="inner" type="radio" name="rgroup" />
-       <b>Menu</b>
-       <u aria-hidden="true" class="icon-reorder"></u>
-       <label for="default"></label>
-       <ul>
-         <li><span aria-hidden="true" class="icon-envelope"></span> Mail</li>
-         <li><span aria-hidden="true" class="icon-picture"></span>Pictures</li>
-         <li><span aria-hidden="true" class="icon-film"></span>Videos</li>
-         <li><span aria-hidden="true" class="icon-twitter"></span>Twitter</li>
-         <li><span aria-hidden="true" class="icon-user"></span> Friends</li>
-         <li><span aria-hidden="true" class="icon-cogs"></span>Settings</li>
-         <li><span aria-hidden="true" class="icon-remove"></span>Logout</li>
-       </ul>
-     </label>
-     
-     </div> -->
-
-	<!-- Sidebar div -->
-	<!-- <aside class="w3-teal W-64 w3-sidebar w3-border-right" id="sidebar" style="display:none" aria-label="Sidebar">
-
-
-		<button type="button" onclick="w3_close()"
-			class="text-blue-900 bg-transparent border border-blue-900 hover:bg-blue-900 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-xs px-3 py-1.5 text-center dark:hover:bg-blue-400 dark:border-blue-400 dark:text-blue-400 dark:hover:text-white dark:focus:ring-blue-800"
-			data-dismiss-target="#alert-additional-content-1" aria-label="Close" >
-			<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd"
-					d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-					clip-rule="evenodd"></path>
-			</svg>
-		</button>
-		
-		<div class="home flex items-center pl-2.5 mb-5 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-			onclick="window.location.href='index.html';">
-			<i class="fa fa-home fa-2x"></i>
-
-			<div class="pad">Home</div>
-		</div>
-
-		<div class="home flex items-center pl-2.5 mb-5 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-			onclick="window.location.href='home.html';">
-			
-			<i class="fa fa-video-camera fa-2x"></i>
-			<div class="pad">Videos </div>
-		</div>
-
-
-		<div class="home flex items-center pl-2.5 mb-5 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-			onclick="window.location.href='game.html';">
-			<i class="fa fa-gamepad fa-2x"></i>
-		
-			<div class="pad">Games</div>
-		</div>
-
-		<div class="home flex items-center pl-2.5 mb-5 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-			onclick="window.location.href='read.html';">
-			<i class='fas fa-book-reader fa-2x'></i>
-			<div class="pad">Readers </div>
-		</div>
-		<div
-			class="home flex items-center pl-2.5 mb-5 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 ">
-			 <img src="sidebar/youtube-music.svg" class="upload"> 
-			<i class="fa fa-music fa-2x"></i>
-			<div class="pad">Music </div>
-		</div>
-		<div
-			class="home flex items-center pl-2.5 mb-5 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-		 <img src="sidebar/library.svg" class="upload"> -->
-			<!-- .fa icon for Library
-			<i class="fa fa-book fa-2x"></i>
-
-			<div class="pad">Library </div>
-		</div>
-	</aside>
- -->
 
 
 	<main id="contents" class="dark:bg-gray-900  ">
@@ -368,7 +244,7 @@
 							<div class="subnav">
 								<button class="subnavbtn">Zoo Animals <i class="fa fa-caret-up"></i></button>
 								<div class="subnav-content">
-									<a href="zoo-animals/">Lesson Plan</a>
+									<a href="zoo-animals/zoo.html">Lesson Plan</a>
 									<a href="zoo-animals/worksheets/worksheet.html">Worksheets</a>
 									<a href="zoo-animals/game.html">Online Games</a>
 								</div>
@@ -1651,14 +1527,9 @@
 
 			videoGrid.style.transition = "all 0.5s";
 		}
-
-
-		
-	
-		
 	
 	</script>
-	<script src="search.js"></script>
+	<script src="/scripts/index.js"></script>
 	<script src="/scripts/topbutton.js"></script>
 	<script src="/scripts/tailwind.config.js"></script>
 	<script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>

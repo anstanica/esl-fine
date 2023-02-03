@@ -167,13 +167,13 @@ $(function () {
     loadContent("/Music/music.html");
   });
   $(".daily").on("click", function () {
-    loadContent("/daily/daily.html");
+    loadContent("/daily-routine/daily.html");
   });
   $(".games").on("click", function () {
     loadContent("/games/games.html");
   });
   $(".alpha").on("click", function () {
-    loadContent("/alphabet/alphabet.html");
+    loadContent("/alphabets/alphabets.html");
   });
 
   $(".house").on("click", function () {
@@ -193,7 +193,7 @@ $(function () {
   });
 
   $(".numbers").on("click", function () {
-    loadContent("numbers/numbers.html");
+    loadContent("/numbers/numbers.html");
   });
 
   $(".phonics").on("click", function () {

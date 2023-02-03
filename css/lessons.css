@@ -393,6 +393,7 @@
             letter-spacing: 1px;
             color: #fff;
             margin-bottom: 30px;
+            resize: horizontal;
        
         }
 

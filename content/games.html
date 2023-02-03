@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Games</title>
     <!-- <link rel="stylesheet" href="animal/css/style.css" /> -->
-    <!-- <link rel="stylesheet" media="screen and (max-width: 720px)" href="./css/main-small.css"> -->
+    <link rel="stylesheet" media="screen and (max-width: 720px)" href="/css/main-small.css">
     <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- MytopButton script -->
     <link rel="stylesheet" href="/css/online-games.css" />
-    <link rel="stylesheet" href="/css/w3css.css" />
+    <!-- <link rel="stylesheet" href="/css/w3css.css" /> -->
     <!-- videojs -->
     <!-- <link rel="stylesheet" href="/css/worksheet.css"> -->
-    <link href="https:vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <!-- <link href="https:vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" /> -->
     <!-- tailwind -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -25,7 +25,7 @@
     <!-- get lesson.css -->
     <!-- <link rel="stylesheet" href="/css/lessons.css"> -->
     <link rel="stylesheet" href="/css/games.css">
-    <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (3).png" />
+    <!-- <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (3).png" /> -->
     <link rel="shortcut icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="/css/pico.min.css" /> -->
 </head>
@@ -320,9 +320,50 @@
 
 <div class="wrapper">
     <div class="header">
+
+
      <div class="search-bar">
       <input type="text" placeholder="Search">
+     
+
      </div>
+          <!-- create a small sub menu with the a reference to the other html pages in this directory -->
+
+        <div class="menu">
+            <div class="user-menu-items">
+                <!-- MAKE them buttons -->
+                
+                <a href="./videos.html" alt="" class="user-icon" srcset="">Videos</a>
+                <a href="./lessons.html" alt="" class="user-icon" srcset="">Lessons</a>
+                <a href="./worksheets.html" alt="" class="user-icon" srcset="">worksheets</a>
+                <!-- <a href="#"> <img src="/logos/user.svg" alt="" class="user-icon" srcset="">4</a> -->
+            </div>
+        <!-- </div> -->
+    </div>
+    <style>
+        /* align .menu to the top right of the parent-container */
+        .menu{
+            position: absolute;
+            top: 30px;
+            right: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+           
+        }
+        .user-menu-items a{
+            /* make them look like a button */
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: aliceblue;
+            margin: 0 5px 20px 0;
+
+            /* color: aliceblue; */
+        }
+    </style>
+
      <a href="#"> <img src="/logos/menu.svg" alt="" class="m-icon" srcset=""></a>
      <style>
       .m-icon{
@@ -368,7 +409,7 @@
           <path d="M20 6L9 17l-5-5" />
          </svg>
          <!-- replace this image with something fun about worksheets -->
-         <img class="author-img" src="./ws-col.png" />
+         <!-- <img class="author-img" src="./ws-col.png" /> -->
         </div>
         <div class="author-detail">
          <div class="author-name">Thomas Hope</div>
@@ -385,7 +426,7 @@
          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
           <path d="M20 6L9 17l-5-5" />
          </svg>
-         <img class="author-img" src="./ws-col.png" />
+         <!-- <img class="author-img" src="./ws-col.png" /> -->
         </div>
         <div class="author-detail">
          <div class="author-name">Tony Andrew</div>
@@ -481,6 +522,7 @@
              Liked
             </button>
            </div>
+           
       <div class="video-stream anim">
         <!-- get a menu icon -->
         

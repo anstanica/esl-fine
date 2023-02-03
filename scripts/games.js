@@ -30,12 +30,30 @@ $(function () {
       $(".search-bar input").css("width", "75%");
       $(".chat-stream").css("display", "none");
 
-    } else if ($windowWidth < 992) {
+      // new updates
+      $(".menu").css("right", "0");
+      $(".menu").css("top", "15px");
+
+      // decrease the width of the iframe-container by 10% every 100px of window width
+      $(".iframe-container").css("width", "100% - 10% * $windowWidth / 100");
+      $(" .user-menu-items ").css("width", "100% - 20% * $windowWidth / 100");
+
+
+
+    } else if ($windowWidth > 786) {
       $(".button-wrapper").css("right", "200px");
       $(".sidebar").css("display", "block");
       $(".m-icon").css("display", "none");
       $(".side-title").html("Menu");
       $(".m-icon").css("top", "17px");
+      $("#about").css("left", "0%");
+      // new updates
+      $(".iframe-container").css("position", "absolute");
+      // increase the width of the iframe-container by 10% every 100px of window width
+      $(".iframe-container").css("width", "100% + 10% * $windowWidth / 100");
+      
+    
+
     } else {
       $(".button-wrapper").css("right", "460px");
       $(".sidebar").css("display", "block");
@@ -156,21 +174,18 @@ $(".related-resources").remove();
       var topicName = $(this).attr("data-topic");
       var href = "/" + topicName + "/game.html" + " #about";
       loadContent(href);
-      // increase .main-container width 
-      $('#about').css("width", "100%");
-      $('.main-container').css("width", "150%");
-      // increase iframe width 
-      $('.iframe-container').css("width", "100%");
-      // allow iframe full screen
+      // ma
       $('.iframe-container').css("height", "520px");
-      $('.iframe-container').css("overflow", "hidden");
+      $('.iframe-container').css("overflow", "auto");
+      $('.iframe-container').css("object-fit", "cover");
 
-      $('.main-container').css("width", "120%");
-      $('.chat-stream').css("display", "none");
+      $('.main-container').css("width", "200%");
+      $('.main-container').css("margin", "0");
+      // $('.chat-stream').css("display", "none");
 
     });
 
-    // function for removing content
+
     // 
     // $('.main-container').html("<video id='streamer' src='vsrc/"+ videoName + ".mp4' controls></video>");
     // remove content on click

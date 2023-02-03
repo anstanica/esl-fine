@@ -26,18 +26,49 @@ $(function () {
       $(".search-bar").css("width", "75%");
       $(".search-bar").css("marginLeft", "30px");
       $(".search-bar input").css("width", "75%");
+      // video.height = window.innerHeight;
+      $("#streamer").css("height", "100%");
+      // $("a.user-icon").css("width", "40%");
+      // $(".user-menu-items a.user-icon ").css("width", "50%");
+      $(".user-menu-items a.user-icon ").css("margin", "auto");
+      $(".user-menu-items a.user-icon ").css("padding", "auto");
+      $(".user-menu-items").css("right", "-100px");
+      $(".user-menu-items").css("top", "-30px");
+      $(".user-menu-items").css("position", "absolute");
+      $(".user-menu-items").css("height", "50%");
+      // $(".user-menu-items").css("width", "120%");
+      $(".user-menu-items .user-icon").css("display", "inline-block");
+      // create a menu icon for the user menu
+      $(".user-menu-items .user-icon").css("font-size", "70%");
+      $(".user-menu-items .user-icon").css("font-weight", "900");
+
+      // make the media controls smaller
+
+
+
     } else if ($windowWidth < 992) {
       $(".button-wrapper").css("right", "200px");
       $(".sidebar").css("display", "block");
       $(".m-icon").css("display", "none");
       $(".side-title").html("Menu");
       $(".m-icon").css("top", "17px");
+
     } else {
       $(".button-wrapper").css("right", "460px");
       $(".sidebar").css("display", "block");
       $(".m-icon").css("display", "none");
       $(".side-title").html("Menu");
       $(".m-icon").css("top", "17px");
+      // reset .user-menu-items style to default
+      $(".user-menu-items").css("right", "100px");
+      $(".user-menu-items").css("top", "8px");
+      $(".user-menu-items").css("position", "relative");
+      $(".user-menu-items").css("height", "100%");
+      $(".user-menu-items").css("width", "100%");
+      // $(".user-menu-items .user-icon").css("display", "block");
+      $(".user-menu-items .user-icon").css("font-size", "100%");
+      // $(".user-menu-items .user-icon").css("font-weight", "100");
+
     }
   });
   
@@ -142,8 +173,9 @@ var videoName = $(this).attr("data-topic");
     $('.main-container').html("<video id='streamer' src='vsrc/" + videoName + ".mp4' controls></video>");
       // resize the video tag to fit the screen
       var video = document.querySelector("#streamer");
-      video.width = window.innerWidth;
-      video.height = window.innerHeight;
+      video.width = window.innerWidth - 50;
+      // 
+      video.height = window.innerHeight - 100;
 
       // load the video 
       
@@ -151,6 +183,7 @@ var videoName = $(this).attr("data-topic");
       // $("#streamer").css("width", "80%");
       // add padding to the video stream div
       $("#streamer").css("padding", "50px");
+      $("#streamer").css("padding-top", "0");
       // add margin to the right
       $("#streamer").css("margin-right", "50px");
 
