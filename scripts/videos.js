@@ -28,21 +28,10 @@ $(function () {
       $(".search-bar input").css("width", "75%");
       // video.height = window.innerHeight;
       $("#streamer").css("height", "100%");
-      // $("a.user-icon").css("width", "40%");
-      // $(".user-menu-items a.user-icon ").css("width", "50%");
-      $(".user-menu-items a.user-icon ").css("margin", "auto");
-      $(".user-menu-items a.user-icon ").css("padding", "auto");
-      $(".user-menu-items").css("right", "-100px");
-      $(".user-menu-items").css("top", "-30px");
-      $(".user-menu-items").css("position", "absolute");
-      $(".user-menu-items").css("height", "50%");
-      // $(".user-menu-items").css("width", "120%");
-      $(".user-menu-items .user-icon").css("display", "inline-block");
-      // create a menu icon for the user menu
-      $(".user-menu-items .user-icon").css("font-size", "70%");
-      $(".user-menu-items .user-icon").css("font-weight", "900");
-
-      // make the media controls smaller
+      $(".menu").css("right", "0");
+      $(".menu").css("top", "80px");
+      $(".small-icon").css("right", "40px");
+     
 
 
 
@@ -60,14 +49,7 @@ $(function () {
       $(".side-title").html("Menu");
       $(".m-icon").css("top", "17px");
       // reset .user-menu-items style to default
-      $(".user-menu-items").css("right", "100px");
-      $(".user-menu-items").css("top", "8px");
-      $(".user-menu-items").css("position", "relative");
-      $(".user-menu-items").css("height", "100%");
-      $(".user-menu-items").css("width", "100%");
-      // $(".user-menu-items .user-icon").css("display", "block");
-      $(".user-menu-items .user-icon").css("font-size", "100%");
-      // $(".user-menu-items .user-icon").css("font-weight", "100");
+
 
     }
   });
@@ -204,11 +186,11 @@ var videoName = $(this).attr("data-topic");
   // liked counter
   // const likeBtn = document.querySelector(".like");
   const savedData = localStorage.getItem("clicks");
-  var clicks = 0;
+  var clicks = 3350;
   if (savedData !== null) {
     clicks = savedData;
   } else {
-    clicks = 0;
+    clicks = 3350;
   }
   // clicks = savedData;
   document.getElementById("clicks").innerHTML = clicks;
@@ -249,3 +231,12 @@ var videoName = $(this).attr("data-topic");
     });
   });
   // check if this script included in the head tag <script src="/scripts/jquery.min.js"></script>
+
+$(function () {
+  $(".small-icon").on("click", function () {
+    $(".menu").toggle();
+    // $(".menu").css("display", "flex");
+  
+
+  });
+});

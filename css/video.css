@@ -10,6 +10,11 @@ max-width: 100%;
 background-color: #1b1b1b;
 
 }
+#fest{
+  height: 185px;
+  max-width: 100%;
+  background-color: #1b1b1b;
+}
 .video-grid {
   display: grid;
   grid-template-columns: auto ;

@@ -1,36 +1,129 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link src="./dist/output.css" rel="stylesheet">
+  <!-- import tailwind -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css">
+  <!-- get jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-<!-- add a frame around the page -->
-<!-- tailwind border 10px -->
+<style>
+  body,
+  h1 {
+    font-family: "Raleway", sans-serif
+  }
 
-<div class="border-8 border-blue-500 p-4">
+  body,
+  html {
+    height: 100%
+  }
 
-<!-- add an image  and center the div in the middle of the page-->
-<div class="flex flex-col items-center text-center">
-    <!-- <div class="m-auto  snap-center"> -->
-        <!-- resize the image with tailwind and center it-->
-    
-    
-        <img class="w-1/2 bg-center mr-7" src="/Red-Coming-Soon-Stamp.svg" alt="Coming Soon">
-        <!-- <img src="/Red-Coming-Soon-Stamp.svg" alt="Coming Soon"> -->
-      <!-- </div> -->
-</div>
-  <!-- add a paragraph -->
-  <div class="flex flex-col items-center text-center">
-    <p class="text-xl">We are working hard on something amazing!</p>
-    <p>Sign up below to stay updated.</p>
+  .bgimg {
+    background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+</style>
+</head>
 
-    <!-- add a form -->
-    <form class="m-3 w-2/3">
-      <input class="block w-full p-2" type="email" placeholder="Your Email Address">
-      <input class="block w-full p-2 bg-blue-500 text-white" type="submit" value="Get notifications">
-    </form>
-    <!-- add a button with tailwind css says go to home -->
-    <a href="/index.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Go to Home page</a>
-  </div>
-   <!-- add my footer -->
-    <div class="flex flex-col items-center text-center">
-        <p>© 2019 - 2020</p>
-        <p> <a href="/index.html">ESLclup</a></p>
+<body>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+
     </div>
-</div>
+    <!-- a menu for lessons.html , worksheets.html, games.html and videos.html -->
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <a href="./index.html">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+          </svg>
+          <span class="font-semibold text-xl tracking-tight">ESL CLUP</span>
+        </div>
+      </a>
+        <div class="block lg:hidden">
+
+          <button
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white menu-toggle">
+
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+
+          </button>
+        </div>
+
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto items">
+        <div class="text-sm lg:flex-grow">
+          <a href="./content/lessons.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-200 hover:text-white hover:underline mr-4 font-bold">
+            Lesson Plans
+          </a>
+          <a href="./content/worksheets.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-200 hover:text-white hover:underline mr-4 font-extrabold">
+            Worksheets
+          </a>
+          <a href="/content/games.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-200 hover:text-white mr-4 hover:underline py-2 font-extrabold">
+            Games
+          </a>
+          <a href="/content/videos.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-200 hover:text-white hover:underline font-extrabold">
+            Videos
+          </a>
+        </div>
+        <div>
+          <a href="#"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center text-justify text-2xl" id="demo">
+        
+      </p>
+
+    </div>
+    <!-- <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div> -->
+  </div>
+  <script>
+    // if screen is less than 768px, hide the menu items
+    if ($(window).width() < 768) {
+      $('.items').hide();
+    }
+    $(function () {
+      $('.menu-toggle').click(function () {
+        $('.items').toggle();
+      })
+    })
+    // create daily count down from 35 days
+    
+    var countDownDate = new Date("April 6, 2023 00:00:00").getTime();
+    // append the count down to the page
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("demo").innerHTML = days + " days left";
+  
+    }, 1000);
+
+    $("#demo").css("color", "lime");
+
+
+
+  </script>
+</body>
+
+</html>

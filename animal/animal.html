@@ -2,24 +2,26 @@
 <html>
 
 <head>
-<title>Farm Animals</title>
- <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- w3school css -->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!-- get style sheet from css folder -->
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/main-small.css">
-<link rel="stylesheet" href="../css/footer.css"/>
-<link rel="stylesheet" href="/css/left-sidebar.css" />
-<link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/left-sideSmall.css" />
-<!-- fonts and icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/scripts/jquery.min.js"></script>
+  <title>Farm Animals</title>
+  <link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- w3school css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- get style sheet from css folder -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main-small.css">
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="/css/left-sidebar.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/left-sideSmall.css" />
+  <!-- fonts and icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/scripts/jquery.min.js"></script>
+  <script src="https://cdn.podlove.org/web-player/5.x/embed.js"></script>
+
 </head>
 
 
@@ -33,261 +35,390 @@
     </label>
 
     <a href="../index.html" class="menu-item" data-title="Home"> <i class="fa fa-home fa-2x"></i></a>
-    <a href="/animal/worksheet.html" class="menu-item" data-title="Worksheets"> <i
-        class="fa fa-file-word fa-2x"></i> </a>
+    <a href="/animal/worksheet.html" class="menu-item" data-title="Worksheets"> <i class="fa fa-file-word fa-2x"></i>
+    </a>
     <a href="/animal/game.html" class="menu-item" data-title="Online Games"> <i class="fa fa-gamepad fa-2x"></i> </a>
     <a href="#" class="menu-item" data-title="Donate"> <i class="fa fa-heart fa-2x"></i> </a>
 
   </nav>
   <!-- close menu-items by clicking oustide -->
   <script>
-    document.addEventListener('click', function (event)
-    {
+    document.addEventListener('click', function (event) {
       var isClickInside = document.querySelector('.menu').contains(event.target);
-      if (!isClickInside)
-      {
+      if (!isClickInside) {
         document.getElementById('menu-open').checked = false;
       }
     });
 
   </script>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
 
-  <!-- Header/Home -->
-  <header class="w3-container  w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">
-      <i class="fas fa-paw"></i> 
-      Farm</span> Animals
-    <!-- add an icon for animals -->
-    <i class="fas fa-paw"></i> 
-   <style>
-    /* style the icon */
-    .fas.fa-paw {
-      color: #9e97b5;
-      font-size: 50px;
-    }
-   </style>
-      
+    <!-- Header/Home -->
+    <header class="w3-container  w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">
+          <i class="fas fa-paw"></i>
+          Farm</span> Animals
+        <!-- add an icon for animals -->
+        <i class="fas fa-paw"></i>
+        <style>
+          /* style the icon */
+          .fas.fa-paw {
+            color: #9e97b5;
+            font-size: 50px;
+          }
+        </style>
 
-    
-    </h1>
-    <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
-  </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey " id="about">
-    <h2 class="w3-text-light-grey">Farm Animals | Lesson Plan</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p class="p-content">In this farm animals lesson plan, students will learn the names of farm animals in English. This lesson plan is suitable for lessons teaching farm animals to kids. The below lesson plan is complete with all the games, activities, and resources you need to teach farm animals to kids.
+
+      </h1>
+      <!-- <img src="/animal/animals-pics/animals.jpg" alt="boy" class="w3-image" width="292" height="108"> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey " id="about">
+ 
+      <audio controls data-role="audio-player" data-tooltip="Listen"> Listen
+        <source src="/audio/farm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <style>
+          /* audio */
+          audio {
+            width: 30%;
+            height: 50px;
+            background-color: #fcb900;
+            color: #fbfdfe;
+            font-weight: 900;
+            border-radius: 5px;
+            border: 1px solid #fbfdfe;
+            margin-bottom: 20px;
+            /* move to th right of the parent div #about*/
+            margin-left: 70%;
+           
+            cursor: pointer;
+          }
+          @media screen   and (max-width: 768px) {
+            audio {
+              width: 50%;
+              margin-left: 40%;
+            }
+          }
+            
+          
+           /* on hover show the word 'Listen' */
+          audio:hover {
+
+            background-color: #fbfdfe;
+            color: #fcb900;
+            font-weight: 900;
+            border: 1px solid #fcb900;
+          }
+
+
+      </style>
+      <script>
+      //  audio on hover show the word 'Listen'
+        $(function () {
+          $('[data-tooltip="Listen"]').tooltip({
+            placement: 'right',
+            title: 'Listen'
+          });
+        });
+      </script>
+      <h2 class="w3-text-light-grey">Farm Animals | Lesson Plan</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="p-content">In this farm animals lesson plan, students will learn the names of farm animals in English.
+        This lesson plan is suitable for lessons teaching farm animals to kids. The below lesson plan is complete with
+        all the games, activities, and resources you need to teach farm animals to kids.
 
         <!-- <h2 class="has-text-align-center">Farm Animals Lesson Plan</h2>
         <style> </style> -->
-       <h3 style="color:#fbfdfe; font-weight:900">Warm Up</h3> <hr>
-       <p class="p-content">
+      <h3 style="color:#fbfdfe; font-weight:900">Warm Up</h3>
+      <hr>
+      <p class="p-content">
         It depends ont the kids age and previous knowledge of English, for older kids (Age 5-6)
         are likely to be familiar with some animals and animal names.
-        They may even know that some animals can be found on a farm, and other animals, such as zoo animals, 
-        are not usually found on a farm. To warm up and activate students’ 
-        existing knowledge about animals, ask students to tell you what animals they already know and write the animal names on the board, Or you can show them some flashcards. <br>
+        They may even know that some animals can be found on a farm, and other animals, such as zoo animals,
+        are not usually found on a farm. To warm up and activate students’
+        existing knowledge about animals, ask students to tell you what animals they already know and write the animal
+        names on the board, Or you can show them some flashcards. <br>
         <strong style="color: #fcb900;"> "in the below powerpoint you will find everything you need" </strong>. <br>
       </p> <br>
 
-        <div class="embed">
-          <iframe src="https://www.slideshare.net/slideshow/embed_code/key/zBVlstfcQuPIak?hostedIn=slideshare&page=upload" width="600" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
+      <div class="embed">
+        <iframe src="https://www.slideshare.net/slideshow/embed_code/key/zBVlstfcQuPIak?hostedIn=slideshare&page=upload"
+          width="600" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+          allowfullscreen></iframe>
+      </div>
+      <div class="download-btn">
+        <a href="animals-pics/Farm Animals.pptx" class="previous ">
+          <button class="fa fa-download" id="downloads"> download </button></a>
+        </a>
+      </div>
+
+      <br> <br>
+      <br> <br>
+
+      <p class="p-content">
+        <strong>Next</strong> , ask students to identify which of the animals that you have written/shown on the board
+        can be found on a farm.
+        Then, ask students again if they can think of any more farm animals.
+        Another fun way to elicit the farm animal names from students is to make the farm animal sounds and ask students
+        to guess what animal it is.
+        For example, you might make the sound “moo” to elicit ‘cow’, or “oink” to elicit ‘pig’.
+
+      </p>
+
+      <p class="p-content">
+        Once you have a list of farm animals on the board that students already know, it’s time to listen to a fun farm
+        animals song. This song by Super Simple Songs is a great <strong style="color:#fbfdfe">‘Old Macdonald’</strong>
+        song to learn the farm animal names and sounds.
+      </p>
+
+      <div class="video">
+        <iframe width="600" height="388" src="https://www.youtube.com/embed/_6HzoUcx3eo" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+        <div class="download-video" >
+          <a href="/videos/od.mp4" class="previous ">
+            <button class="fa fa-download" id="downloads" class="button-20 "> Download</button></a>
+          </a>
         </div>
-          <div class="download-btn" >
-            <a href="animals-pics/Farm Animals.pptx" class="previous "> 
-              <button class="fa fa-download" id="downloads"> download </button></a>
-            </a>
-          </div>
-   
-        <br> <br>
-        <br> <br>
-      
-        <p class="p-content">
-            <strong>Next</strong> , ask students to identify which of the animals that you have written/shown on the board can be found on a farm.
-         Then, ask students again if they can think of any more farm animals. 
-         Another fun way to elicit the farm animal names from students is to make the farm animal sounds and ask students to guess what animal it is. 
-         For example, you might make the sound “moo” to elicit ‘cow’, or “oink” to elicit ‘pig’.
+      </div>
 
-    </p>
 
-    <p class="p-content">
-      Once you have a list of farm animals on the board that students already know, it’s time to listen to a fun farm animals song. This song by Super Simple Songs is a great  <strong style="color:#fbfdfe">‘Old Macdonald’</strong>  song to learn the farm animal names and sounds.
-    </p>
+      <div style="margin-top: 120px;">
+      <strong style="font-size: 26px; color:#e9b9c9;  margin-bottom: 0;"><span> Rules for teaching a
+          song for the first time: </span></strong>
+      <ol class="list-rules">
+        <li class="li-list">
+          <p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)">Let the kids watch the
+            song first No interference required at this stage<span><strong>. So, they get an idea about the topic they
+                are learning</strong></span></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)"> Teach the song using
+            <a href="#" style="color:#215387" class="hover_img"><span><img src="animals-pics/tpr.jpg" alt="image"
+                  height="300" /></span><strong>TPR</strong></a> , Also use an audio version <q>Convert to audio<a
+                href="https://tinywow.com/video/extract-audio" style="color: red; font:bold 21px;"><strong>
+                  Here</strong></a></q>. <q>Don't let the students watch a video while you are teaching them TPR /
+              dance, they will easily be distracted</q></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)"><strong>Repeat 2 OR 3
+              times and let the students repeat after you</strong></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)"><strong> Perform and
+              sing together </strong></p>
+        </li>
+      </ol>
+    </div>
+      <h3 style="color:#fbfdfe; font-weight:900">Practice</h3>
+      <hr>
 
-    <div class="video">
-      <iframe width="600" height="388" src="https://www.youtube.com/embed/_6HzoUcx3eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
-    <div class="download-custom">
-      <a href="/videos/od.mp4" class="previous "> 
-        <button class="fa fa-download" id="downloads"> Download</button></a>
-      </a>
-    </div> 
-  </div> 
-  
+      <p class="p-content">
+        say the names of the farm animals out loud and ask students to repeat after you. Then, ask students to say each
+        farm animal name on their own.
+        A perfect approach is playing <a href="#" class="hover_img"><strong style="color: white; "> Pass & Say </strong>
+          <span
+            style="background-color: #222; color:rgb(247, 253, 251); bottom: 0; left: 0; width: 300px; border: 2px solid; padding: 6px;">Hand
+            a flashcard to one student and ask him to say and pass to the next etc... </span> </a> game
 
-    <strong style="font-size: 26px; color:#e9b9c9; margin-top: 80px; margin-bottom: 0;"><span> Rules for teaching a song for the first time: </span></strong>
-    <ol class="list-rules">
-      <li class="li-list"> <p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)">Let the kids watch the song first No interference required at this stage<span><strong>. So, they get an idea about the topic they are learning</strong></span></p></li>
-      <li class="li-list"><p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)"> Teach the song using <a href="#" style="color:#215387" class="hover_img"><span><img src="animals-pics/tpr.jpg" alt="image" height="300" /></span><strong>TPR</strong></a> , Also use an audio version <q>Convert to audio<a href="https://tinywow.com/video/extract-audio" style="color: red; font:bold 21px;"><strong> Here</strong></a></q>.  <q>Don't let the students watch a video while you are teaching them TPR / dance, they will easily be distracted</q></p> </li>
-      <li class="li-list"><p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)"><strong>Repeat 2 OR 3 times and let the students repeat after you</strong></p></li>
-      <li class="li-list"><p class="p-content" style="font-size: 20px; font-weight: 500; color:rgb(122,220,180)"><strong> Perform and sing together </strong></p></li>
-    </ol>
-
-    <h3 style="color:#fbfdfe; font-weight:900">Practice</h3>
-    <hr>
-
-    <p class="p-content">
-      say the names of the farm animals out loud and ask students to repeat after you. Then, ask students to say each farm animal name on their own.
-      A perfect approach is playing <a href="#" class="hover_img"><strong style="color: white; "> Pass & Say </strong> <span style="background-color: #222; color:rgb(247, 253, 251); bottom: 0; left: 0; width: 300px; border: 2px solid; padding: 6px;">Hand a flashcard to one student and ask him to say and pass to the next etc... </span> </a> game 
-      
-      <blockquote style="font-size:20px; color:#8241ad; margin: 5px;"> <strong> "Remember to correct their pronunciation, specially the first ones" </strong></blockquote>
-    </p>
-    <h3 style="color:#fbfdfe; font-weight:900">Games</h3> <hr>
-    <ol class="list-rules">
-      <li class="li-list"> <p class="p-content">  You say the animal's name and the kids do the animal sound <strong> ex: "cow" "Mooo".</strong> </p> </li>
-      <li class="li-list"> <p class="p-content">  Act Like, You say the animal's name and students act like <strong>For example: Rabbit.</strong></p> </li>
-      <li class="li-list"><p class="p-content"> <a href="./game.html">  Online Games.</a></li>
-    </ol>
-    <h3 style="color:#fbfdfe; font-weight:900">Wrap up</h3> <hr>
-    <p class="p-content">To Wrap up , show a flashcard or a picture from PPT ,and ask the students What is it? it is a cow.</p>
-    <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3><hr>
-    <p class="p-content"> A GoodBye song is a very important part of your lesson, Make time for it.
+      <blockquote style="font-size:20px; color:#8241ad; margin: 5px;"> <strong> "Remember to correct their
+          pronunciation, specially the first ones" </strong></blockquote>
+      </p>
+      <h3 style="color:#fbfdfe; font-weight:900">Games</h3>
+      <hr>
+      <ol class="list-rules">
+        <li class="li-list">
+          <p class="p-content"> You say the animal's name and the kids do the animal sound <strong> ex: "cow"
+              "Mooo".</strong> </p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> Act Like, You say the animal's name and students act like <strong>For example:
+              Rabbit.</strong></p>
+        </li>
+        <li class="li-list">
+          <p class="p-content"> <a href="./game.html"> Online Games.</a>
+        </li>
+      </ol>
+      <h3 style="color:#fbfdfe; font-weight:900">Wrap up</h3>
+      <hr>
+      <p class="p-content">To Wrap up , show a flashcard or a picture from PPT ,and ask the students What is it? it is a
+        cow.</p>
+      <h3 style="color:#fbfdfe; font-weight:900">GoodBye song</h3>
+      <hr>
+      <p class="p-content"> A GoodBye song is a very important part of your lesson, Make time for it.
 
       <h3> Here is a good one from Dream English.</h3>
       <div class="video">
-        
-        <iframe width="600" height="388" src="https://www.youtube.com/embed/Xcws7UWWDEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="600" height="388" src="https://www.youtube.com/embed/Xcws7UWWDEs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
-    </p>
+      </p>
 
-</div>
-<button class="myTopBtn">
-  <!-- add an icon up -->
-  <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i><hr style="margin: 0; padding:3px; color: #521b30; width: 100%;">
-  
-</button>
+    </div>
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      <hr style="margin: 0; padding:3px; color: #521b30; width: 100%;">
+
+    </button>
+    <style>
+      .myTopBtn {
+        position: fixed;
+        bottom: 470px;
+        right: 350px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #521b30;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 4px;
+      }
+
+      .myTopBtn:hover {
+        background-color: #555;
+      }
+      /* small screens  */
+      @media screen and (max-width: 600px) {
+        .myTopBtn {
+          right: 0;
+
+        }
+      }
+    </style>
 
   </div>
-</div>
-
-
-<!-- the right section -->
-<div class="right-side">
-  <div class="two">
-      <a href="" class="posts">post 1</a>
-      <a href="" class="posts">post 1</a>
-      <a href="" class="posts">post 1</a>
-      <a href="" class="posts">post 1</a>
-      <a href="" class="posts">post 1</a>
   </div>
 
-  <div class="three">
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-  </div>
-  <div class="three">
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-    <a href="" class="posts">post 1</a>
-  </div>
 
-  
-  <script>
+  <!-- the right section -->
+  <div class="right-side">
+    <div class="two">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+    <div class="three">
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+      <a href="" class="posts">post 1</a>
+    </div>
+
+
+    <script>
     // $('.three:gt(1)').hide()
-  </script>
-  <!-- latest posts section -->
-  <div class="latest-posts">
-    <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
-    <div class="latest-posts-content">
-      <div class="latest-posts-img">
-        <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+    </script>
+    <!-- latest posts section -->
+    <div class="latest-posts">
+      <h3 style="color:#fbfdfe; font-weight:900">Latest Posts</h3>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
       </div>
-      <div class="latest-posts-text">
-        <a href="" class="latest-posts-link">post 1</a>
-        <p class="latest-posts-date">date</p>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
       </div>
-    </div>
-    <div class="latest-posts-content">
-      <div class="latest-posts-img">
-        <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
       </div>
-      <div class="latest-posts-text">
-        <a href="" class="latest-posts-link">post 1</a>
-        <p class="latest-posts-date">date</p>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
       </div>
-    </div>
-    <div class="latest-posts-content">
-      <div class="latest-posts-img">
-        <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
-      </div>
-      <div class="latest-posts-text">
-        <a href="" class="latest-posts-link">post 1</a>
-        <p class="latest-posts-date">date</p>
-      </div>
-    </div>
-    <div class="latest-posts-content">
-      <div class="latest-posts-img">
-        <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
-      </div>
-      <div class="latest-posts-text">
-        <a href="" class="latest-posts-link">post 1</a>
-        <p class="latest-posts-date">date</p>
-      </div>
-    </div>
-    <div class="latest-posts-content">
-      <div class="latest-posts-img">
-        <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
-      </div>
-      <div class="latest-posts-text">
-        <a href="" class="latest-posts-link">post 1</a>
-        <p class="latest-posts-date">date</p>
-      </div>
- 
-    </div>
-  </div>
-</div>
+      <div class="latest-posts-content">
+        <div class="latest-posts-img">
+          <img src="clothes/pics/1.jpg" alt="image" height="100" width="100">
+        </div>
+        <div class="latest-posts-text">
+          <a href="" class="latest-posts-link">post 1</a>
+          <p class="latest-posts-date">date</p>
+        </div>
 
-<!-- END PAGE CONTENT -->
-</div>
-<footer>
-  <div class="footer w3-container">
-  <div class="row">
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <a href="#"><i class="fa fa-instagram"></i></a>
-  <a href="#"><i class="fa fa-youtube"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
   </div>
-  
-  <div class="row">
-  <ul>
-  <li><a href="../index.html">Home</a></li>
-  <li><a href="../game.html">Most Popular</a></li>
-  <li><a href="#">Privacy Policy</a></li>
-  <li><a href="#">Terms & Conditions</a></li>
-  <li><a href="#">Contact Us</a></li>
-  </ul>
+
+  <!-- END PAGE CONTENT -->
   </div>
-  
-  <div class="row">
-  MoESL Copyright © 2021 MoESL - All rights reserved 
-  <!-- Logo -->
-  <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" alt="logo" width="50" height="50">
-  </div>
-  </div>
+  <footer>
+    <div class="footer w3-container">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../game.html">Most Popular</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        MoESL Copyright © 2021 MoESL - All rights reserved
+        <!-- Logo -->
+        <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" alt="logo" width="50" height="50">
+      </div>
+    </div>
   </footer>
 
-<script src="/scripts/main.js"></script>
+  <script src="/scripts/main.js"></script>
 
-<script src="/scripts/topbutton.js"></script>
+  <script src="/scripts/topbutton.js"></script>
 
 </body>
+
 </html>

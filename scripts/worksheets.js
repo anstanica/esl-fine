@@ -166,7 +166,10 @@ $(function () {
       loadContent("/family/worksheets/worksheet.html");
      
     });
-  
+    $(".Festivals").on("click", function () {
+      loadContent("/Festivals/worksheets/worksheet.html");
+     
+    });
     $(".colors").on("click", function () {
       loadContent("/colors/worksheets/worksheet.html");
      

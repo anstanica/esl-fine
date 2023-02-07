@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- import tailwind  -->
+    <link
+      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- get pico css -->
+    <!-- <link rel="stylesheet" href="https://picocss.com/pico.min.css"> -->
+  </head>
+  <body class="bg-gray-800">
+    <!-- create about us page -->
+
+    <a href="/index.html">
+      <button id="go-back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-1 w-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        Go Back
+        <!-- an arrow back -->
+      </button></a
+    >
+
+    <style>
+      svg {
+        position: absolute;
+
+        width: 2rem;
+        height: 2rem;
+        fill: currentColor;
+        stroke: currentColor;
+        top: 1.4%;
+        /* align to the center */
+        left: 10%;
+
+        stroke-width: 2rem;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-dasharray: none;
+        stroke-dashoffset: 0;
+        stroke-opacity: 1;
+      }
+    </style>
+    <div class="container mx-auto col-auto bg-slate-600 aboutus">
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold text-center">About Us</h1>
+        <p class="text-lg text-center">
+          <!-- 
+            i think many of us have been in a situation where we lose our teaching content or we have to go through a lot of trouble to find it.
+           -->
+           I think many of us have been in a situation where we lose our teaching content or we have to go through a lot of trouble to find it.
+           That is why I created this website. I wanted to create a place where teachers can share their teaching content with other teachers. I also wanted to create a place where teachers can find teaching content that they can use in their classrooms. I hope you find this website useful and I hope you enjoy using it.
+          This page is a testament to the hard work and dedication of
+          one individual. For more than a year, worked tirelessly to design and
+          build this website from the ground up. Without the help of any outside
+          assistance, I was able to craft a website that is both aesthetically
+          pleasing and easy to navigate. I am proud of the work I have done to
+          create this website and I hope you enjoy using it. Thank you for
+          taking the time to learn more about us. .
+        </p>
+      </div>
+    </div>
+    <!-- add contact us form -->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="container container-message" class="form-control">
+          <form id="contact" action="contact.php" method="post">
+            <h3>Quick Contact</h3>
+            <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <fieldset>
+              <input
+                placeholder="Your name"
+                type="text"
+                tabindex="1"
+                required
+                autofocus
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                placeholder="Your Email Address"
+                type="email"
+                tabindex="2"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number" type="tel" tabindex="3" />
+            </fieldset>
+            <fieldset>
+              <input
+                placeholder="Your Web Site starts with http://"
+                type="url"
+                tabindex="4"
+              />
+            </fieldset>
+            <fieldset>
+              <textarea
+                placeholder="Type your Message Here...."
+                tabindex="5"
+                required
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <button
+                name="submit"
+                type="submit"
+                id="contact-submit"
+                data-submit="...Sending"
+              >
+                Submit
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- create got home -->
+  </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #2d3748;
+      color: aliceblue;
+    }
+    /* center the main div */
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact button[type="submit"] {
+      font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+    }
+
+    #contact {
+      background: #f9f9f9;
+      padding: 25px;
+      margin: 50px 0;
+    }
+
+    #contact h3 {
+      color: #f96;
+      display: block;
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    #contact h4 {
+      margin: 5px 0 15px;
+      display: block;
+      font-size: 13px;
+    }
+
+    fieldset {
+      border: medium none !important;
+      margin: 0 0 10px;
+      min-width: 100%;
+      padding: 0;
+      width: 100%;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      background: #fff;
+      margin: 0 0 5px;
+      padding: 10px;
+    }
+
+    #contact input[type="text"]:hover,
+    #contact input[type="email"]:hover,
+    #contact input[type="tel"]:hover,
+    #contact input[type="url"]:hover,
+    #contact textarea:hover {
+      -webkit-transition: border-color 0.3s ease-in-out;
+      -moz-transition: border-color 0.3s ease-in-out;
+      transition: border-color 0.3s ease-in-out;
+      border: 1px solid #aaa;
+    }
+
+    #contact textarea {
+      height: 100px;
+      max-width: 100%;
+      resize: none;
+    }
+
+    #contact button[type="submit"],
+    #go-back {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      background: #0cf;
+      color: #fff;
+      margin: 0 0 5px;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    #contact button[type="submit"]:hover,
+    #go-back:hover {
+      background: #09c;
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #contact button[type="submit"]:active {
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    #contact input:focus,
+    #contact textarea:focus {
+      outline: 0;
+      border: 1px solid #999;
+    }
+    ::-webkit-input-placeholder {
+      color: #888;
+    }
+    :-moz-placeholder {
+      color: #888;
+    }
+    ::-moz-placeholder {
+      color: #888;
+    }
+    :-ms-input-placeholder {
+      color: #888;
+    }
+
+    .page-section {
+      background: #000;
+      color: orange;
+    }
+
+    .page-section {
+      padding: 6rem 0;
+    }
+    .page-section h2.section-heading,
+    .page-section .section-heading.h2 {
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .page-section h3.section-subheading,
+    .page-section .section-subheading.h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      margin-bottom: 4rem;
+    }
+
+    @media (min-width: 768px) {
+      section {
+        padding: 9rem 0;
+      }
+    }
+
+    .text-center {
+      text-align: center !important;
+    }
+
+    .page-section h2.section-heading,
+    .page-section .section-heading.h2 {
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .text-uppercase {
+      text-transform: uppercase !important;
+    }
+
+    .text-muted {
+      --bs-text-opacity: 1;
+      color: #6c757d !important;
+    }
+
+    p {
+      line-height: 1.75;
+    }
+  </style>
+  <script>
+    // on submit send the data to the server  with jquery ajax
+    $("#contact").submit(function (e) {
+      // prevent the default action of submitting the form
+      e.preventDefault();
+
+      // send the form data to the server using ajax
+      $.ajax({
+        type: "GET",
+        url: "contact.php",
+        data: $(this).serialize(),
+        success: function (data) {
+          // when the server responds show the response to the user
+          $("#contact").html(data);
+        },
+        error: function (data) {
+          // when the server responds show the response to the user
+          $("#contact").html(data);
+        },
+      });
+      //check if the data is sent to the server
+      console.log($(this).serialize());
+      // show  the user that i have received the message
+      $(".container-message").html(
+        "<h1>Thank you <br> <br> Your message received </h1>"
+      );
+      $(".container-message").css("color", "green");
+      $(".container-message").css("background-color", "white");
+      $(".container-message").css("padding", "20px");
+      $(".container-message").css("margin", "auto");
+      $(".container-message").css("text-align", "center");
+      $(".container-message").css("width", "100%");
+      // border
+      $(".container-message").css("border", "2px solid green");
+      $(".container-message").css("border-radius", "10px");
+      // MAKE IT LOOKS LIKE 3D
+      $(".container-message").css("box-shadow", "0 0 10px 0 white");
+      // add go back button
+      $(".container-message").append(
+        '<a href="/index.html"> <button id="go-back">Go Back </button></a>'
+      );
+      $(".container-message #go-back").css("box-shadow", "0 0 10px 0 white");
+      $(".container-message #go-back").css("color", "white");
+    });
+  </script>
+</html>

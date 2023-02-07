@@ -142,6 +142,9 @@ $(function () {
   $(".family").on("click", function () {
     loadContent("/family/family.html");
   });
+  $(".Festivals").on("click", function () {
+    loadContent("/Festivals/Festivals.html");
+  });
 
   $(".colors").on("click", function () {
     loadContent("/colors/colors.html");
