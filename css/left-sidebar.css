@@ -1,18 +1,16 @@
 
- .menu {
-	filter: url('#shadowed-goo');
-}
+
 .menu-item, .menu-open-button {
 	background: #0a0f0f;
 	border-radius: 100%;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	margin-left: -40px;
 	position: absolute;
 	top: 10px;
-	color: white;
+	/* color: white; */
 	text-align: center;
-	line-height: 80px;
+	line-height: 60px;
 	transform: translate3d(0, 0, 0);
 	transition: transform ease-out 200ms;
 	z-index: 1;
@@ -22,14 +20,14 @@
 	display: none;
 }
 .hamburger {
-	width: 25px;
-	height: 3px;
+	width: 15px;
+	height: 1px;
 	background: white;
 	display: block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -12.5px;
+	margin-left: -7.5px;
 	margin-top: -1.5px;
 	transition: transform 200ms;
 }
@@ -58,7 +56,7 @@
 	padding-top: 20px;
 	padding-left: 50px;
 	width: auto;
-	height: 200px;
+	height: 100px;
 	box-sizing: border-box;
 	font-size: 20px;
 	text-align: left;

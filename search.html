@@ -1,0 +1,269 @@
+<!-- search only version -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      var ALGOLIA_INSIGHTS_SRC =
+        "https://cdn.jsdelivr.net/npm/search-insights@2.2.1";
+  
+      !(function (e, a, t, n, s, i, c) {
+        (e.AlgoliaAnalyticsObject = s),
+          (e[s] =
+            e[s] ||
+            function () {
+              (e[s].queue = e[s].queue || []).push(arguments);
+            }),
+          (i = a.createElement(t)),
+          (c = a.getElementsByTagName(t)[0]),
+          (i.async = 1),
+          (i.src = n),
+          c.parentNode.insertBefore(i, c);
+      })(window, document, "script", ALGOLIA_INSIGHTS_SRC, "aa");
+    </script>
+  
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
+      integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+    <script>
+      const { autocomplete, getAlgoliaResults } =
+        window["@algolia/autocomplete-js"];
+    </script>
+    <!-- search only version -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
+      integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- import jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- default version -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
+      integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- import tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="autocomplete">
+      <div class="icon"></div>
+    </div>
+  
+    <style>
+      #autocomplete .icon {
+        width: 40px;
+        height: 40px;
+        line-height: 80px;
+        font-size: 30px;
+        color: #131212;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+      }
+      #autocomplete .icon:before {
+        content: "\f002";
+        font-family: fontAwesome;
+      }
+      #autocomplete.active .icon:before {
+        content: "\f00d";
+        font-family: fontAwesome;
+      }
+  
+      #autocomplete {
+        /* width: 100%; */
+        /* margin: 0 auto; */
+        /* i wanna make float  */
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4vw;
+        height: 6vw;
+        /* background dark*/
+        /* background: #15182a; */
+        transition: 0.5s;
+        /* display: none; */
+        margin: 0 auto;
+        padding: 0 auto;
+      }
+  
+      #autocomplete.active {
+        width: 100%;
+        height: 100%;
+        background: #15182a;
+        transition: 0.5s;
+        /* display: block; */
+      }
+  
+      .aa-Autocomplete {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        /* font family bold mac */
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+          "Helvetica";
+        /* height: -5px; */
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+    </style>
+  
+  </body>
+  <script>
+    const searchClient = algoliasearch(
+      "YAXLOA4NOT",
+      "be9404655bfed0d89e0a6faea46b1652"
+    );
+  
+    autocomplete({
+      container: "#autocomplete",
+      placeholder: "Search",
+      getSources({ query }) {
+        return [
+          {
+            sourceId: "*",
+            getItems() {
+              return getAlgoliaResults({
+                searchClient,
+                queries: [
+                  {
+                    indexName: "dev_data",
+                    query,
+                    params: {
+                      hitsPerPage: 10,
+                      attributesToSnippet: ["name:10", "description:35"],
+                      snippetEllipsisText: "…",
+                    },
+                  },
+                ],
+              });
+            },
+            templates: {
+              item({ item, components, html }) {
+                return html`<div
+                  class="box-content px-4 text-xl text-white bottom-6 flex flex-row"
+                >
+                  <div class="aa-ItemContent Static ">
+                    <div class="px-4 w-full h-full max-w-2xl basis-1/2">
+                      <figure
+                        class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+                      >
+                        <a href="${item.url}">
+                          <img
+                            class="object-scale-dow justify-center sm:w-8 md:w-16 lg:w-24"
+                            src="${item.image}"
+                            alt="${item.name}"
+                          />
+                        </a>
+                      </figure>
+                    </div>
+  
+                    <a href="${item.url}" target="_blank" class="links">
+                      <div
+                        class="aa-ItemContentBody px-4 basis-1/2 hover:basis-1/2"
+                      >
+                        <div class="aa-ItemContentTitle basis-1/4">
+                          ${components.Snippet({
+                            hit: item,
+                            attribute: "name",
+                          })}
+                        </div>
+  
+                        <div class="aa-ItemContentDescription basis-1/4 ">
+                          ${components.Snippet({
+                            hit: item,
+                            attribute: "description",
+                          })}
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>`;
+              },
+            },
+          },
+        ];
+      },
+    });
+  
+    // aa-ItemContent on click of the button, redirect to the url
+    // aa-ItemContentBody on click of the button, redirect to the url
+  
+    $(function () {
+      $(".aa-ItemContent").click(function () {
+        // href to the uel of this item
+        //    capitalize the first letter
+        name = $(this).find(".aa-ItemContentTitle").text();
+        name = name.charAt(0).toUpperCase() + name.slice(1);
+      });
+    });
+  
+  
+      // const aa = require('search-insights')
+  
+      aa("init", {
+        appId: "YAXLOA4NOT",
+        apiKey: "4ee6d304b5e0b73a7136f299baaa1527",
+        useCookie: true,
+      });
+      $(".aa-Item").text("");
+    // check if the user using dark mode or not if yes add class dark to the body
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+      // dark class to #autocomplete
+      $("#autocomplete").addClass("dark");
+      $(".aa-autocomplete").addClass("dark");
+      $(".icon").css("color", "#807ae1");
+    } else {
+      document.body.classList.remove("dark");
+      // dark class to #autocomplete
+      $("#autocomplete").removeClass("dark");
+      $(".aa-autocomplete").removeClass("dark");
+  
+      $(".icon").css("color", "#131212");
+    }
+  
+    $(".icon").click(function () {
+      $(".aa-Autocomplete").toggle();
+      $("#autocomplete").toggleClass("active");
+  
+      //    toggle the icon color to white
+    });
+  
+    // aa-Input on key up move the aa-Autocomplete div to the top
+    $(".aa-Input").keyup(function () {
+      $(".aa-Autocomplete").css("top", "30px");
+    });
+    // also on screen resize if the screen is less than 768px hide the search icon and show the close button
+    $(window).resize(function () {
+      if ($(window).width() < 768) {
+        $(".aa-DetachedCancelButton").on("click", function () {
+          $(".aa-Autocomplete").hide();
+          $("#autocomplete").removeClass("active");
+        });
+      }
+    });
+  </script>
+  

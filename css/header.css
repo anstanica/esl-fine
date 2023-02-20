@@ -12,13 +12,9 @@
   border-bottom-width: 1px;
   border-bottom-color: rgb(197, 195, 195);
   border-bottom-style: solid;
-  z-index: 100;
+  z-index: 99;
 }
-.left-section {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .menu {
   height: 24px;
   margin-left: 24px;
@@ -46,90 +42,11 @@
   max-width: 500px;
   /* align-items: center; */
 }
-.search {
-  flex: 1;
-  height: 40px;
-  padding-left: 10px;
-  font-size: 16px;
-  border-color: rgb(186, 182, 182);
-  background-color: transparent;
-  border-width: 1px;
-  border-radius: 2px;
-  width: 0;
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-}
-.search::placeholder {
-  font-size: 16px;
-}
-.search-button {
-  height: 40px;
-  width: 66px;
-  margin-right: 8px;
-  border-radius: 2px;
-  border-color: rgb(7, 6, 6);
-  border-width: 1px;
-  border-style: solid;
-  margin-left: -1px;
-  
-  
-}
 
-.search-button, .voice-search-button, 
-.upload-tooltip, .apps-tooltip, .icon-counter, .my-channel-too
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-.search-button .tooltip, .voice-search-button .tooltip, .upload-tooltip .tooltip,
-.apps-tooltip .tooltip, .icon-counter .tooltip
-{
-  /*  */
-  position: absolute;
-  background-color: #717171;
-  opacity: 0;
-  font-weight: 400;
-  font-size: 13px;
-  white-space: nowrap;
-  color: #fff;
-  padding: 10px 6px 6px 6px;
-  top: 52px;
-  z-index: 105;
-  border-radius: 0 2px 2px 0;
-  transition: 0.15s;
 
-}
-.search-button:hover .tooltip, .voice-search-button:hover .tooltip,
- .upload-tooltip:hover .tooltip, .apps-tooltip:hover .tooltip, 
- .icon-counter:hover .tooltip
- {
-  opacity: 1;
-}
-.voice-search-button {
-  /* position: relative; */
-  padding-top: 8px;
-  padding-bottom: 6px;
-  height: 40px;
-  width: 40px;
-  border: 0;
-  border-radius: 50%;
-}
-
-.search-icon {
-  height: 25px;
-}
-.voice-icon {
-  height: 20px;
-  /* align-self: center; */
-}
-.right-section {
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
+.search-bar {
+ width: 5%;
+ top: 10px;
 }
 .upload {
   height: 26px;
@@ -146,25 +63,6 @@
 .notification-icon {
   height: 24px;
 }
-
-.notification-number {
-  position: absolute;
-  top: -2px;
-  right: -6px;
-  background-color: rgb(204, 0, 0);
-  color: white;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(29, 1, 1);
-  font-size: 11px;
-  font-weight: 400;
-  padding: 2px 4px 0px 4px;
-}
-
-/*  style the logo class to be 30% bigger*/
-
-
 
 
 /* style the menu-btn to be bigger */

@@ -1,12 +1,69 @@
 
 
-@media screen and (min-width: 769px){
+@media screen and (max-width: 768px){
+#main, .p-content, #about, iframe, nav{
+    /* margin-right: 0; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 412px;
+    /* font size drcrease */
+    background-size: 100%;
+    /* font-size: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right : 0;
+    /* margin-top: 50px; */
+  }
+
+    .right-side {
+      display: none;
+
+    }
+
+    .download-custom , .download-video, .download-btn {
+      flex-direction: column;
+      left: auto;
+      /* width: auto; */
+      margin-top:5px;
+
+    }
+    .video, .embed, .download, .goodbye{
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: auto;
+    }
+    .w3-jumbo, .w3-container{
+      display: none;
+
+    }
+
+    .myTopBtn {
+      position: absolute;
+      right: 10px;
+     
+    }
 
 }
 *, :after, :before {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+
+
 }
 
+body {
+  padding-right: 0;
+  padding-left: 0;
+}
 html {
   scroll-behavior: smooth
 }
@@ -25,27 +82,11 @@ html {
   }
 }
 
-@media only screen and (max-width: 720px) {
-  #main, #home, #about {
-    /* margin-right: 0; */
-    padding: auto;
-    margin: 40px 0;
-    /* margin-top: 50px; */
-  }
-  
-    #main{
-      padding-top:0;
-      margin-top: 0;
-    }
-  #home{
-    display:none;
-  }
-  #about{
-    padding-top:15px;
-  }
-}
+/* @media only screen and (max-width: 720px) {
+ 
+} */
 
-@media only screen and (max-width: 1299px) and (min-width: 1180) {
+/* @media only screen and (max-width: 1299px) and (min-width: 1180) {
   #main,
   .p-content,
   #home,
@@ -105,12 +146,7 @@ html {
   .list-rules {
     display: flex;
     /* flex-wrap: wrap; */
-    flex-grow: -1;
-    flex-direction: column;
-    /* list-style: none; */
-    margin-left: 0;
-    padding-left: 5px;
-  }
+
   .download-btn {
     justify-self: left;
     flex-direction: column;
@@ -131,9 +167,9 @@ html {
   #smallNavbar {
     padding-left: 80px;
   }
-}
-/* add media screen on max width 800px */
-@media only screen and (max-width: 500px) and (min-width: 400px) {
+/* } */
+
+/* @media only screen and (max-width: 500px) and (min-width: 400px) {
   .right-side {
     display: none;
   }
@@ -149,37 +185,32 @@ html {
   .list-rules {
     display: flex;
     /* flex-wrap: wrap; */
-    flex-direction: column;
+    /* flex-direction: column;
     /* list-style: none; */
-    margin-left: 5px;
+    /* margin-left: 5px;
     padding-left: 5px;
-  }
-  .download-btn, .download-video, .download-custom {
+  } */
+  /* .download-btn, .download-video, .download-custom {
    
     flex-direction: column;
     left: 150px;
     width: auto;
     margin-top:5px;
-  }
-  #home {
+  }  */
+  /* #home {
     margin-top: 90px;
   }
   #smallNavbar {
     padding-left: 80px;
     /* hide div on scroll */
-  }
-  .myTopBtn {
-    right: 0;
-    
-    left: 410px;
-    width: fit-content;
-  }
-}
-/* Worksheets small */
+  /* }  */
 
-@media only screen and (max-width: 390px) {
+/* }
+ Worksheets small  */
+
+/* @media only screen and (max-width: 390px) {
   .previous {
-    /* width: 150px; */
+    
     margin-left: 25px;
     padding-bottom: 15px;
   }
@@ -201,14 +232,14 @@ html {
     display: none;
   }
 
-}
+ }  
 #line {
   font-size: 1.5rem;
   font-weight: 900;
   color: #fffefc;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px){ 
   .right-side, .fas.fa-tshirt {
     display: none;
   }
@@ -222,16 +253,16 @@ html {
   }
   .list-rules {
     display: flex;
-    /* flex-wrap: wrap; */
+    
     flex-grow: -1;
     flex-direction: column;
-    /* list-style: none; */
+
     margin-left: 0;
     padding-left: 5px;
   }
   .download-btn, .download-custom, .download-warmup-song, .download-video{
     justify-self: left;
-    /* flex-direction: column; */
+
     position: absolute;
     left: 150px;
     margin-bottom: 40px;
@@ -240,15 +271,8 @@ html {
     margin-top: 90px;
   }
   /* hide #smallNavbar on page scroll */
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: auto;
-    z-index: 999;
-  }
-  #smallNavbar {
-    padding-left: 80px;
-  }
+
+
   .download-2{
     justify-self: left;
     margin-left: 0;
@@ -279,14 +303,6 @@ img:hover{
   margin: 0;
   padding: 0;
 }
-}
+
 
  
-  @media screen and (max-width: 720px) {
-    .p-content{
-      margin-top: 5px;
-      margin-bottom: 0;
-      padding-top: 0;
-    }
-  
-}

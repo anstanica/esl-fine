@@ -45,36 +45,15 @@ if (window.innerWidth < 600) {
     }
   });
 }
-var btn = document.querySelector(".ppp");
-        var div = document.querySelector(".hidden-div");
-        btn.addEventListener("click", function ()
-        {
-          if (div.style.display === "none")
-          {
-            div.style.display = "block";
-          }
-          else
-          {
-            div.style.display = "none";
-          }
-        });
-        // also show/hide this div on hover
-        btn.addEventListener("mouseover", function ()
-        {
-          if (div.style.display === "none")
-          {
-            div.style.display = "block";
-          }
-          else
-          {
-            div.style.display = "none";
-          }
-        });
-        // if mouse is out of the div hide it
-        div.addEventListener("mouseout", function ()
-        {
-          if (div.style.display === "block")
-          {
-            div.style.display = "none";
-          }
-        });
+
+$(".ppp").on("click", function () {
+  $(".hidden-div").toggle();
+});
+
+$(".ppp").on("mouseover", function () {
+  $(".hidden-div").show();
+});
+
+$("div").on("mouseout", function () {
+  $(".hidden-div").toggle();
+});

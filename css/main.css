@@ -73,11 +73,10 @@ h3,
 h4,
 h5,
 h6 {
-  
-  font-family: -apple-system-body, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif ;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* font-weight: 500; */
+  font-family: -apple-system-body, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
 }
 
 .w3-row-padding img {margin-bottom: 12px}
@@ -98,7 +97,7 @@ hr{
   width: 25%;
 }
 .p-content {
-  font-size: 18px;
+  /* font-size: 18px; */
   color: #eceef0;
   word-break: inherit;
   width: 750px;

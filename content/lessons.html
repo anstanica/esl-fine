@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" class="dark:bg-[--theme-bg]">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessons Plans</title>
-    <link rel="stylesheet" href="https:www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" media="screen and (max-width: 720px)" href="./css/main-small.css">
-    <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.8.1/css/all.css"
+    <head id="header">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/scripts/jquery.min.js"></script>
+        <link rel="stylesheet" href="https:www.w3schools.com/w3css/4/w3.css">
+        <!-- <link rel="stylesheet" media="screen and (max-width: 720px)" href="./css/main-small.css"> -->
+        <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- MytopButton script -->
+        <!-- <script src="https:cdn.tailwindcss.com"></script> -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.entries%2CObject.assign"></script>
+        
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/main-small.css">
+       
+        <!-- videojs -->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link href="https:vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+        <!-- tailwind -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- MytopButton script -->
-    <!-- <script src="https:cdn.tailwindcss.com"></script> -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.entries%2CObject.assign"></script>
+        <!-- import jquery -->
+        
+        <link rel="stylesheet" src="/dist/output.css" />
+        <!-- get lesson.css -->
+        <link rel="stylesheet" href="/css/lessons.css">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" type="image/x-icon">
+        
+        
+        <script>
+            var ALGOLIA_INSIGHTS_SRC =
+              "https://cdn.jsdelivr.net/npm/search-insights@2.2.1";
+        
+            !(function (e, a, t, n, s, i, c) {
+              (e.AlgoliaAnalyticsObject = s),
+                (e[s] =
+                  e[s] ||
+                  function () {
+                    (e[s].queue = e[s].queue || []).push(arguments);
+                  }),
+                (i = a.createElement(t)),
+                (c = a.getElementsByTagName(t)[0]),
+                (i.async = 1),
+                (i.src = n),
+                c.parentNode.insertBefore(i, c);
+            })(window, document, "script", ALGOLIA_INSIGHTS_SRC, "aa");
+          </script>
+        
+          <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
+            integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
+            crossorigin="anonymous"
+          ></script>
+          <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+          <script>
+            const { autocomplete, getAlgoliaResults } =
+              window["@algolia/autocomplete-js"];
+          </script>
+          <!-- search only version -->
+          <script
+            src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
+            integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
+            crossorigin="anonymous"
+          ></script>
+          
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
+        />
+        <link
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        />
+        <!-- default version -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
+        integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
+        crossorigin="anonymous"
+        ></script>
+        
+        
+        </head>
+    
+<body data-theme=dark>
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/main-small.css">
-    <!-- videojs -->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link href="https:vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-    <!-- tailwind -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- import jquery -->
-    <script src="/scripts/jquery.min.js"></script>
-    <link rel="stylesheet" src="/dist/output.css" />
-    <!-- get lesson.css -->
-    <link rel="stylesheet" href="/css/lessons.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" type="image/x-icon">
-</head>
-
-<body>
     <!-- how to make a doc page layout? -->
     <!-- 1. make a grid -->
 
@@ -39,7 +95,7 @@
     <div class="container dark:bg-[--theme-bg]">
             <div class="sidebar">
                 <span class="logo"></span>
-                <a class="logo-expand" href="/index.html">ESLclup
+                <a class="logo-expand" href="/index.html">ESLClup
                     <!-- logo -->
                     <img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" alt="" class="logo-img" />
                 
@@ -49,7 +105,7 @@
                 <div class="side-wrapper">
                     <div class="side-title">MENU</div>
                     <div class="side-menu">
-                        <a class="sidebar-link discover is-active " href="#">
+                        <a class="sidebar-link discover is-active " data-topic="animal" href="#">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M9.135 20.773v-3.057c0-.78.637-1.414 1.423-1.414h2.875c.377 0 .74.15 1.006.414.267.265.417.625.417 1v3.057c-.002.325.126.637.356.867.23.23.544.36.87.36h1.962a3.46 3.46 0 002.443-1 3.41 3.41 0 001.013-2.422V9.867c0-.735-.328-1.431-.895-1.902l-6.671-5.29a3.097 3.097 0 00-3.949.072L3.467 7.965A2.474 2.474 0 002.5 9.867v8.702C2.5 20.464 4.047 22 5.956 22h1.916c.68 0 1.231-.544 1.236-1.218l.027-.009z" />
@@ -329,43 +385,108 @@
 
 <div class="wrapper">
     <div class="header">
-     <div class="search-bar">
-      <input type="text" placeholder="Search">
-     </div>
-     <a href="#"> <img src="/logos/menu.svg" alt="" class="m-icon" srcset=""></a>
-     <style>
-      .m-icon{
-        display: none;
-          background-color: aliceblue;
-          border-radius: 50%;
-          z-index: 100;
-          position: absolute;
-          top: 20px;
-          left:5px;
-          width: 40px;
-          rotate: 180deg;
-      }
-     </style>
-     <div class="user-settings">
-      <img class="user-img" src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80" alt="">
-      <div class="user-name">
-        
-        <details>
-            <summary style="color: gray;">All our resources are available <br> offline including the videos</summary>
-            Just click on the download button and you are good to go.
-        </details>
-        
+        <div class="search-bar">
+            <!-- <input type="text" placeholder="Search" id="myInput"> -->
         </div>
-      <svg viewBox="0 0 492 492" fill="currentColor">
-       <path d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z"></path>
-      </svg>
-      <div class="notify">
-       <div class="notification"></div>
-       <svg viewBox="0 0 24 24" fill="currentColor">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.707 8.796c0 1.256.332 1.997 1.063 2.85.553.628.73 1.435.73 2.31 0 .874-.287 1.704-.863 2.378a4.537 4.537 0 01-2.9 1.413c-1.571.134-3.143.247-4.736.247-1.595 0-3.166-.068-4.737-.247a4.532 4.532 0 01-2.9-1.413 3.616 3.616 0 01-.864-2.378c0-.875.178-1.682.73-2.31.754-.854 1.064-1.594 1.064-2.85V8.37c0-1.682.42-2.781 1.283-3.858C7.861 2.942 9.919 2 11.956 2h.09c2.08 0 4.204.987 5.466 2.625.82 1.054 1.195 2.108 1.195 3.745v.426zM9.074 20.061c0-.504.462-.734.89-.833.5-.106 3.545-.106 4.045 0 .428.099.89.33.89.833-.025.48-.306.904-.695 1.174a3.635 3.635 0 01-1.713.731 3.795 3.795 0 01-1.008 0 3.618 3.618 0 01-1.714-.732c-.39-.269-.67-.694-.695-1.173z" />
-       </svg>
-      </div>
-     </div>
+        <div class="button-wrapper">
+            <button class="like" id="share">
+             <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.435 2.582a1.933 1.933 0 00-1.93-.503L3.408 6.759a1.92 1.92 0 00-1.384 1.522c-.142.75.355 1.704 1.003 2.102l5.033 3.094a1.304 1.304 0 001.61-.194l5.763-5.799a.734.734 0 011.06 0c.29.292.29.765 0 1.067l-5.773 5.8c-.428.43-.508 1.1-.193 1.62l3.075 5.083c.36.604.98.946 1.66.946.08 0 .17 0 .251-.01.78-.1 1.4-.634 1.63-1.39l4.773-16.075c.21-.685.02-1.43-.48-1.943z" />
+             </svg>
+             Share
+            </button>
+            <button class="like red" id="clicks">
+             <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.85 2.5c.63 0 1.26.09 1.86.29 3.69 1.2 5.02 5.25 3.91 8.79a12.728 12.728 0 01-3.01 4.81 38.456 38.456 0 01-6.33 4.96l-.25.15-.26-.16a38.093 38.093 0 01-6.37-4.96 12.933 12.933 0 01-3.01-4.8c-1.13-3.54.2-7.59 3.93-8.81.29-.1.59-.17.89-.21h.12c.28-.04.56-.06.84-.06h.11c.63.02 1.24.13 1.83.33h.06c.04.02.07.04.09.06.22.07.43.15.63.26l.38.17c.092.05.195.125.284.19.056.04.107.077.146.1l.05.03c.085.05.175.102.25.16a6.263 6.263 0 013.85-1.3zm2.66 7.2c.41-.01.76-.34.79-.76v-.12a3.3 3.3 0 00-2.11-3.16.8.8 0 00-1.01.5c-.14.42.08.88.5 1.03.64.24 1.07.87 1.07 1.57v.03a.86.86 0 00.19.62c.14.17.35.27.57.29z" />
+             </svg>
+             Liked
+            </button>
+           </div>
+      
+        <!-- a menu icon -->
+        <a href="#">
+            <!-- i icon for menu -->
+            <img src="/logos/drawer_button.svg" alt="Other Topics" class="small-icon" srcset=""
+                title="Other Sections">
+
+        </a>
+        <div class="menu" style="display: none;">
+
+            <div class="user-menu-items">
+                <!-- MAKE them buttons -->
+
+                <a href="./videos.html" alt="" class="user-icon" srcset="">Videos</a>
+                <a href="./worksheets.html" alt="" class="user-icon" srcset="">Worksheets</a>
+                <a href="./games.html" alt="" class="user-icon" srcset="">Online Games</a>
+                <!-- <a href="#"> <img src="/logos/user.svg" alt="" class="user-icon" srcset="">4</a> -->
+            </div>
+            <!-- </div> -->
+        </div>
+        <style>
+            /* align .menu to the top right of the parent-container */
+            .menu {
+                position: absolute;
+                top: 60px;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 20px;
+                z-index: 100;
+                flex-direction: row;
+            }
+
+            .user-menu-items a {
+                /* make them look like a button */
+                display: flex;
+                flex-direction: row;
+                padding: 10px 10px;
+                border-radius: 5px;
+                background-color: aliceblue;
+                margin: 0 5px 5px 0;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 1.2rem;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease-in-out;
+            }
+
+
+            /* color: aliceblue; */
+
+            .small-icon {
+                width: 40px;
+                height: 40px;
+                /* background-color: aliceblue; */
+                border-radius: 50%;
+                z-index: 100;
+                position: absolute;
+                top: 20px;
+                right: 15px;
+                /* rotate: 180deg; */
+            }
+        </style>
+
+
+        <a href="#"> <img src="/logos/menu.svg" alt="" class="m-icon" srcset="" aria-hidden="true"></a>
+     
+        <div class="user-settings">
+            <!-- <img class="user-img" src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80" alt=""> -->
+            <!-- <div class="user-name">Thomas</div> -->
+            <svg viewBox="0 0 492 492" fill="currentColor">
+                <path
+                    d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
+                </path>
+            </svg>
+            <div class="notify">
+                <!-- <div class="notification"></div> -->
+                <!-- <svg viewBox="0 0 24 24" fill="currentColor">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.707 8.796c0 1.256.332 1.997 1.063 2.85.553.628.73 1.435.73 2.31 0 .874-.287 1.704-.863 2.378a4.537 4.537 0 01-2.9 1.413c-1.571.134-3.143.247-4.736.247-1.595 0-3.166-.068-4.737-.247a4.532 4.532 0 01-2.9-1.413 3.616 3.616 0 01-.864-2.378c0-.875.178-1.682.73-2.31.754-.854 1.064-1.594 1.064-2.85V8.37c0-1.682.42-2.781 1.283-3.858C7.861 2.942 9.919 2 11.956 2h.09c2.08 0 4.204.987 5.466 2.625.82 1.054 1.195 2.108 1.195 3.745v.426zM9.074 20.061c0-.504.462-.734.89-.833.5-.106 3.545-.106 4.045 0 .428.099.89.33.89.833-.025.48-.306.904-.695 1.174a3.635 3.635 0 01-1.713.731 3.795 3.795 0 01-1.008 0 3.618 3.618 0 01-1.714-.732c-.39-.269-.67-.694-.695-1.173z" />
+</svg> -->
+            </div>
+        </div>
     </div>
     <div class="main-container">
      <div class="main-header anim" >
@@ -479,20 +600,7 @@
      </div>
      <div class="stream-area">
 
-        <div class="button-wrapper">
-            <button class="like" id="share">
-             <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21.435 2.582a1.933 1.933 0 00-1.93-.503L3.408 6.759a1.92 1.92 0 00-1.384 1.522c-.142.75.355 1.704 1.003 2.102l5.033 3.094a1.304 1.304 0 001.61-.194l5.763-5.799a.734.734 0 011.06 0c.29.292.29.765 0 1.067l-5.773 5.8c-.428.43-.508 1.1-.193 1.62l3.075 5.083c.36.604.98.946 1.66.946.08 0 .17 0 .251-.01.78-.1 1.4-.634 1.63-1.39l4.773-16.075c.21-.685.02-1.43-.48-1.943z" />
-             </svg>
-             Share
-            </button>
-            <button class="like red" id="clicks">
-             <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.85 2.5c.63 0 1.26.09 1.86.29 3.69 1.2 5.02 5.25 3.91 8.79a12.728 12.728 0 01-3.01 4.81 38.456 38.456 0 01-6.33 4.96l-.25.15-.26-.16a38.093 38.093 0 01-6.37-4.96 12.933 12.933 0 01-3.01-4.8c-1.13-3.54.2-7.59 3.93-8.81.29-.1.59-.17.89-.21h.12c.28-.04.56-.06.84-.06h.11c.63.02 1.24.13 1.83.33h.06c.04.02.07.04.09.06.22.07.43.15.63.26l.38.17c.092.05.195.125.284.19.056.04.107.077.146.1l.05.03c.085.05.175.102.25.16a6.263 6.263 0 013.85-1.3zm2.66 7.2c.41-.01.76-.34.79-.76v-.12a3.3 3.3 0 00-2.11-3.16.8.8 0 00-1.01.5c-.14.42.08.88.5 1.03.64.24 1.07.87 1.07 1.57v.03a.86.86 0 00.19.62c.14.17.35.27.57.29z" />
-             </svg>
-             Liked
-            </button>
-           </div>
+
       <div class="video-stream anim">
         <!-- get a menu icon -->
         
@@ -680,6 +788,8 @@
 
 <script src="/scripts/topbutton.js"></script>
     <script src="/scripts/lessons.js"></script>
+    <script async defer src="/scripts/search.js"></script>
+
 </body>
 
 </html>

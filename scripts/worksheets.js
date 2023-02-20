@@ -5,83 +5,67 @@ $(function () {
       $(this).addClass("is-active");
     });
   });
+  $(window).on("load", function () {
+    const $windowWidth = $(window).width();
+    if ($windowWidth < 768) {
+      $(".m-icon").show();
+      $(".sidebar").hide();
   
-  // This code is used to resize the sidebar while in mobile view.
-  // It is called on window resize and it checks the width of the window.
-  // If the window width is less than 768px, then the sidebar is hidden by setting the width to 0px.
-  // This code also sets the sidebar to be displayed in the center of the page in mobile view.
-  // If the window width is greater than 768px, then the sidebar is displayed by setting the width to 220px.
-  
+    } else {
+      // $(".button-wrapper").css("right", "460px");
+      $(".m-icon").hide();
+      $(".sidebar").show();
+      $(".side-title").html("Menu");
+    }
+  });
   $(window).on("resize", function () {
     const $windowWidth = $(window).width();
-  
-  //   also on minimize and maximize
-  
-  
     if ($windowWidth < 768) {
-      $(".top-hr").css("display", "none");
-      $(".sidebar").css("display", "none");
-      $(".m-icon").css("display", "block");
-      $(".button-wrapper").css("right", "0");
-      $(".button-wrapper").css("top", "70px");
-      $(".search-bar").css("width", "75%");
-      $(".search-bar").css("marginLeft", "30px");
-      $(".search-bar input").css("width", "75%");
-    } else if ($windowWidth < 992) {
-      $(".button-wrapper").css("right", "200px");
-      $(".sidebar").css("display", "block");
-      $(".m-icon").css("display", "none");
-      $(".side-title").html("Menu");
-      $(".m-icon").css("top", "17px");
-      $(".top-hr").css("display", "none");
+      $(".sidebar").hide();
+      $(".m-icon").show();
+      $(".search-bar input").css("margin-left", "60px");
+      $(".search-bar input").css("width", "65%");
     } else {
-      $(".button-wrapper").css("right", "460px");
-      $(".sidebar").css("display", "block");
-      $(".m-icon").css("display", "none");
+      // $(".button-wrapper").css("right", "460px");
+      $(".m-icon").hide();
+      $(".sidebar").show();
       $(".side-title").html("Menu");
-      // $(".m-icon").css("top", "17px");
     }
   });
-  
-  // $(window).on('resize', resize);
-  // windows onscroll 
-  // create topFunction() function
-  function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  
-  
   // .m-icon onclick display sidebar
   $(".m-icon").on("click", function () {
-    $(".sidebar").toggle('fast');
-
+    $(".sidebar").toggle();
     
-    if (".m-icon"){
-     
-     
+  
+    if (".m-icon") {
       $(".logo-expand").hide();
-      $(".side-title").html("ESL CLUP");
-      $(".m-icon").css("left", "5px");
-      $(".m-icon").css("top", "21px");
+      $(".side-title").html("");
     }
-  //   
-//   github pull command
-    
+    //
+    //   github pull command
     else {
-    //  ONCLICK again 
       $(".logo-expand").show();
       $(".side-title").html("Menu");
-      $(".m-icon").css("left", "15PX");
-      // $(".m-icon").css("top", "0");
     }
   });
   
-  // onc refer-div display on click
-  // get ppp button
+  $(function () {
+    $(".sidebar-link").on("click", function () {
+      $(".main-container").removeClass("show");
+      $(".main-container").scrollTop(0);
+    });
+  });
+  $(".iframe-container").css("height", "520px");
+  $(".iframe-container").css("overflow", "hidden");
   
   // When the document is ready, do the following:
   
+  $(function () {
+    $(".small-icon").on("click", function () {
+      $(".menu").toggle();
+      // $(".menu").css("display", "flex");
+    });
+  });
   
   // const strongTags = document.querySelectorAll("strong");
   
@@ -105,7 +89,13 @@ $(function () {
   //         video.pause();
   //     });
   // });
-  
+  $(".main-container").on("click", function () {
+    if (window.innerWidth < 768) {
+      $(".sidebar").hide();
+    }
+    $(".menu").hide();
+    // $('.sidebar').hide();
+  });
   $(function () {
     $(".sidebar-link").on("click", function () {
       $(".main-container").removeClass("show");
@@ -136,189 +126,181 @@ $(function () {
    
     };
 
+    $(function () {
+      $(".sidebar-link").on("click", function () {
+        loadContent("/" + $(this).attr("data-topic") + "/worksheets/worksheet.html");
+      });
+      
+      $(".zoo").on("click", function () {
+        loadContent("/zoo-animals/worksheets/worksheet.html");
+      });
+      $(".discover").on("click", function () {
+        loadContent("/animal/worksheet.html");
+      });
+    });
+    
     // $('.main-container').html("<video id='streamer' src='vsrc/"+ videoName + ".mp4' controls></video>");
     // function for removing content
 
     // remove content on click
-    $(function () {
-    $(".logo, .logo-expand, .discover").on("click", function (e) {
-      loadContent("/animal/worksheet.html")
-      //
-    });
-    // load content on click
-    $(".trending, .video").on("click", function () {
-      loadContent("/body/worksheets/worksheet.html");
+  //   $(function () {
+  //   $(".logo, .logo-expand, .discover").on("click", function (e) {
+  //     loadContent("/animal/worksheet.html")
+  //     //
+  //   });
+  //   // load content on click
+  //   $(".trending, .video").on("click", function () {
+  //     loadContent("/body/worksheets/worksheet.html");
      
-    });
-    $(".days, .video").on("click", function () {
-      loadContent("/days-of-the-week/worksheets/worksheet.html");
+  //   });
+  //   $(".days, .video").on("click", function () {
+  //     loadContent("/days-of-the-week/worksheets/worksheet.html");
      
-    });
-    $(".clothes, .video").on("click", function () {
-      loadContent("/clothes/worksheets/worksheet.html");
+  //   });
+  //   $(".clothes, .video").on("click", function () {
+  //     loadContent("/clothes/worksheets/worksheet.html");
      
-    });
-    $(".food").on("click", function () {
-      loadContent("/food/worksheets/worksheet.html");
+  //   });
+  //   $(".food").on("click", function () {
+  //     loadContent("/food/worksheets/worksheet.html");
      
-    });
-    $(".family").on("click", function () {
-      loadContent("/family/worksheets/worksheet.html");
+  //   });
+  //   $(".family").on("click", function () {
+  //     loadContent("/family/worksheets/worksheet.html");
      
-    });
-    $(".Festivals").on("click", function () {
-      loadContent("/Festivals/worksheets/worksheet.html");
+  //   });
+  //   $(".Festivals").on("click", function () {
+  //     loadContent("/Festivals/worksheets/worksheet.html");
      
-    });
-    $(".colors").on("click", function () {
-      loadContent("/colors/worksheets/worksheet.html");
+  //   });
+  //   $(".colors").on("click", function () {
+  //     loadContent("/colors/worksheets/worksheet.html");
      
-    });
-    $(".weather").on("click", function () {
-      loadContent("/weather/worksheets/worksheet.html");
+  //   });
+  //   $(".weather").on("click", function () {
+  //     loadContent("/weather/worksheets/worksheet.html");
      
-    });
-    $(".adj").on("click", function () {
-      loadContent("/Adjectives/worksheets/worksheet.html");
+  //   });
+  //   $(".adj").on("click", function () {
+  //     loadContent("/Adjectives/worksheets/worksheet.html");
      
-    });
-    $(".adv").on("click", function () {
-      loadContent("/Adverbs/worksheets/worksheet.html");
+  //   });
+  //   $(".adv").on("click", function () {
+  //     loadContent("/Adverbs/worksheets/worksheet.html");
      
-    });
-    $(".country").on("click", function () {
-      loadContent("/countries/worksheets/worksheet.html");
+  //   });
+  //   $(".country").on("click", function () {
+  //     loadContent("/countries/worksheets/worksheet.html");
      
-    });
-    $(".music").on("click", function () {
-      loadContent("/Music/worksheets/worksheet.html");
+  //   });
+  //   $(".music").on("click", function () {
+  //     loadContent("/Music/worksheets/worksheet.html");
      
-    });
-    $(".daily").on("click", function () {
-      loadContent("/daily-routine/worksheets/worksheet.html");
+  //   });
+  //   $(".daily").on("click", function () {
+  //     loadContent("/daily-routine/worksheets/worksheet.html");
      
-    });
-    $(".games").on("click", function () {
-      loadContent("/games/worksheets/worksheet.html");
+  //   });
+  //   $(".games").on("click", function () {
+  //     loadContent("/games/worksheets/worksheet.html");
      
-    });
-    $(".alpha").on("click", function () {
-      loadContent("/Alphabets/worksheets/worksheet.html");
+  //   });
+  //   $(".alpha").on("click", function () {
+  //     loadContent("/Alphabets/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".house").on("click", function () {
-      loadContent("/house/worksheets/worksheet.html");
+  //   $(".house").on("click", function () {
+  //     loadContent("/house/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".jobs").on("click", function () {
-      loadContent("/jobs/worksheets/worksheet.html");
+  //   $(".jobs").on("click", function () {
+  //     loadContent("/jobs/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".months").on("click", function () {
-      loadContent("/months/worksheets/worksheet.html");
+  //   $(".months").on("click", function () {
+  //     loadContent("/months/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".class").on("click", function () {
-      loadContent("/classroom/worksheets/worksheet.html");
+  //   $(".class").on("click", function () {
+  //     loadContent("/classroom/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".numbers").on("click", function () {
-      loadContent("/numbers/worksheets/worksheet.html");
+  //   $(".numbers").on("click", function () {
+  //     loadContent("/numbers/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".phonics").on("click", function () {
-      loadContent("/phonics/worksheets/worksheet.html");
+  //   $(".phonics").on("click", function () {
+  //     loadContent("/phonics/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".places").on("click", function () {
-      loadContent("/places/worksheets/worksheet.html");
+  //   $(".places").on("click", function () {
+  //     loadContent("/places/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".questions").on("click", function () {
-      loadContent("/questions/worksheets/worksheet.html");
+  //   $(".questions").on("click", function () {
+  //     loadContent("/questions/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".seasons").on("click", function () {
-      loadContent("/seasons/worksheets/worksheet.html");
+  //   $(".seasons").on("click", function () {
+  //     loadContent("/seasons/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".shapes").on("click", function () {
-      loadContent("/shapes/worksheets/worksheet.html");
+  //   $(".shapes").on("click", function () {
+  //     loadContent("/shapes/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".sports").on("click", function () {
-      loadContent("/sports/worksheets/worksheet.html");
+  //   $(".sports").on("click", function () {
+  //     loadContent("/sports/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".time").on("click", function () {
-      loadContent("/time/worksheets/worksheet.html");
+  //   $(".time").on("click", function () {
+  //     loadContent("/time/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".toys").on("click", function () {
-      loadContent("/toys/worksheets/worksheet.html");
+  //   $(".toys").on("click", function () {
+  //     loadContent("/toys/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".transport").on("click", function () {
-      loadContent("/transportations/worksheets/worksheet.html");
+  //   $(".transport").on("click", function () {
+  //     loadContent("/transportations/worksheets/worksheet.html");
      
-    });
+  //   });
   
-    $(".verbs").on("click", function () {
-      loadContent("/verbs/worksheets/worksheet.html");
+  //   $(".verbs").on("click", function () {
+  //     loadContent("/verbs/worksheets/worksheet.html");
      
-    });
-    $(".zoo").on("click", function () {
-      loadContent("/zoo-animals/worksheets/worksheet.html");
-      $("title").text($(this).text() + "Worksheets");
-    });
+  //   });
+  //   $(".zoo").on("click", function () {
+  //     loadContent("/zoo-animals/worksheets/worksheet.html");
+  //     $("title").text($(this).text() + "Worksheets");
+  //   });
   
-    $(".sidebar-link").on("click", function () {
-      $("#about").css("margin", "10px");
-      $("#about").css("padding", "10px");
-      $(".video-stream").css("marginBottom", "80px");
-    });
+  //   $(".sidebar-link").on("click", function () {
+  //     $("#about").css("margin", "10px");
+  //     $("#about").css("padding", "10px");
+  //     $(".video-stream").css("marginBottom", "80px");
+  //   });
   
-    // add class py-2 to every element in the div .video-stream
-    $(".video-stream").children().addClass("py-2");
-  });
+  //   // add class py-2 to every element in the div .video-stream
+  //   $(".video-stream").children().addClass("py-2");
+  // });
 
-  $(function () {
-    $(".video").on("click", function () {
-      var source = $(this).find("source").attr("src");
-      var title = $(this).find(".video-name").text();
-      var person = $(this).find(".video-by").text();
-      var img = $(this).find(".author-img").attr("src");
-      $(".video-stream video").stop();
-      $(".video-stream source").attr("src", source);
-      $(".video-stream video").load();
-      $(".video-detail .author-img").attr("src", img);
-    });
-  });
-  
-  const vdSub = document.querySelector(".video-stream");
-  // for each vdSub child if it doesn't have the class of py-2 then add it
-  $(vdSub)
-    .children()
-    .each(function () {
-      if (!$(this).hasClass("py-2")) {
-        $(this).addClass("py-2");
-      }
-    });
-  
+
+
   // liked counter
   // const likeBtn = document.querySelector(".like");
   const savedData = localStorage.getItem("clicks");

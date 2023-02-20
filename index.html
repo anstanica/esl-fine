@@ -1,1535 +1,1456 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="light" description />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESL Clup Home</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png"
+    />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="color-scheme" content="light" description>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>ESL Clup Home</title>
-	<link rel="icon" type="image/x-icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png">
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="/scripts/jquery.min.js"></script>
-	<!-- <link rel="stylesheet" href="css/pico.min.css"> -->
-	<!-- styles -->
-	<link rel="stylesheet" href="css/w3css.css">
-	<link rel="stylesheet" href="css\styles.css" />
-	<link rel="stylesheet" href="css\video.css" />
-	<link rel="stylesheet" href="css\header.css" />
-	<link rel="stylesheet" href="css\general.css" />
-	<link rel="stylesheet" href="css\sidebar.css" />
-	<link rel="stylesheet" href="css\h-menu.css" />
+    <!-- <link rel="stylesheet" href="css/pico.min.css"> -->
+    <!-- styles -->
+    <link rel="stylesheet" href="css/w3css.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/h-menu.css" />
+    <!-- <link rel="stylesheet" href="css/search.css" /> -->
 
+    <link rel="stylesheet" href="css/footer.css" />
 
-	<link rel="stylesheet" href="css/footer.css" />
+    <!-- <link rel="stylesheet" href="search.css" /> -->
 
-	<!-- <link rel="stylesheet" href="search.css" /> -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 500px)"
+      href="/css/left-sideSmall.css"
+    />
+    <!-- fonts -->
 
-	<link rel="stylesheet" media="screen and (max-width: 500px)" href="/css/left-sideSmall.css" />
-	<!-- fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/03826baea9.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--import jquery -->
-	
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer
+      src="https://kit.fontawesome.com/03826baea9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--import jquery -->
 
-	<script src="./node_modules/freezeframe/dist/freezeframe.min.js"></script>
+    <script>
+      var ALGOLIA_INSIGHTS_SRC =
+        "https://cdn.jsdelivr.net/npm/search-insights@2.2.1";
 
-</head>
+      !(function (e, a, t, n, s, i, c) {
+        (e.AlgoliaAnalyticsObject = s),
+          (e[s] =
+            e[s] ||
+            function () {
+              (e[s].queue = e[s].queue || []).push(arguments);
+            }),
+          (i = a.createElement(t)),
+          (c = a.getElementsByTagName(t)[0]),
+          (i.async = 1),
+          (i.src = n),
+          c.parentNode.insertBefore(i, c);
+      })(window, document, "script", ALGOLIA_INSIGHTS_SRC, "aa");
+    </script>
 
-<body class="dark:bg-gray-900 anim " data-theme="dark">
+    <script
+      type="module"
+      defer
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
+      integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+    <script>
+      const { autocomplete, getAlgoliaResults } =
+        window["@algolia/autocomplete-js"];
+    </script>
+    <!-- search only version -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
+      integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- import jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- default version -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
+      integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- import tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="./node_modules/freezeframe/dist/freezeframe.min.js"></script>
+  </head>
 
+  <body class="dark:bg-gray-900 anim">
+    <header class="header">
+      <div class="left-section">
+        <!-- create menu icon  -->
+        <div class="flex md:order-2">
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            onclick="w3_open()"
+            class="inline-flex top-2 items-center p-2 text-sm text-gray-500 z-20 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-	<header class="header">
-		<div class="left-section">
+      <div class="middle-section">
+        <nav
+          class="bg-white h-15 px-2 left-0 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full top-0 border-b border-gray-200 dark:border-gray-600"
+          id="nav-left"
+        >
+          <div
+            class="flex items-center justify-between left-0 mr-5"
+            id="center-div"
+          >
+            <h1
+              class="small-size flex ml-32 text-2xl antialiased font-bold text-white top-2"
+              style="display: none"
+              id="small-size"
+            >
+              <a
+                href=""
+                class="small-size flex text-2xl antialiased font-bold text-white"
+              >
+                ESL Clup Free Resources</a
+              >
+            </h1>
+            <a
+              href="https://eslclup.com/"
+              class="flex items-center justify-center"
+            >
+              <img
+                src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png"
+                class="h-6 mr-2 sm:h-9"
+                id="logo-m"
+                alt="Logo"
+              />
+              <span
+                class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+                id="span-rm"
+                >ESL Clup</span
+              >
+            </a>
 
-			<!-- create menu icon  -->
-	
+            <div class="flex md:order-3 left-0"></div>
+            <div
+              class="items-center justify-between hidden left-0 w-full md:flex md:w-auto md:order-1"
+              id="navbar-sticky"
+            >
+              <div class="relative mt-3 md:hidden">
+                <div
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-500"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <ul
+                class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="./index.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/lessons.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Lesson Plans</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/worksheets.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Worksheets</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/flashcards.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Flashcards</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/videos.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Videos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/games.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Games</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >About Me</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./donate.html"
+                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Donate</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-			<div class="flex md:order-2">
-				<!-- <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button> -->
-				<button data-collapse-toggle="navbar-sticky" type="button" onclick="w3_open()" class="inline-flex top-2 items-center p-2 text-sm text-gray-500 z-20 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-				  <span class="sr-only">Open main menu</span>
-				  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-			  </button>
-			</div>
-		
-		</div>
+      <div class="search-bar">
+    
+      </div>
+    </header>
 
+    <div id="autocomplete"></div>
+    <main id="contents" class="dark:bg-gray-900">
+      <section class="video-grid md:dark:bg-gray-900">
+        <div class="video-preview">
+          <div
+            class="thumbnail-row"
+            onclick="window.location.href='animal/animal.html';"
+          >
+            <img
+              src="animal/animals-pics/animals.jpg"
+              class="inside-anfield freezeframe"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Animal Farm <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content">
+                    <a href="animal/animal.html">Lesson Plan</a>
+                    <a href="/animal/worksheet.html">Worksheets</a>
+                    <a href="animal/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<div class="middle-section">
-		
-	
+        <div class="video-preview">
+          <div
+            class="thumbnail-row"
+            onclick="window.location.href='zoo-animals/zoo.html';"
+          >
+            <img src="/thumbnails/zoo.jpg" class="inside-anfield freezeframe" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-<nav class="bg-white h-15 px-2 left-0 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full  top-0  border-b border-gray-200 dark:border-gray-600" id="nav-left">
-	<div class="flex items-center justify-between left-0 mr-5" id="center-div">
-		<h1  class="small-size flex  ml-32 text-2xl antialiased font-bold text-white top-2" style="display: none;" id="small-size">
-		<a href="" class="small-size flex  text-2xl antialiased font-bold text-white">	ESL Clup Free Resources</a>
-		</h1>
-	<a href="https://eslclup.com/" class="flex items-center justify-center ">
-		<img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="h-6 mr-2 sm:h-9"  id="logo-m" alt="Logo">
-		<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white" id="span-rm">ESL Clup</span>
-	</a>
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Zoo Animals <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content">
+                    <a href="zoo-animals/zoo.html">Lesson Plan</a>
+                    <a href="zoo-animals/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="zoo-animals/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
 
-	<div class="flex md:order-3 left-0">
-		
-	</div>
-	<div class="items-center justify-between hidden left-0 w-full md:flex md:w-auto md:order-1 " id="navbar-sticky">
-	    <div class="relative mt-3 md:hidden">
-			<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-			  <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-			</div>
-			<!-- <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."> -->
-		  </div>
-	  <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
-		<li>
-		  <a href="./index.html" class="block py-2 pl-3 pr-4 text-xl	 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-		</li>
-		<li>
-		  <a href="/content/lessons.html" class="block py-2 pl-3 pr-4 text-xl	text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Lesson Plans</a>
-		</li>
-		<li>
-		  <a href="/content/worksheets.html" class="block py-2 pl-3 pr-4 text-xl	text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Worksheets</a>
-		</li>
-		<li>
-		  <a href="/content/flashcards.html" class="block py-2 pl-3 pr-4 text-xl	text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Flashcards</a>
-		</li>
-		<li>
-			<a href="/content/videos.html" class="block py-2 pl-3 pr-4 text-xl	text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Videos</a>
-		  </li>
-		  <li>
-			<a href="/content/games.html" class="block py-2 pl-3 pr-4 text-xl	text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Games</a>
-		  </li>
-		  <li>
-			<a href="./about.html" class="block py-2 pl-3 pr-4 text-xl	text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
-		  </li>
-		  <li>
-			<a href="./donate.html" class="block py-2 pl-3 pr-4 text-xl	text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Donate</a>
-		  </li>
-	  </ul>
-	</div>
-	</div>
-  </nav>
-  <</div>
-		<div class="right-section">
-	
-			<!-- <div class="upload-tooltip">
-			
-				<i class="fa fa-upload" style="font-size:24px"></i>
-				<div class="tooltip">Create</div>
-			</div>
+              <!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
+            </div>
+          </div>
+        </div>
 
-			<div class="apps-tooltip">
-			
-				<i class="fa fa-th" style="font-size:24px"></i>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/adjectives-ppt.png"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='/Adjectives/adjectives.html' "
+            />
 
-
-
-				<div class="tooltip">Apps</div>
-			</div>
-
-			<div class="icon-counter">
-
-			
-				<i class="fa fa-bell" style="font-size:24px"></i>
-
-				<div class="tooltip">Notifications</div>
-				<div class="notification-number">
-					1
-				</div> -->
-
-
-			</div>
-			<div class="my-channel-too">
-				<!-- <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-					<svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-					<svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-				</button> -->
-			
-			</div>
-		</div>
-		<div class="search-btn-div ">
-			<!-- <input type="search" placeholder="Search" class="search" data-search/> -->
-			<button class="search-button md:bg-gray-900 md:border-0 focus-visible) hover:text-white">
-				<!-- <img src="header/search.svg" class=" search-icon" title="Search">  -->
-				<!-- fa search icon  -->
-				<i class="fa fa-search" style="font-size:24px"></i>
-
-				<div class="tooltip">Search</div>
-
-			</button>
-			<!-- add input -->
-			<!-- <input type="text" placeholder="Search" id="search-final" data-search autocomplete="on"> -->
-		</div>
-
-<style>
-	.search-btn-div, .search-button{
-		top: 10px;
-		z-index: 1000;
-	}
-	#search-final{
-		/* on top of everything else */
-		z-index: 999;
-		position: absolute;
-		top: 30px;
-		right: 20px;
-
-
-	}
-</style>
-		
-
-
-	
-		</main>
-		</div>
-
-		
-		
-	</header>
-
-
-
-	<main id="contents" class="dark:bg-gray-900  ">
-	
-		<section class="video-grid md:dark:bg-gray-900">
-			<div class="video-preview">
-				<div class="thumbnail-row" onclick="window.location.href='animal/animal.html';">
-					<img src="animal/animals-pics/animals.jpg" class="inside-anfield freezeframe" />
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Animal Farm <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content">
-									<a href=animal/animal.html>Lesson Plan</a>
-									<a href="/animal/worksheet.html">Worksheets</a>
-									<a href="animal/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-
-			<div class="video-preview">
-				<div class="thumbnail-row" onclick="window.location.href='zoo-animals/zoo.html';">
-					<img src="/thumbnails/zoo.jpg" class="inside-anfield freezeframe" />
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Zoo Animals <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content">
-									<a href="zoo-animals/zoo.html">Lesson Plan</a>
-									<a href="zoo-animals/worksheets/worksheet.html">Worksheets</a>
-									<a href="zoo-animals/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/adjectives-ppt.png" class="inside-anfield freezeframe"
-						onclick="window.location.href='/Adjectives/adjectives.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
           </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Adjectives<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Adjectives/adjectives.html">Lesson Plan</a>
+                    <a href="/Adjectives/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/Adjectives/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <div class="video-preview">
+          <div
+            class="thumbnail-row"
+            onclick="window.location.href='food/food.html';"
+          >
+            <img src="thumbnails/Food.png" class="inside-anfield freezeframe" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Food and Drinks <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="food/food.html">Lesson Plan</a>
+                    <a href="food/worksheets/worksheet.html">Worksheets</a>
+                    <a href="food/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Adjectives<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Adjectives/adjectives.html">Lesson Plan</a>
-									<a href="/Adjectives/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Adjectives/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
+        <div class="video-preview">
+          <div
+            class="thumbnail-row"
+            onclick="window.location.href='classroom/classroom.html';"
+          >
+            <img
+              src="/thumbnails/Classroom-Objects .gif"
+              class="inside-anfield freezeframe"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-			<div class="video-preview">
-				<div class="thumbnail-row" onclick="window.location.href='food/food.html';">
-					<img src="thumbnails/Food.png" class="inside-anfield freezeframe" />
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Classroom <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="/Classroom/classroom.html">Lesson Plan</a>
+                    <a href="/Classroom/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/Classroom/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <div class="video-preview">
+          <div
+            class="thumbnail-row"
+            onclick="window.location.href='clothes/clothes.html';"
+          >
+            <img
+              src="/thumbnails/clothes.gif"
+              class="inside-anfield freezeframe"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Clothes <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="/clothes/clothes.html">Lesson Plan</a>
+                    <a href="clothes/worksheets/worksheet.html">Worksheets</a>
+                    <a href="clothes/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Food and Drinks <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="food/food.html">Lesson Plan</a>
-									<a href="food/worksheets/worksheet.html">Worksheets</a>
-									<a href="food/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
+        <div class="video-preview">
+          <div
+            class="thumbnail-row"
+            onclick="window.location.href='body/body.html';"
+          >
+            <img
+              src="/thumbnails/body.png"
+              class="inside-anfield freezeframe"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Body Parts <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="body/body.html">Lesson Plan</a>
+                    <a href="body/worksheets/worksheet.html">Worksheets</a>
+                    <a href="body/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
 
-			<div class="video-preview">
-				<div class="thumbnail-row" onclick="window.location.href='classroom/classroom.html';">
-					<img src="/thumbnails/Classroom-Objects .gif" class="inside-anfield freezeframe" />
+              <!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <div class="video-preview">
+          <div
+            class="thumbnail-row"
+            onclick="window.location.href='places/places.html';"
+          >
+            <img
+              src="thumbnails/Places.gif"
+              class="inside-anfield freezeframe"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Places <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="places/places.html">Lesson Plan</a>
+                    <a href="places/worksheets/worksheet.html">Worksheets</a>
+                    <a href="places/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn"> Classroom <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="/Classroom/classroom.html">Lesson Plan</a>
-									<a href="/Classroom/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Classroom/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="/thumbnails/transportation.png"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='transportations/transportation.html' "
+            />
 
-			<div class="video-preview">
-				<div class="thumbnail-row" onclick="window.location.href='clothes/clothes.html';">
-					<img src="/thumbnails/clothes.gif" class="inside-anfield freezeframe" />
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn"> Clothes <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="/clothes/clothes.html">Lesson Plan</a>
-									<a href="clothes/worksheets/worksheet.html">Worksheets</a>
-									<a href="clothes/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="video-preview">
-				<div class="thumbnail-row" onclick="window.location.href='body/body.html';">
-					<img src="/thumbnails/body.png" class="inside-anfield freezeframe" />
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Body Parts <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="body/body.html">Lesson Plan</a>
-									<a href="body/worksheets/worksheet.html">Worksheets</a>
-									<a href="body/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-
-			<div class="video-preview">
-				<div class="thumbnail-row" onclick="window.location.href='places/places.html';">
-					<img src="thumbnails/Places.gif" class="inside-anfield freezeframe" 
-					
-					/>
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Places <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="places/places.html">Lesson Plan</a>
-									<a href="places/worksheets/worksheet.html">Worksheets</a>
-									<a href="places/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="/thumbnails/transportation.png" class="inside-anfield freezeframe"
-						onclick="window.location.href='transportations/transportation.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
           </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Transportation<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-transport">
+                    <a href="transportations/transportation.html"
+                      >Lesson Plan</a
+                    >
+                    <a href="/transportations/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/transportations/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Adjectives-->
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+        <!--  Adverbs-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="Adverbs/pics/Adverbs.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='adverbs/adverbs.html' "
+            />
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Transportation<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-transport">
-									<a href="transportations/transportation.html">Lesson Plan</a>
-									<a href="/transportations/worksheets/worksheet.html">Worksheets</a>
-									<a href="/transportations/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Adjectives-->
-
-
-			<!--  Adverbs-->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="Adverbs/pics/Adverbs.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='adverbs/adverbs.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Adverbs<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Adverbs/Adverbs.html">Lesson Plan</a>
+                    <a href="/Adverbs/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/Adverbs/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/verbs.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='verbs/verbs.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Adverbs<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Adverbs/Adverbs.html">Lesson Plan</a>
-									<a href="/Adverbs/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Adverbs/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/verbs.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='verbs/verbs.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Verbs<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="verbs/verbs.html">Lesson Plan</a>
+                    <a href="/verbs/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/verbs/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  colors -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Colors-Flashcard.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='colors/colors.html' "
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Colors<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Colors/colors.html">Lesson Plan</a>
+                    <a href="Colors/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/Colors/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Verbs<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="verbs/verbs.html">Lesson Plan</a>
-									<a href="/verbs/worksheets/worksheet.html">Worksheets</a>
-									<a href="/verbs/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Shapes & objects .gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='/shapes/shapes.html' "
+            />
+            <div class="video-info-grid">
+              <div class="channel-picture"></div>
+              <div class="video-info">
+                <p class="title"></p>
 
-			<!--  colors -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Colors-Flashcard.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='colors/colors.html' " />
+                <div class="navbar">
+                  <div class="subnav">
+                    <button class="subnavbtn">
+                      shapes<i class="fa fa-caret-up"></i>
+                    </button>
+                    <div class="subnav-content-clothes">
+                      <a href="shapes/shapes.html">Lesson Plan</a>
+                      <a href="shapes/worksheets/worksheet.html">Worksheets</a>
+                      <a href="/shapes/game.html">Online Games</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  Countries-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="countries/pics/countries-Flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='countries/countries.html' "
+            />
 
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Countries<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="/countries/countries.html">Lesson Plan</a>
+                    <a href="/countries/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/countries/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Daily routine -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Daily Routine Flashcards-20.png"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='daily/daily.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Colors<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Colors/colors.html">Lesson Plan</a>
-									<a href="Colors/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Colors/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Shapes & objects .gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='shapes/shapes.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					<!-- Shapes -->
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Daily Routine<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="transport/transportation.html">Lesson Plan</a>
+                    <a href="/transport/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/transport/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+        <!-- add an empty div -->
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Colors<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="shapes/shapes.html">Lesson Plan</a>
-									<a href="shapes/worksheets/worksheet.html">Worksheets</a>
-									<a href="/shapes/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
+        <!--  Days of the Week -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Colorful Days of the Week Circle Time Chart Flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='days/days.html' "
+            />
 
-			<!--  Countries-->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="countries/pics/countries-Flashcards.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='countries/countries.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Days of the Week<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content">
+                    <a href="/days/days.html">Lesson Plan</a>
+                    <a href="/days/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/days/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!-- Months of the year -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Months of the Year Flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='months/months.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Countries<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="/countries/countries.html">Lesson Plan</a>
-									<a href="/countries/worksheets/worksheet.html">Worksheets</a>
-									<a href="/countries/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!--  Daily routine -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Daily Routine Flashcards-20.png" class="inside-anfield freezeframe"
-						onclick="window.location.href='daily/daily.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Months of the year<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content">
+                    <a href="months/months.html">Lesson Plan</a>
+                    <a href="/months/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/months/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Family -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Familys.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='Family/family.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Daily Routine<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="transport/transportation.html">Lesson Plan</a>
-									<a href="/transport/worksheets/worksheet.html">Worksheets</a>
-									<a href="/transport/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<!-- add an empty div -->
-
-
-			<!--  Days of the Week -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Colorful Days of the Week Circle Time Chart Flashcards.gif"
-						class="inside-anfield freezeframe" onclick="window.location.href='days/days.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Family<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Family/family.html">Lesson Plan</a>
+                    <a href="/Family/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/Family/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Feelings -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Colorful funny emojis and Illustrated Feelings Flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='Feelings/feelings.html' "
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Feelings<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Feelings/feelings.html">Lesson Plan</a>
+                    <a href=" /Feelings/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/Feelings/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Days of the Week<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content">
-									<a href="/days/days.html">Lesson Plan</a>
-									<a href="/days/worksheets/worksheet.html">Worksheets</a>
-									<a href="/days/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
+        <!--  Festivals -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  festivals from icon -->
+            <img
+              src="thumbnails/festivals.png"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='festivals/festivals.html' "
+              id="fest"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Festivals<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="festivals/festivals.html">Lesson Plan</a>
+                    <a href="/festivals/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <!-- <a href="/festivals/game.html">Online Games</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<!-- Months of the year -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Months of the Year Flashcards.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='months/months.html' " />
+        <!--  House-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Parts of a House Posters (Flashcard).gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='house/house.html' "
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    House<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="house/house.html">Lesson Plan</a>
+                    <a href="/House/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/House/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  Jobs -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/jobs-Flashcard.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='Jobs/jobs.html' "
+            />
+
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Jobs<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Jobs/jobs.html">Lesson Plan</a>
+                    <a href="/jobs/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/jobs/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Work Places-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="/thumbnails/Places.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='transport/transportation.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Months of the year<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content">
-									<a href="months/months.html">Lesson Plan</a>
-									<a href="/months/worksheets/worksheet.html">Worksheets</a>
-									<a href="/months/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Family -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Familys.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='Family/family.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Work Places<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="/places/places.html">Lesson Plan</a>
+                    <a href="/places/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/places/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Music -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Musical Instruments vocabulary flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='music/music.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Family<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Family/family.html">Lesson Plan</a>
-									<a href="/Family/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Family/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Feelings -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Colorful funny emojis and Illustrated Feelings Flashcards.gif"
-						class="inside-anfield freezeframe" onclick="window.location.href='Feelings/feelings.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Music<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="music/music.html">Lesson Plan</a>
+                    <a href="/music/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/music/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Numbers -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="/thumbnails/numbers.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='numbers/numbers.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Feelings<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Feelings/feelings.html"">Lesson Plan</a>
-              <a href=" /Feelings/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Feelings/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Festivals -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  festivals from icon -->
-					<img src="thumbnails/festivals.png" class="inside-anfield freezeframe"
-						onclick="window.location.href='festivals/festivals.html' " id="fest" />
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Festivals<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="festivals/festivals.html">Lesson Plan</a>
-									<a href="/festivals/worksheets/worksheet.html">Worksheets</a>
-									<!-- <a href="/festivals/game.html">Online Games</a> -->
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  House-->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Parts of a House Posters (Flashcard).gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='house/house.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Numbers<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="transport/transportation.html">Lesson Plan</a>
+                    <a href="/transport/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/transport/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Phonics -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="Phonics/pics/Short vowels CVC Word Cards.gif"
+              onclick="window.location.href='phonics/phonics.html' "
+              style="height: 185px; margin: auto"
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">House<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="house/house.html">Lesson Plan</a>
-									<a href="/House/worksheets/worksheet.html">Worksheets</a>
-									<a href="/House/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!--  Jobs -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/jobs-Flashcard.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='Jobs/jobs.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Phonics<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="phonics/phonics.html">Lesson Plan</a>
+                    <a href="/phonics/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/phonics/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Questions -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Wh-Questions.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='questions/common-questions.html' "
+              style="height: 185px; margin: auto"
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Jobs<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Jobs/jobs.html">Lesson Plan</a>
-									<a href="/jobs/worksheets/worksheet.html">Worksheets</a>
-									<a href="/jobs/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Work Places-->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="/thumbnails/Places.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='transport/transportation.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Questions<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="questions/common-questions.html">Lesson Plan</a>
+                    <a href="/questions/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/questions/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Seasons-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Colorful Seasons Flascards.png"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='seasons/seasons.html' "
+              width="150px"
+              height="150px"
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Work Places<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="/places/places.html">Lesson Plan</a>
-									<a href="/places/worksheets/worksheet.html">Worksheets</a>
-									<a href="/places/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Music -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Musical Instruments vocabulary flashcards.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='music/music.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Seasons<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="seasons/seasons.html">Lesson Plan</a>
+                    <a href="/seasons/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/seasons/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Weather-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/The Weather.png"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='weather/weather.html' "
+              alt=""
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Music<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="music/music.html">Lesson Plan</a>
-									<a href="/music/worksheets/worksheet.html">Worksheets</a>
-									<a href="/music/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Numbers -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="/thumbnails/numbers.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='numbers/numbers.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Weather<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Weather/weather.html">Lesson Plan</a>
+                    <a href="/Weather/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/weather/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Time -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Clock Matching Flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='time/time.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Numbers<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="transport/transportation.html">Lesson Plan</a>
-									<a href="/transport/worksheets/worksheet.html">Worksheets</a>
-									<a href="/transport/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!--  Phonics -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="Phonics/pics/Short vowels CVC Word Cards.gif" 
-						onclick="window.location.href='phonics/phonics.html' "
-						
-						style="height: 185px; margin: auto;"
-						/>
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Time<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Time/time.html">Lesson Plan</a>
+                    <a href="/Time/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/Time/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  Toys -->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Colourful Toys Flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='toys/toys.html' "
+            />
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Phonics<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="phonics/phonics.html">Lesson Plan</a>
-									<a href="/phonics/worksheets/worksheet.html">Worksheets</a>
-									<a href="/phonics/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Questions -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Wh-Questions.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='questions/common-questions.html' "
-						
-						style="height: 185px; margin: auto;"
-						/>
-
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
     </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Toys <i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="toys/toys.html">Lesson Plan</a>
+                    <a href="/toys/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/toys/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
+        <!--  sports-->
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="/thumbnails/Sports Flashcards.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='sports/sports.html' "
+              style="width: 240px; margin: auto"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Sports<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Sports/sports.html">Lesson Plan</a>
+                    <a href="/Sports/worksheets/worksheet.html">Worksheets</a>
+                    <a href="/Sports/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- image for  transportation from icon -->
+            <img
+              src="thumbnails/Alphabet Posters.gif"
+              class="inside-anfield freezeframe"
+              onclick="window.location.href='Alphabets/alphabets.html' "
+              style="width: 260px; margin: auto"
+            />
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Questions<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="questions/common-questions.html">Lesson Plan</a>
-									<a href="/questions/worksheets/worksheet.html">Worksheets</a>
-									<a href="/questions/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!--  Seasons-->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Colorful Seasons Flascards.png" class="inside-anfield freezeframe"
-						onclick="window.location.href='seasons/seasons.html' " width="150px" height="150px" />
-
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-    </iframe> -->
-
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Seasons<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="seasons/seasons.html">Lesson Plan</a>
-									<a href="/seasons/worksheets/worksheet.html">Worksheets</a>
-									<a href="/seasons/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--  Weather-->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/The Weather.png" class="inside-anfield freezeframe"
-						onclick="window.location.href='weather/weather.html' " alt="" />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-    </iframe> -->
-
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Weather<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Weather/weather.html">Lesson Plan</a>
-									<a href="/Weather/worksheets/worksheet.html">Worksheets</a>
-									<a href="/weather/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!--  Time -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Clock Matching Flashcards.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='time/time.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-    </iframe> -->
-
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Time<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Time/time.html">Lesson Plan</a>
-									<a href="/Time/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Time/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!--  Toys -->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Colourful Toys Flashcards.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='toys/toys.html' " />
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-    </iframe> -->
-
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Toys <i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="toys/toys.html">Lesson Plan</a>
-									<a href="/toys/worksheets/worksheet.html">Worksheets</a>
-									<a href="/toys/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-
-
-			<!--  sports-->
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="/thumbnails/Sports Flashcards.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='sports/sports.html' "
-						style="width: 240px; margin: auto;"
-						/>
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
-    </iframe> -->
-
-
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
-
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Sports<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Sports/sports.html">Lesson Plan</a>
-									<a href="/Sports/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Sports/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-			<div class="video-preview">
-				<div class="thumbnail-row">
-					<!-- image for  transportation from icon -->
-					<img src="thumbnails/Alphabet Posters.gif" class="inside-anfield freezeframe"
-						onclick="window.location.href='Alphabets/alphabets.html' "
-						style="width: 260px; margin: auto;" />
-
-
-					<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
         </iframe> -->
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture"></div>
+            <div class="video-info">
+              <p class="title"></p>
+
+              <div class="navbar">
+                <div class="subnav">
+                  <button class="subnavbtn">
+                    Alphabets<i class="fa fa-caret-up"></i>
+                  </button>
+                  <div class="subnav-content-clothes">
+                    <a href="Alphabets/alphabets.html">Lesson Plan</a>
+                    <a href="/Alphabets/worksheets/worksheet.html"
+                      >Worksheets</a
+                    >
+                    <a href="/Alphabets/game.html">Online Games</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          new Freezeframe();
+        </script>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="footer w3-container p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800"
+      >
+        <div class="row w3-row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../game.html">Most Popular</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="w3-row">
+          <img
+            src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png"
+            class="logo"
+          />
+
+          ESL Clup Copyright © 2021 ESL Clup - All rights reserved
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      @media screen and (max-width: 768px) {
+        #span-rm,
+        #logo-m {
+          display: none;
+        }
+
+        /* add h1 tag */
+      }
+    </style>
+    <button class="myTopBtn">
+      <!-- add an icon up -->
+      <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+      <hr style="margin: 0; padding: 3px; color: #521b30; width: 100%" />
+      <!--  -->
+    </button>
 
 
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
 
-					</div>
-					<div class="video-info">
-						<p class="title"></p>
+   
+    <script src="/scripts/topbutton.js"></script>
+    <!-- <script src="/scripts/main.js"></script> -->
+    <script src="/scripts/search.js"></script>
 
-						<div class="navbar">
-							<div class="subnav">
-								<button class="subnavbtn">Alphabets<i class="fa fa-caret-up"></i></button>
-								<div class="subnav-content-clothes">
-									<a href="Alphabets/alphabets.html">Lesson Plan</a>
-									<a href="/Alphabets/worksheets/worksheet.html">Worksheets</a>
-									<a href="/Alphabets/game.html">Online Games</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<!-- <p class="description"> <span class="span-hidden">Please Choose from DropDown Menu</span> </p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<script>
-				new Freezeframe();
-				</script>
-				
-		</section>
-
-	</main>
-
-	<footer>
-		<div class="footer w3-container p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
-			<div class="row w3-row">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-youtube"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-			</div>
-
-			<div class="row">
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../game.html">Most Popular</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms & Conditions</a></li>
-					<li><a href="#">Contact Us</a></li>
-				
-				</ul>
-				
-			</div>
-
-			<div class="w3-row">
-				<img src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" class="logo">
-
-				ESL Clup Copyright © 2021 ESL Clup - All rights reserved
-			</div>
-		</div>
-
-	
-	</footer>
-
-
-	<style>
-		@media screen and (max-width: 768px)
-		{
-			#span-rm, #logo-m
-	
-			{
-				display: none;
-			}
-			/* add h1 tag */
-
-
-		}
-
-		
-
-	</style>
-	<button class="myTopBtn">
-		<!-- add an icon up -->
-		<i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
-		<hr style="margin: 0; padding:3px; color: #521b30; width: 100%;">
-		<!--  -->
-	</button>
-	
-	
-	<script>
-		
-		// // get video-grid class
-		var videoGrid = document.querySelector(".video-grid");
-
-		function w3_open()
-		{
-			
-			if (window.innerWidth <= 768)
-			{
-				videoGrid.style.marginLeft = "1%";
-				videoGrid.style.marginRight = "-20%";
-				document.querySelector("#navbar-sticky").style.paddingTop = "25px";
-				document.querySelector("#nav-left").classList.replace("h-15", "h-20"); 
-				document.getElementById("span-rm").style.display = "none";
-				document.getElementById("logo-m").style.display = "none";
-				document.getElementById("small-size").style.display = "none";
-				
-
-
-			} else
-			{
-				videoGrid.style.marginLeft = "25%";
-				videoGrid.style.marginRight = "10%";
-				document.querySelector("#nav-left").classList.replace("h-20", "h-15"); 
-	
-				
-			}
-
-			videoGrid.style.transition = "all 0.5s";
-
-
-		}
-		// if media prefers color-scheme dark  
-		if (window.matchMedia('prefers-color-scheme:dark'))
-		{
-			videoGrid.style.backgroundColor = "#1b1b1b";
-			videoGrid.style.borderColor = "white";
-		}
-
-		// on resize and 
-		window.onresize = function ()
-		{
-		
-			if (window.innerWidth <= 768)
-			{
-				document.getElementById("span-rm").style.display = "none";
-				document.getElementById("logo-m").style.display = "none";
-				document.querySelector("#nav-left").classList.add("h-20"); 
-				document.getElementById("small-size").style.display = "block";
-				videoGrid.style.margin = "auto";
-				// add html element to the header
-			
-			} else if (window.innerWidth > 768)
-			{
-				document.getElementById("span-rm").style.display = "block";
-				document.getElementById("logo-m").style.display = "block";
-				// document.querySelector("#nav-left").classList.replace("h-20", "h-15"); 
-				document.getElementById("small-size").style.display = "none";
-				document.querySelector("#nav-left").classList.remove("h-20");
-				videoGrid.style.marginLeft = "18%";
-				videoGrid.style.marginRight = "15%";
-				// remove html element from the header
-			
-
-			
-			}	else
-			{
-				document.getElementById("small-size").style.display = "none";
-				
-			}
-				
-			
-
-
-			videoGrid.style.transition = "all 0.5s";
-		};
-
-		function w3_close()
-		{
-			document.getElementById("sidebar").style.display = "none";
-
-			if (window.innerWidth <= 768)
-			{
-				videoGrid.style.marginLeft = "10%";
-				videoGrid.style.marginRight = "0%";
-			} else
-			{
-				videoGrid.style.marginLeft = "15%";
-				videoGrid.style.marginRight = "15%";
-			}
-
-			videoGrid.style.transition = "all 0.5s";
-		}
-	
-	</script>
-	<script src="/scripts/index.js"></script>
-	<script src="/scripts/topbutton.js"></script>
-	<script src="/scripts/tailwind.config.js"></script>
-	<script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
-	<!-- jquery -->
-</body>
-
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+    <!-- jquery -->
+  </body>
 </html>

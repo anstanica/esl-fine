@@ -189,4 +189,28 @@
       width: fit-content;
     }
   }
+  .logo-expand:hover, .logo-img:hover, .sidebar-link:hover, .m-icon:hover, .small-icon:hover {
+    /* filter: drop-shadow(0 0 1em #646cffaa); */
+    filter: drop-shadow(0 0 0.75rem crimson);
+    animation: 3s infinite alternate hue;
+  }
+
   
+  /* animation */
+  @keyframes hue{
+    10% {
+        filter: hue-rotate(41deg)
+    }
+    30% {
+        filter: hue-rotate(93deg)
+    }
+    50%{
+        filter: hue-rotate(138deg)
+    }
+    80% {
+        filter: hue-rotate(200deg)
+    }
+    100%{
+        filter: hue-rotate(360deg)
+    }
+  }
