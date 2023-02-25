@@ -68,7 +68,7 @@
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
         integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet"
+ <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
@@ -79,8 +79,20 @@
             siteId: 'a079641b-fded-449e-9fa7-35f3c030cad7',
             branch: 'main',
             selector: 'div#search',
+            hitsPerPage : 8,
+            detached : true,
+            searchParameters: {
+                hitsPerPage: 8,
+                facetFilters: ['language:en']
+            },
+            theme: {
+                    mark: '#fff',                                 // Color of the matching content
+                    background: '#23263b',                        // Background Color of the input and the panel
+                    selected: '#111432',                          // Background Color of the selected item
+                    text: '#d6d6e7',                              // Color of the title of the items
+                    colorSourceIcon: '#d6d6e7',                    // Color of the icon on the left of results
+                                }
         });
-
 
     </script>
 </head>
@@ -376,11 +388,84 @@
         </div>
 
         <!-- End of the sidebar -->
+    <style>
 
+    .aa-DetachedOverlay
+        {
+            height: 100%;
+            width: 100%;
+            background-color: #212529;
+            /* zindex on top of everything else */
+            z-index: 9999999;
+            
+            backdrop-filter: blur(1px);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        
+        }
+        .aa-Form .aa-Input{
+            color: #212529;
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.5;
+            outline: none;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        }
+
+        .aa-DetachedContainer--modal .aa-DetachedFormContainer .aa-Form{
+            height: 60px;
+            width: 100%;
+            border-radius: 20px;
+
+        }
+        .aa-DetachedContainer--modal {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .aa-ItemContent {
+            font-size: 26px;
+        
+        }
+        .aa-Item .aa-ItemContent .aa-ItemTitle {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #d444b7;
+        }
+        .aa-Item .aa-ItemContent .aa-ItemDescription{
+            font-size: 1rem;
+            margin-top: 1rem;
+            color : #e4f6d4;
+            line-height: 1.6  ;
+        }
+        mark {
+            background-color: #f8f9fa;
+            color: #db2f2f;
+            font-size: 1rem;
+        }
+        .aa-Item .aa-ItemContent{
+            border: 4px solid #3863b7;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+    </style>
+<script>
+    $(function(){
+        $("#search").on('keyup', () => {
+            // hide this div
+            $("#search input").css("display", "none");
+        })
+    })
+</script>
 
         <div class="wrapper">
             <div class="header">
-                <div class="search-bar" id="search">
+                <div id="search">
                     <!-- <input type="text" placeholder="Search" id="myInput"> -->
                 </div>
                 <div class="button-wrapper">

@@ -1,7 +1,7 @@
 .header {
   height: 55px;
   display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -12,17 +12,15 @@
   border-bottom-width: 1px;
   border-bottom-color: rgb(197, 195, 195);
   border-bottom-style: solid;
-  z-index: 99;
+  z-index: 100;
+  
 }
 
 .menu {
   height: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  position: relative;
+
   cursor: pointer;
-  animation-play-state: running;
-  animation-timing-function: ease;
+
 }
 .logo {
   height: 54px;
@@ -34,7 +32,7 @@
 
 /* Middle */
 .middle-section {
-  flex: 1;
+
   display: flex;
   justify-content: center;
   /* margin-left: 70px;
@@ -44,25 +42,7 @@
 }
 
 
-.search-bar {
- width: 5%;
- top: 10px;
-}
-.upload {
-  height: 26px;
-}
 
-.apps {
-  height: 26px;
-}
-.my-channel {
-  height: 32px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.notification-icon {
-  height: 24px;
-}
 
 
 /* style the menu-btn to be bigger */
@@ -91,4 +71,3 @@
   font-size: 1.8em;
 
 }
-

@@ -19,7 +19,7 @@
 
         :root {
             --body-font: "Inter", sans-serif;
-            --theme-bg: #1f1d2b;
+            --theme-bg: #252936;
             --body-color: #808191;
             --button-bg: #353340;
             --border-color: rgb(128 129 145 / 24%);
@@ -50,7 +50,7 @@
 
 
         .container {
-            background-color: var(--theme-bg);
+            background-color: #252936;
             /* max-width: 1240px; */
             /* max-height: 1200px; */
             /* height:  110vh; */
@@ -76,6 +76,7 @@
             overflow-y: auto;
             overflow-x: hidden;
             clear: left;
+            background-color: #252936;
         }
 
         .sidebar .logo {
@@ -149,6 +150,7 @@
 
         .sidebar.collapse .side-wrapper {
             width: 30px;
+            background-color: black;
         }
 
         .sidebar.collapse .side-menu svg {
@@ -239,6 +241,7 @@
 
         .search-bar {
             margin-left: 50px;
+            width: 20px;
         }
         .aa-Autocomplete{
             z-index: 110;
@@ -1256,6 +1259,7 @@ padding:auto;
                 /* left: -40px; */
                 width: 100%;
                 padding: 0;
+                background-color: #596382;
 
             }
         }

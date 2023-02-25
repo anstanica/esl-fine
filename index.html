@@ -14,12 +14,12 @@
 
     <!-- <link rel="stylesheet" href="css/pico.min.css"> -->
     <!-- styles -->
-    <link rel="stylesheet" href="css/w3css.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+
+
     <link rel="stylesheet" href="css/video.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
+    <!-- <link rel="stylesheet" href="css/sidebar.css" /> -->
     <link rel="stylesheet" href="css/h-menu.css" />
     <!-- <link rel="stylesheet" href="css/search.css" /> -->
 
@@ -45,67 +45,14 @@
     <script defer
       src="https://kit.fontawesome.com/03826baea9.js"
       crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!--import jquery -->
 
-    <script>
-      var ALGOLIA_INSIGHTS_SRC =
-        "https://cdn.jsdelivr.net/npm/search-insights@2.2.1";
-
-      !(function (e, a, t, n, s, i, c) {
-        (e.AlgoliaAnalyticsObject = s),
-          (e[s] =
-            e[s] ||
-            function () {
-              (e[s].queue = e[s].queue || []).push(arguments);
-            }),
-          (i = a.createElement(t)),
-          (c = a.getElementsByTagName(t)[0]),
-          (i.async = 1),
-          (i.src = n),
-          c.parentNode.insertBefore(i, c);
-      })(window, document, "script", ALGOLIA_INSIGHTS_SRC, "aa");
-    </script>
-
-    <script
-      type="module"
-      defer
-      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
-      integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
-      crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
-    <script>
-      const { autocomplete, getAlgoliaResults } =
-        window["@algolia/autocomplete-js"];
-    </script>
-    <!-- search only version -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
-      integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
-      crossorigin="anonymous"
-    ></script>
+  
     <!-- import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <!-- default version -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
-      integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
-      crossorigin="anonymous"
-    ></script>
+
+
     <!-- import tailwind css -->
     <link
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -114,15 +61,43 @@
     <script src="./node_modules/freezeframe/dist/freezeframe.min.js"></script>
   </head>
 
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+    algoliasearchNetlify({
+        appId: 'SYRFU4T5WC',
+        apiKey: '303d116ae1b602d3e7025a2431245bde',
+        siteId: 'a079641b-fded-449e-9fa7-35f3c030cad7',
+        branch: 'main',
+        selector: 'div#search',
+        hitsPerPage : 8,
+        detached : true,
+        searchParameters: {
+            hitsPerPage: 8,
+            facetFilters: ['language:en']
+        },
+        theme: {
+                mark: '#fff',                                 // Color of the matching content
+                background: '#23263b',                        // Background Color of the input and the panel
+                selected: '#111432',                          // Background Color of the selected item
+                text: '#d6d6e7',                              // Color of the title of the items
+                colorSourceIcon: '#d6d6e7',                    // Color of the icon on the left of results
+                            }
+    });
+
+    // <link rel="stylesheet" href="/css/golia.css" />
+</script>
   <body class="dark:bg-gray-900 anim">
-    <header class="header">
+    <header class="header bg-slate-800">
       <div class="left-section">
         <!-- create menu icon  -->
         <div class="flex md:order-2">
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            onclick="w3_open()"
+            onclick="toggleMenu()"
             class="inline-flex top-2 items-center p-2 text-sm text-gray-500 z-20 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
@@ -145,9 +120,22 @@
         </div>
       </div>
 
-      <div class="middle-section">
+      <script>
+        // w3_open the menu jquery
+        function toggleMenu() {
+          var x = document.getElementById("navbar-sticky");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        $("#navbar-sticky .linko").addClass("border-r-2 border-gray-400");
+          
+      </script>
+      <div class="middle-section ">
         <nav
-          class="bg-white h-15 px-2 left-0 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full top-0 border-b border-gray-200 dark:border-gray-600"
+          class="h-15 px-2 left-0 sm:px-4 py-2.5 dark:bg-gray-800 fixed w-full top-0  dark:border-gray-600"
           id="nav-left"
         >
           <div
@@ -166,62 +154,38 @@
                 ESL Clup Free Resources</a
               >
             </h1>
+            <div>
             <a
-              href="https://eslclup.com/"
-              class="flex items-center justify-center"
+              href="/"
+              class="flex items-start justify-start fixed top-2 mr-16"
             >
               <img
-                src="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png"
-                class="h-6 mr-2 sm:h-9"
+                src="/logos/Black and White Vintage Circle Coffee Shop Logo (2).svg"
+                class="h-6 mr-2 sm:h-9 bg-transparent"
                 id="logo-m"
                 alt="Logo"
               />
               <span
-                class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+                class=" text-xl font-semibold whitespace-nowrap dark:text-white"
                 id="span-rm"
                 >ESL Clup</span
               >
             </a>
-
+          </div>
             <div class="flex md:order-3 left-0"></div>
             <div
-              class="items-center justify-between hidden left-0 w-full md:flex md:w-auto md:order-1"
+              class="items-center dark:bg-gray-800 bg-gray-200 md:border-2 rounded-xl rounded-t-none top-0 border-danger  justify-between hidden left-0 w-full md:flex md:w-auto md:order-1"
               id="navbar-sticky"
             >
-              <div class="relative mt-3 md:hidden">
-                <div
-                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-                >
-                  <svg
-                    class="w-5 h-5 text-gray-500"
-                    aria-hidden="true"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
+          
               <ul
-                class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                class="flex flex-col p-4 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
               >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="block py-2 pl-3 pr-4 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
+          
                 <li>
                   <a
                     href="/content/lessons.html"
-                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    class="border-r-2 block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >Lesson Plans</a
                   >
                 </li>
@@ -235,35 +199,35 @@
                 <li>
                   <a
                     href="/content/flashcards.html"
-                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    class="linko block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >Flashcards</a
                   >
                 </li>
                 <li>
                   <a
                     href="/content/videos.html"
-                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    class="linko block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >Videos</a
                   >
                 </li>
                 <li>
                   <a
                     href="/content/games.html"
-                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    class="linko block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >Games</a
                   >
                 </li>
                 <li>
                   <a
                     href="./about.html"
-                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    class="linko block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >About Me</a
                   >
                 </li>
                 <li>
                   <a
                     href="./donate.html"
-                    class="block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    class="linko block py-2 pl-3 pr-4 text-xl text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >Donate</a
                   >
                 </li>
@@ -272,14 +236,78 @@
           </div>
         </nav>
       </div>
-
-      <div class="search-bar">
+      <style>
+        .aa-DetachedOverlay
+            {
+                height: 100%;
+                width: 100%;
+                background-color: #212529;
+                /* zindex on top of everything else */
+                z-index: 9999999;
+                
+                backdrop-filter: blur(1px);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+        
+               
+            }
+            .aa-Form .aa-Input{
+                color: #212529;
+                font-size: 2.2rem;
+                font-weight: 600;
+                line-height: 1.5;
+                outline: none;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        
+            }
+        
+            .aa-DetachedContainer--modal .aa-DetachedFormContainer .aa-Form{
+                height: 60px;
+                width: 100%;
+                border-radius: 20px;
+        
+            }
+            .aa-DetachedContainer--modal {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .aa-ItemContent {
+                font-size: 26px;
+               
+            }
+            .aa-Item .aa-ItemContent .aa-ItemTitle {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+                color: #d444b7;
+            }
+            .aa-Item .aa-ItemContent .aa-ItemDescription{
+                font-size: 1rem;
+                margin-top: 1rem;
+                color : #e4f6d4;
+                line-height: 1.6  ;
+            }
+            mark {
+                background-color: #f8f9fa;
+                color: #db2f2f;
+                font-size: 1rem;
+            }
+            .aa-Item .aa-ItemContent{
+                border: 4px solid #3863b7;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 10px;
+        
+            }
+        </style>
+      <div id="search" class="absolute top-2 right-4 bg-transparent">
     
       </div>
     </header>
 
-    <div id="autocomplete"></div>
-    <main id="contents" class="dark:bg-gray-900">
+    
+    <main id="contents" class="dark:bg-gray-800">
       <section class="video-grid md:dark:bg-gray-900">
         <div class="video-preview">
           <div
@@ -1444,11 +1472,10 @@
     </button>
 
 
-
    
     <script src="/scripts/topbutton.js"></script>
-    <!-- <script src="/scripts/main.js"></script> -->
-    <script src="/scripts/search.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- <script src="/scripts/search.js"></script> -->
 
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
     <!-- jquery -->

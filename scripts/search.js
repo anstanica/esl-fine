@@ -8,18 +8,18 @@ if ($(".search-bar").is(":visible")) {
   );
 
   autocomplete({
-    container: ".search-bar",
+    container: "#search",
     placeholder: "Search",
     getSources({ query }) {
       return [
         {
-          sourceId: "*",
+          sourceId: "a079641b-fded-449e-9fa7-35f3c030cad7",
           getItems() {
             return getAlgoliaResults({
               searchClient,
               queries: [
                 {
-                  indexName: "dev_data",
+                  indexName: "netlify_a079641b-fded-449e-9fa7-35f3c030cad7_main_all",
                   query,
                   params: {
                     hitsPerPage: 10,

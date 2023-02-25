@@ -6,63 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/online-games.css" />
     <title>Online Games</title>
-    <script>
-        var ALGOLIA_INSIGHTS_SRC =
-          "https://cdn.jsdelivr.net/npm/search-insights@2.2.1";
-    
-        !(function (e, a, t, n, s, i, c) {
-          (e.AlgoliaAnalyticsObject = s),
-            (e[s] =
-              e[s] ||
-              function () {
-                (e[s].queue = e[s].queue || []).push(arguments);
-              }),
-            (i = a.createElement(t)),
-            (c = a.getElementsByTagName(t)[0]),
-            (i.async = 1),
-            (i.src = n),
-            c.parentNode.insertBefore(i, c);
-        })(window, document, "script", ALGOLIA_INSIGHTS_SRC, "aa");
-      </script>
-    
-      <script
-        type="module"
-        src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
-        integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
-        crossorigin="anonymous"
-      ></script>
-      <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
-      <script>
-        const { autocomplete, getAlgoliaResults } =
-          window["@algolia/autocomplete-js"];
-      </script>
-      <!-- search only version -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch-lite.umd.js"
-        integrity="sha256-dyJcbGuYfdzNfifkHxYVd/rzeR6SLLcDFYEidcybldM="
-        crossorigin="anonymous"
-      ></script>
+ 
       
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
-    />
-    <link
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    rel="stylesheet"
-    />
-    <!-- default version -->
-    <script
-    src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.3/dist/algoliasearch.umd.js"
-    integrity="sha256-xpIeHMyr5dPVIcLjKZ9plxUrg4lFJ11AMdoPLDEYtPk="
-    crossorigin="anonymous"
-    ></script>
+
        <!-- import jquery -->
     <script src="/scripts/jquery.min.js"></script>
 
     <link rel="stylesheet" href="/css/games.css">
     <!-- <link rel="stylesheet" href="/css/lessons.css"> -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+    algoliasearchNetlify({
+        appId: 'SYRFU4T5WC',
+        apiKey: '303d116ae1b602d3e7025a2431245bde',
+        siteId: 'a079641b-fded-449e-9fa7-35f3c030cad7',
+        branch: 'main',
+        selector: 'div#search',
+        hitsPerPage : 8,
+        detached : true,
+        searchParameters: {
+            hitsPerPage: 8,
+            facetFilters: ['language:en']
+        },
+        theme: {
+                mark: '#fff',                                 // Color of the matching content
+                background: '#23263b',                        // Background Color of the input and the panel
+                selected: '#111432',                          // Background Color of the selected item
+                text: '#d6d6e7',                              // Color of the title of the items
+                colorSourceIcon: '#d6d6e7',                    // Color of the icon on the left of results
+                            }
+    });
 
+    // <link rel="stylesheet" href="/css/golia.css" />
+</script>
 </head>
 
 <body data-theme=dark>
@@ -352,11 +331,74 @@
             </div>
 
 <!-- End of the sidebar -->
+<style>
+.aa-DetachedOverlay
+    {
+        height: 100%;
+        width: 100%;
+        background-color: #212529;
+        /* zindex on top of everything else */
+        z-index: 9999999;
+        
+        backdrop-filter: blur(1px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
+       
+    }
+    .aa-Form .aa-Input{
+        color: #212529;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.5;
+        outline: none;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
+    }
+
+    .aa-DetachedContainer--modal .aa-DetachedFormContainer .aa-Form{
+        height: 60px;
+        width: 100%;
+        border-radius: 20px;
+
+    }
+    .aa-DetachedContainer--modal {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .aa-ItemContent {
+        font-size: 26px;
+       
+    }
+    .aa-Item .aa-ItemContent .aa-ItemTitle {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #d444b7;
+    }
+    .aa-Item .aa-ItemContent .aa-ItemDescription{
+        font-size: 1rem;
+        margin-top: 1rem;
+        color : #e4f6d4;
+        line-height: 1.6  ;
+    }
+    mark {
+        background-color: #f8f9fa;
+        color: #db2f2f;
+        font-size: 1rem;
+    }
+    .aa-Item .aa-ItemContent{
+        border: 4px solid #3863b7;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+
+    }
+</style>
 <div class="wrapper">
     <div class="header">
-        <div class="search-bar">
+        <div class="search-bar" id="search">
             <!-- <input type="text" placeholder="Search" id="myInput"> -->
         </div>
         <div class="button-wrapper">
@@ -653,7 +695,7 @@ add an icon up
  </button> -->
     <script async  src="/scripts/games.js"></script>
     <script async  src="/scripts/all.js"></script>
-    <script async  src="/scripts/search.js"></script>
+    <!-- <script async  src="/scripts/search.js"></script> -->
 
 </body>
 

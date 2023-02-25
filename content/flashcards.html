@@ -29,6 +29,33 @@
     <link rel="stylesheet" href="/css/flash.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="/logos/Black and White Vintage Circle Coffee Shop Logo (4).png" type="image/x-icon">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+    algoliasearchNetlify({
+        appId: 'SYRFU4T5WC',
+        apiKey: '303d116ae1b602d3e7025a2431245bde',
+        siteId: 'a079641b-fded-449e-9fa7-35f3c030cad7',
+        branch: 'main',
+        selector: 'div#search',
+        hitsPerPage : 8,
+        detached : true,
+        searchParameters: {
+            hitsPerPage: 8,
+            facetFilters: ['language:en']
+        },
+        theme: {
+                mark: '#fff',                                 // Color of the matching content
+                background: '#23263b',                        // Background Color of the input and the panel
+                selected: '#111432',                          // Background Color of the selected item
+                text: '#d6d6e7',                              // Color of the title of the items
+                colorSourceIcon: '#d6d6e7',                    // Color of the icon on the left of results
+                            }
+    });
+
+</script>
 </head>
 
 <body>
@@ -174,8 +201,8 @@
 
 <div class="wrapper">
     <div class="header">
-     <div class="search-bar">
-      <input type="text" placeholder="Search">
+     <div id=search>
+      
      </div>
      <a href="#"> <img src="/logos/menu.svg" alt="" class="m-icon" srcset=""
         title="Menu"
