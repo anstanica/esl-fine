@@ -15,10 +15,7 @@ img {
   max-width: 100%;
 }
 
-.search-bar {
-  width: 450px;
-  top: 5px;
-}
+
 
 :root {
   --body-font: "Inter", sans-serif;

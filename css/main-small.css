@@ -6,15 +6,15 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 412px;
+ 
     /* font size drcrease */
     background-size: 100%;
-    /* font-size: 1rem; */
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-right : 0;
+ 
     /* margin-top: 50px; */
   }
 
@@ -45,6 +45,17 @@
       position: absolute;
       right: 10px;
      
+    }
+    .download-btn{
+ 
+        margin-top: 40px;
+        position: absolute; 
+        left:100px; 
+        margin-bottom: 50px;
+       
+    }
+    .w3-text-light-grey{
+      margin-top: 6px;
     }
 
 }
@@ -147,13 +158,7 @@ html {
     display: flex;
     /* flex-wrap: wrap; */
 
-  .download-btn {
-    justify-self: left;
-    flex-direction: column;
-    position: absolute;
-    left: auto;
-    margin-bottom: 40px;
-  }
+
   #home {
     margin-top: 90px;
   }

@@ -1,10 +1,9 @@
 a {
 	color: inherit;
 }
-h1, h2, h3, h4 {
-	margin: 0;
-	margin-bottom: 10px;
-	margin-top: 10px;
+h1, h2, h3, h4, .w3-text-light-grey {
+	margin: 60px 0 0 0;
+
 }
 h1 {
 	font-size: 3em;
@@ -44,6 +43,7 @@ h1 {
 	margin-left: -7.5px;
 	margin-top: -1.5px;
 	transition: transform 200ms;
+	mergin-bottom: 60px;
 }
 .hamburger-1 {
 	transform: translate3d(0, -8px, 0);
@@ -65,12 +65,12 @@ h1 {
 }
 .menu {
 	position: absolute;
-	right: 0;
+	left: 40px;
 	top: 0;
 	/* margin-left: -50px; */
 	padding-top: 20px;
-	padding-left: 50px;
-	width: 250px;
+	/* padding-left: 50px; */
+	width: 70px;
 	height: 100px;
 	box-sizing: border-box;
 	font-size: 20px;
@@ -119,19 +119,19 @@ h1 {
 }
 .menu-open:checked ~ .menu-item:nth-child(3) {
    transition-duration: 190ms;
-   transform: translate3d(0, 90px, 0);
+   transform: translate3d(90px, 0, 0);
  }
  .menu-open:checked ~ .menu-item:nth-child(4) {
    transition-duration: 290ms;
-   transform: translate3d(0, 175px, 0);
+   transform: translate3d(175px, 0, 0);
  }
  .menu-open:checked ~ .menu-item:nth-child(5) {
    transition-duration: 390ms;
-   transform: translate3d(0, 265px, 0);
+   transform: translate3d(265px, 0, 0);
  }
  .menu-open:checked ~ .menu-item:nth-child(6) {
    transition-duration: 490ms;
-   transform: translate3d(0 , 345px, 0);
+   transform: translate3d(345px ,0 , 0);
  }
  
  [data-title]:hover:after {

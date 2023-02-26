@@ -670,6 +670,9 @@
 
         .show .stream-area {
             display: flex;
+            margin-left: -14px;
+            overflow-wrap: anywhere;
+            /* overflow: hidden; */
         }
 
         .show .main-header,

@@ -73,10 +73,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system-body, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  
+font-family: -apple-system-body, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  
+-webkit-font-smoothing: antialiased;
+  
+-moz-osx-font-smoothing: grayscale;
+  
+font-weight: 500;
 }
 
 .w3-row-padding img {margin-bottom: 12px}
@@ -133,10 +137,11 @@ hr{
 }
 /* add margin top to .download-btn */
 .download-btn {
-  margin-top: 20px;
+  margin-top: 40px;
   position: absolute; 
-  left:450px; 
-  margin-bottom: 40px
+  right:450px; 
+  margin-bottom: 40px;
+  bottom : -110px;
   
 }
 .download-custom{
@@ -200,7 +205,7 @@ hr{
   color: #ffffff;
   border-color: #a0b5ad; height: 50px; width: 185px; cursor: pointer;
 }
-.video, .embed, .goodbye, .download-btn{
+.video, .embed, .goodbye{
     display: flex;
     justify-content: center;
     align-items: center;
